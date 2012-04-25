@@ -1,0 +1,108 @@
+Name,Amount,Reward,Hint,Action,Target,Scheme,Level,icon,type
+Whack the Troll,1,100,,whack,troll,tutorial_1,1
+Build a Peasant's House,1,150,,buy,poor_house,tutorial_2,1
+Collect 2 Pumpkins,2,50,Tap on the farms to collect,harvest,seed-pumpkin,pumpkinHarvest,1
+Buy a Farm Plot,1,100,Look under Farming tab in Shop,buy,basic_plot,basicPlot,1
+Plant 2 Watermelons,2,75,Look under the Farming tab in Shop,plant,seed-melon,plantMelons,1
+Build Crazy Hog's Pub,1,600,Look for Crazy Hog's Pub under Houses tab in Shop,buy,crazy_hogs_pub,businessBasics_1,1,,have
+Supply to Crazy Hog's Pub,1,100,Tap on the Pub to supply food,contract,crazy_hogs_pub,businessBasics_2,1
+Chop down a tree,1,20,Tip: Tap on the trees 5x times to chop them. Chopping trees costs food!,whack,*tree,lumberBasics_1,1,buildings/axe_icon.png
+Smash a rock,1,20,Tip: Tap on the rocks 4x times to smash them,whack,*rock,rockBasics_1,1,buildings/rock_icon.png
+Cut one Small Tree,1,50,Tap on the trees to chop them,whack,tree-small,lumberBasics,1
+Build 1 Peasant's House,1,250,Look under Houses tab in Shop,buy,poor_house,peasantHouseBasics_1,1
+Buy a Villager House,1,100,INFO: Each building adds ONE population to your village,buy,villager_house,villagerHouseBasics_2,1,,have
+Place One Daisy,1,25,Look under Decorations tab in Shop,buy,flower_daisy,landscapeBasics_1,1
+Place One Haybale,1,100,Decorations boost your gold and food output,buy,haybale,landscapeBasics_2,1
+Have 2 Bakeries,2,600,Look for Bakert under Houses tab in Shop,buy,bakery,breadBreakfast_1,1,,have
+Supply the Bakery (x 1),1,200,Tap on the Bakery to supply fruits,contract,bakery,breadBreakfast_2,1
+Whack 2 Trolls,2,100,TIP: Trolls hide behind the trees!,whack,troll,trollMenace,1
+Buy 2 Farm Plots,2,200,TIP: Having more farm plots will increase your food production,buy,basic_plot,melons_1,1
+Plant 4 Beans,4,50,Look under Farming tab in Shop,plant,seed-beans,melons_2,1
+Build Peasant's House (x 1),1,100,INFO: Peasant houses deliver gold every 3 minutes!,buy,poor_house,morePeasantHouses_1,1
+Build Villager's House (x 1),1,500,INFO: Villager houses deliver gold every 5 minutes!,buy,villager_house,moreVillagerHouses_2,1
+Plant 3 Watermelons,3,50,TIP: Turn ON notifications to never miss a harvest!,plant,seed-melon,melonsBeans,1
+Plant 3 Beans,3,150,TIP: Build more Farms to plant more seeds!,plant,seed-beans,melonsBeans,1
+Collect from Peasant House x 2,2,30,TIP: Collect from peasant houses every 3 minutes!,collect,poor_house,taxes_1_1,1
+Collect from Villager's House x 1,1,50,TIP: Turn ON notifications to collect taxes on time!,collect,villager_house,taxes_1_2,1
+Collect from Hog's Pub x 2,2,100,TIP: Wait for 30 Seconds to collect gold. ,collect,crazy_hogs_pub,taxes_1_3,1
+Collect from Bakery x 2,2,100,Tap on the bakery to collect gold,collect,bakery,taxes_1_4,1
+Build an Art Studio,1,750,Look under the Houses tab in Shop,buy,artist_studio,artStudio_1,1
+Supply the Art Studio (x 1),1,50,Tap on the studio to supply food,contract,artist_studio,artStudio_2,1
+Have 2 Knight's House,2,1000,Look under the Houses tab in Shop,buy,knights_house,knightHouse_1,1,,have
+Supply to Knights House,1,100,Tap on the Knights House to supply food,contract,knights_house,knightHouse_2,1
+Collect Watermelons (x 5),5,25,TIP: Turn ON notifications to never miss a harvest!,harvest,seed-melon,melonsTrees_1_1,1
+Collect Beans (x 10),10,250,TIP: Turn ON notifications to never miss a harvest!,harvest,seed-beans,melonsTrees_2_1,1
+Collect from Peasant House x 3,3,30,TIP: Collect from peasant houses every minute!,collect,poor_house,taxes_2_1,1
+Collect from Villager's House x 2,2,50,TIP: Turn ON notifications to collect taxes on time!,collect,villager_house,taxes_2_2,1
+Collect from Hog's Pub x 10,10,100,TIP: Wait for 30 Seconds to collect gold. ,collect,crazy_hogs_pub,taxes_2_3,1
+Collect from Bakery x 5,5,250,Tap on the bakery to collect gold,collect,bakery,taxes_2_4,1
+Build a Fairy House,1,100,Look under Houses tab in Shop,buy,fairy_house,fairy_1,1
+Supply to Bakery (x 6),6,250,Tap on the Bakery to supply fruits,contract,bakery,fairy_2,1
+Collect Grapes (x 8),8,300,TIP: Turn ON notifications to never miss a harvest!,harvest,seed-grapes,grapeJuice_1,1
+Buy Farm Plots (x 3),3,150,Look under the farming tab in Shop,buy,basic_plot,grapeJuice_2,1
+Move a House,1,50,TIP: Tap and hold on a house to activate MOVE MODE,move,*house,movingBasics_1,1,buildings/moveBuilding_icon.png
+Build a Dwarf's House,1,50,Look under the Houses tab in Shop,buy,dwarf_house,dwarfs_1,1,,have
+Place 3 Daisy's,3,30,Look under the Decorations tab in Shop,buy,flower_daisy,fairyDecor,1
+Buy a Wind Mill,1,100,Look under the decorations tab in Shop,buy,windmill,fairyDecor,1
+Place 4 Roses,4,40,TIP: Place roses next to the buildings,buy,flower_rose,fairyDecor,1
+Collect Pumpkins (x 10),10,750,TIP: Turn ON notifications to never miss a harvest!,harvest,seed-pumpkin,pumpkinPie,1
+Plant Strawberries (x 5),5,500,Tap on the farms to plant desired seeds,plant,seed-strawberry,strawberryCakes,1
+Collect Strawberries (x 10),10,1000,TIP: Turn ON notifications to never miss a harvest!,harvest,seed-strawberry,strawberryCakes,1
+Collect Wheat (x 10),10,1000,TIP: Turn ON notifications to never miss a harvest!,harvest,seed-wheat,wheatProduction_10,1
+Collect Watermelons (x 30),30,1000,Look under the farming tab in Shop,harvest,seed-melon,fruitGrind,1
+Collect Strawberries (x 30),30,1500,TIP: Turn ON notifications to never miss a harvest!,harvest,seed-strawberry,strawberryPies,1
+Upgrade Your Castle,1,250,TIP: Upgrading allows for more houses = more population!,upgrade,*castle,castleUpgrade,1,buildings/upgrade_icon.png
+Collect Taxes (x 5),5,50,Tap on any building to collect taxes,collect,*house,taxationBasics,1,buildings/taxes_icon.png
+Collect Taxes (x 12),12,50,Tap on any building to collect taxes,collect,*house,taxation_12,1,buildings/taxes_icon.png
+Collect Taxes (x 10),10,50,Tap on any building to collect taxes,collect,*house,taxation_10,1,buildings/taxes_icon.png
+Chop Down Trees (x 15),15,450,TIP: Chop trees in the unlocked region,whack,*tree,treeChopper_15,1,buildings/axe_icon.png
+Chop Down Trees (x 12),12,450,Tip: Tap on the trees to chop them. Chopping trees costs 15 food!,whack,*tree,treeChopper_12,1,buildings/axe_icon.png
+Chop Down Trees (x 10),10,50,Tip: Tap on the trees to chop them. Chopping trees costs 15 food!,whack,*tree,treeChopper_10,1,buildings/axe_icon.png
+Chop Down Trees (x 6),6,50,Tip: Tap on the trees to chop them. Chopping trees costs 15 food!,whack,*tree,treeChopper_6,1,buildings/axe_icon.png
+Chop Down Trees (x 8),8,50,Tip: Tap on the trees to chop them. Chopping trees costs 15 food!,whack,*tree,treeChopper_8,1,buildings/axe_icon.png
+Chop Down Trees (x 5),5,50,Tip: Tap on the trees to chop them. Chopping trees costs 15 food!,whack,*tree,treeChopper_5,1,buildings/axe_icon.png
+Chop Down Trees (x 4),4,50,TIP: Chop trees in the Unlocked Region,whack,*tree,treeChopper_4,1,buildings/axe_icon.png
+Chop Down Trees (x 4),4,50,TIP: Chop trees closer to the dark clouds,whack,*tree,treeChop,1,buildings/axe_icon.png
+Chop Down Trees (x 10),10,50,TIP: Chop trees in the Unlocked Region,whack,*tree,treeChopper_10_1,1,buildings/axe_icon.png
+Boost FairyHouse by (+ 5%),5,50,TIP: Place decorations near the Fairy House,boost,fairy_house,fairyBoost,1,buildings/goldBoost_icon.png
+Move 2 Houses,2,100,TIP: Tap and hold on a building to activate MOVE MODE,move,*house,movingBasics_2,1,buildings/moveBuilding_icon.png
+Move a Farm Plot,1,100,TIP:Organize Often! You will squeeze out some room...,move,*farm,movingBasics_2_1,1,buildings/moveFarm_icon.png
+Build Peasant's House (x 1),1,400,INFO: Peasant houses deliver gold every 3 minutes!,buy,poor_house,fillerHouses_1,1,,have
+Build Villager's House (x 1),1,300,TIP: Rearrange your houses and farms to accomodate more houses,buy,villager_house,fillerHouses_1,1,,have
+Build a Shoe House,1,500,Look under Houses tab in Shop,buy,shoe_house,shoeHouse,1,,have
+Build a Tailor House,1,500,Look under Houses tab in Shop,buy,tailor_shop,tailorHouse,1,,have
+Build a School House,1,1000,Look under Houses tab in Shop,buy,straight_a_schoolhouse,schoolHouse,1,,have
+Build a Horse Stable,1,1000,Look under Houses tab in Shop,buy,horse_stable,horseStable,1,,have
+Build an Observatory,1,2000,Look under Houses tab in Shop,buy,observatory,astroHouse,1,,have
+Build a Wedding Chapel,1,4000,Look under Houses tab in Shop,buy,wedding_chapel,weddingChapel,1,,have
+Build a Lady's House,1,5000,Look under the Houses tab in Shop,buy,ladys_house,fairLady,1,,have
+Build a Joker's House,1,2500,Look under the Houses tab in Shop,buy,jokers_house,jokerHouse,1,,have
+Rescue the Light House,1,250,TIP: Build a road leading to the dark clouds,connect,lighthouse,unlockLighthouse,1,buildings/lighthouse_icon.png,have
+Rescue the Fortress,1,500,TIP: Build a road leading to the dark clouds,connect,fortress,unlockOutpost,1,buildings/fortress_icon.png,have
+Rescue the Treehouse,1,1000,TIP: Build a road leading to the dark clouds. Reconnect to road if previously unlocked.,connect,elves,unlockGardens,1,buildings/vikingsmith_icon.png,have
+Rescue the Oracle's Tent,1,3000,TIP: Build a road leading to the dark clouds. Reconnect to road if previously unlocked.,connect,ozzystent,unlockOracle,1,buildings/ozzystent_icon.png,have
+Rescue the Forge,1,6000,TIP: Build a road leading to the dark clouds. Reconnect to road if previously unlocked.,connect,vikingsmith,unlockViking,1,buildings/elves_icon.png,have
+More Wishes Coming Soon!,1,0,Your Ship will sail in no time!,connect,vikingsmith,comingSoon,1,buildings/coming_soon.png
+Collect Watermelons (x 20),20,250,Tap on the farms to collect,harvest,seed-melon,melon_20,1
+Collect Beans (x 15),15,350,Tap on the farms to collect,harvest,seed-beans,beans_15,1
+Boost KnightHouse (+ 5%),5,250,TIP: Place decorations near the Knights House,boost,knights_house,knightBooster,1,buildings/goldBoost_icon.png
+Collect Pumpkins (x 8),8,500,TIP: Turn ON notifications to never miss a harvest!,harvest,seed-pumpkin,pumpkinPie_8,1
+Collect Wheat (x 20),20,1000,TIP: Turn ON notifications to never miss a harvest!,harvest,seed-wheat,wheatProduction_20,1
+Collect Watermelons (x 30),30,1000,Look under the farming tab in Shop,harvest,seed-melon,kingSized,1
+Collect Beans (x 25),25,1000,Look under the farming tab in Shop,harvest,seed-beans,kingSized,1
+Collect Grapes (x 30),30,2000,Look under the farming tab in Shop,harvest,seed-grapes,kingSized,1
+Collect Pumpkins (x 30),30,3000,TIP: Turn ON notifications to never miss a harvest!,harvest,seed-pumpkin,kingSized,1
+Buy 2 Wells,2,1000,Look under the decorations tab in Shop,buy,well,outdoorDeco,1
+Buy 3 Scarecrows,3,1000,Place the Scarecrow near farm plots for food boost,buy,scarecrow,outdoorDeco,1
+Buy 2 Fountains,2,1000,Place fountains near houses for gold boost,buy,fountain_rock,outdoorDeco,1
+Buy a Bath House,1,1000,Look under the Houses tab in Shop,buy ,bath_house,bathHouse,1
+Collect Taxes (x 50),50,5000,Tap on any building to collect taxes,collect,*house,heavyTaxes,1,buildings/taxes_icon.png
+Whack Trolls (x 10),10,3000,TIP: Chop some trees to spawn the trolls. Storks are scared of trolls!,whack,troll,grandsonArrival,1,characters/baby_icon.png
+Plant Grapes (x 30),30,5000,TIP: Turn on notifications to never miss a harvest!,plant,seed-grapes,grandsonArrival,1
+Collect Pumpkins (x 20),20,10000,TIP: Turn on notifications to never miss a harvest!,collect,seed-pumpkin,grandsonArrival,1
+Collect 2 Watermelons,2,20,Tip: Tap on the farm plots to collect food!,harvest,seed-melon,harvestMelons,1
+Plant 2 Grapes,2,20,Tip: Tap on empty farm plots to plant the desired seeds.,plant,seed-grapes,plantGrapes,1
+Build a Bakery,1,50,Tip: Look for the Bakery under the Buildings tab in Shop,buy,bakery,bakeryBasics_1,1,,have
+Supply to the Bakery,1,10,Tip: Tap on the Bakery to deliver supplies,contract,bakery,bakeryBasics_2,1
+Collect from the Knight House,1,10,Tip: Tap on the Knights House to collect taxes,collect,knights_house,knightsCollection,1,buildings/taxes_icon.png,have
+Collect Taxes,1,10,Tip: Tap on any building to collect taxes,collect,*house,taxCollection,1,buildings/taxes_icon.png

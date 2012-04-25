@@ -1,0 +1,296 @@
+{
+    "_lastEnergyUpdate": 1312891410570,
+    "dataVersion": 0,
+    "diamonds": 0,
+    "gold": 1500,
+    "food": 400,
+    "xp": 0,
+    "level": 1,
+    "goals": {
+        "4001": {
+            "state": 1,
+            "subgoals": {
+                "4001s0": 0
+            }
+        }
+    },
+    "map": {
+        "width": 32,
+        "height": 32,
+        "entities": [
+            {
+                "x": -14,
+                "y": 10,
+                "key": "nature/tree-small"
+            },
+            {
+                "x": -15,
+                "y": 7,
+                "key": "nature/tree-small"
+            },
+            {
+                "x": -15,
+                "y": 5,
+                "key": "nature/tree-big"
+            },
+            {
+                "x": -3,
+                "y": 9,
+                "key": "nature/tree-big"
+            },
+
+            {
+                "x": -12,
+                "y": 2,
+                "key": "buildings/castle_1"
+            },
+
+            {
+                "x": -5,
+                "y": 5,
+                "key": "buildings/knights_house",
+                "contract":{"state":"finished","startTime":128817470133}
+            },
+        {
+                "x": -6,
+                "y": 0,
+                "key": "farming/basic_plot",
+                "contract": {
+                    "seedName": "farming/seed-pumpkin",
+                    "state": "finished"
+                }
+            },
+            {
+                "x": -4,
+                "y": 0,
+                "key": "farming/basic_plot",
+                "contract": {
+                    "seedName": "farming/seed-pumpkin",
+                    "state": "finished"
+                }
+            },
+        
+
+            {"key":"decorations/flower_sunflower","x":-6,"y":6},{"key":"decorations/pond","x":0,"y":4},{"key":"decorations/fountain_rock","x":2,"y":-3},{"key":"decorations/flower_sunflower","x":-2,"y":6},
+        {"key":"decorations/scarecrow","x":-6,"y":-1},{"key":"decorations/well","x":-3,"y":-1},
+
+            {
+                "x": -13,
+                "y": 11,
+                "key": "nature/rock-big-1"
+            },
+            {
+                "x": -14,
+                "y": 8,
+                "key": "nature/rock-big-1"
+            },
+            {
+                "x": -2,
+                "y": 1,
+                "key": "nature/rock-big-1"
+            },
+            {
+                "x": -5,
+                "y": 10,
+                "key": "buildings/ship_stage_1",
+                "contract": {
+                    "state": "idle"
+                }
+            },
+            {
+                "x": -10,
+                "y": 7,
+                "key": "paths/road"
+            },
+            {
+                "x": -5,
+                "y": 8,
+                "key": "paths/road"
+            },
+            {
+                "x": -8,
+                "y": 1,
+                "key": "paths/road"
+            },
+            {
+                "x": -9,
+                "y": 1,
+                "key": "paths/road"
+            },
+            {
+                "x": -9,
+                "y": 7,
+                "key": "paths/road"
+            },
+            {
+                "x": -8,
+                "y": 7,
+                "key": "paths/road"
+            },
+            {
+                "x": -7,
+                "y": 7,
+                "key": "paths/road"
+            },
+            {
+                "x": -7,
+                "y": 6,
+                "key": "paths/road"
+            },
+            {
+                "x": -7,
+                "y": 5,
+                "key": "paths/road"
+            },
+            {
+                "x": -7,
+                "y": 4,
+                "key": "paths/road"
+            },
+            {
+                "x": -7,
+                "y": 3,
+                "key": "paths/road"
+            },
+            {
+                "x": -7,
+                "y": 2,
+                "key": "paths/road"
+            },
+            {
+                "x": -7,
+                "y": 1,
+                "key": "paths/road"
+            },
+            {
+                "x": -7,
+                "y": 0,
+                "key": "paths/road"
+            },
+            {
+                "x": -6,
+                "y": 2,
+                "key": "paths/road"
+            },
+            {
+                "x": -8,
+                "y": -2,
+                "key": "paths/road"
+            },
+            {
+                "x": -7,
+                "y": -1,
+                "key": "paths/road"
+            },
+        {
+                "x": -7,
+                "y": -2,
+                "key": "paths/road"
+            },
+            {
+                "x": -7,
+                "y": -3,
+                "key": "paths/road"
+            }, 
+
+            {
+                "x": -6,
+                "y": 7,
+                "key": "paths/road"
+            },
+            {
+                "x": -5,
+                "y": 7,
+                "key": "paths/road"
+            },
+            {
+                "x": -4,
+                "y": 7,
+                "key": "paths/road"
+            },
+            {
+                "x": -3,
+                "y": 7,
+                "key": "paths/road"
+            },
+            {
+                "x": -2,
+                "y": 7,
+                "key": "paths/road"
+            },
+            {
+                "x": -1,
+                "y": 7,
+                "key": "paths/road"
+            },
+            {
+                "x": 0,
+                "y": 7,
+                "key": "paths/road"
+            },
+
+            {
+                "x": -6,
+                "y": -2,
+                "key": "nature/tree-big"
+            },
+            {
+                "x": -3,
+                "y": -2,
+                "key": "nature/tree-big"
+            },
+            {
+                "x": -2,
+                "y": 0,
+                "key": "nature/tree-big"
+            },
+            {
+                "x": -5,
+                "y": -2,
+                "key": "nature/tree-big"
+            },
+
+            {
+                "key":"characters/troll",
+                "x":-12,
+                "y":7
+            },
+
+            {
+                "key": "buildings/lighthouse",
+                "x": -13,
+                "y": -6,
+                "contract": {"state":"finished","startTime":132881747013}
+            },
+
+            {
+                "key": "buildings/fortress",
+                "x": -4,
+                "y": -12,
+                "contract": {"state":"finished","startTime":132881747013}
+            },
+
+
+            {
+                "key": "buildings/ozzystent",
+                "x": 8,
+                "y": -6,
+                "contract": {"state":"finished","startTime":132881747013}
+            },
+
+            {
+                "key": "buildings/elves",
+                "x": 10,
+                "y": 9,
+                "contract": {"state":"finished","startTime":132881747013}
+            },
+
+            {
+                "key": "buildings/vikingsmith",
+                "x": 9,
+                "y": -13,
+                "contract": {"state":"finished","startTime":132881747013}
+            }
+        ]
+    }
+}

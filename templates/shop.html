@@ -1,0 +1,100 @@
+<div class="head">
+    <h1><%= l10n.shop %></h1>
+    <div class="value diamonds"></div>
+    <div class="value gold"></div>
+    <button class="cancel"></button>
+</div>
+
+<div class="departments_list_wrapper">
+<ul class="departments_list">
+<% for (var departmentName in shopItems) { %>
+    <li><a href="#shop-<%= departmentName %>"><%= l10n[departmentName] %></a></li>
+<% } %>
+</ul>
+</div>
+
+<div class="departments">
+    <hr>
+    <div id="upgrade-castle">
+        <h6>Upgrade your castle to increase population!</h6>
+        <button class="button">Upgrade</button>
+    </div>
+    <% for (var departmentName in shopItems) { %>
+    <ul class="department" id="shop-<%= departmentName %>">
+    <% for (var shopItem in shopItems[departmentName]) { var _shop = shopItems[departmentName][shopItem]; %>
+        <li data-itemname="<%= _shop.name %>"
+            data-type="<%= _shop["class"] %>"
+            data-cost="<%= _shop.goldCost  || _shop.contractRequiredGold %>"
+            data-level="<%= ( "level" == _shop.unlockCondition ) ? _shop.unlockValue : 1 %>"
+            <% if (["house", "uhouse"].indexOf(_shop['class']) !== -1) { %>
+            data-population="<%= _shop.population %>"
+            <% } %>
+            class="panel">
+
+            <div class="image"><img src="<%= _shop.imgSrc %>" alt="" /></div>
+            <div class="specification">
+                <% if(_shop["class"] == "house") { %>
+                <div class="house">
+                    <div class="population"><i></i> x&thinsp;<%= _shop.population %></div>
+                    <h6><%= _shop.title %></h6>
+                    <div class="contract embossed">
+                    	<span class="required Food"><%= _shop.contractRequiredFood %></span>
+						<span class="required Time"><%= _shop.contractRequiredTime %></span>
+						<span class="provided Gold"><%= _shop.contractProvidedGold %></span>
+					</div>
+            <div class="button goldCost"><i></i><%= _shop.goldCost %></div>
+                </div>
+                <% } %>
+                <% if(_shop["class"] == "uhouse") { %>
+                <div class="house">
+                    <div class="population"><i></i> x&thinsp;<%= _shop.population %></div>
+                    <h6><%= _shop.title %></h6>
+                    <div class="contract embossed">
+						<span class="required Time"><%= _shop.contractRequiredTime %></span>
+						<span class="provided Gold"><%= _shop.contractProvidedGold %></span>
+					</div>
+            <div class="button goldCost"><i></i><%= _shop.goldCost %></div>
+                </div>
+                <% } %>
+                <% if(_shop["class"] == "farm") { %>
+                <div class="farm">
+                    <h6><%= _shop.title %></h6>
+					<div class="contract embossed"><span class="hint">Buy farm plots to seed plants</span></div>
+          <div class="button goldCost"><i></i><%= _shop.goldCost %></div>
+                </div>
+                <% } %>
+                <% if(_shop["class"] == "seeds") { %>
+                <div class="seeds">
+                    <h6><%= _shop.title %></h6>
+                    <div class="contract embossed">
+                    	<!-- span class="required Gold"><%= _shop.contractRequiredGold %></span -->
+						<span class="required Time"><%= _shop.contractRequiredTime %></span>
+						<span class="provided Food"><%= shopItems[departmentName][shopItem].contractProvidedFood %></span>
+					</div>
+          <div class="button goldCost"><i></i><%= _shop.contractRequiredGold %></div>
+                </div>
+                <% } %>
+
+                <% if(_shop["class"] == "decoration") { %>
+                <div class="decoration">
+                    <h6><%= _shop.title %></h6>
+					<div class="contract embossed">
+						<p class="tiny">
+					    <% if(_shop.goldBoost !== 0) { %>
+							Put this next to a <strong>house</strong><br> to get <strong><%= _shop.goldBoost %>% more gold</strong> from it.
+					    <% } %>
+					    <% if(_shop.foodBoost !== 0) { %>
+					        Put this next to a <strong>farm</strong><br> to get <strong><%= _shop.foodBoost %>% more food</strong> from it.
+					    <% } %>
+						</p>
+					</div>
+          <div class="button goldCost"><i></i><%= _shop.goldCost %></div>
+                </div>
+                <% } %>
+            </div>
+        </li>
+    <% } %>
+    </ul>
+    <% } %>
+
+</div>

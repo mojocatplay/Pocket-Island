@@ -1,0 +1,73 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'optparse'
+require 'json'
+
+def process_parameter(parameter)
+    key,file = parameter.split(":")
+    raise "The key #{key} is not valid" unless key =~ /[\w_\a\z]+/i
+    raise "File not found #{file}" unless File.file?(file)
+    return key,file
+end
+
+options = {:actions => []}
+OptionParser.new do |opts|
+  opts.banner = "Usage: #{File.basename $0} options"
+
+  opts.on("-o","--oneline key:file", "Read the json from file, remove the newlines and generate a line with the form ' key = file ; '.") do |f|
+    key,file = process_parameter(f)
+    options[:actions] << [:oneline, key, file]
+  end
+
+  opts.on("-r","--reparse key:file", "Read the json, parse it and serialize it in the form ' key = file ; '.") do |f|
+    key,file = process_parameter(f)
+    options[:actions] << [:reparse, key, file]
+  end
+
+  opts.on("-s","--stringify key:file", "Put the content of the file as an string WITHOUT SCAPE") do |f|
+    key,file = process_parameter(f)
+    options[:actions] << [:stringify, key, file]
+  end
+
+  opts.on("-f", "--file FILE", "Set the output to a file instead of the STDOUT") do |f|
+    options[:file] = f
+  end
+
+  opts.on("-h", "--help", "Shows the help") do
+    puts opts
+    exit 0
+  end
+
+
+end.parse!
+
+begin
+  output = options[:file] ? File.open(options[:file],"w") : $stdout
+
+  options[:actions].each do |action|
+    action, key, file = *action
+
+    json = ''
+
+    content = File.read(file)
+    case action
+    when :reparse
+      json = JSON.fast_generate(JSON.parse(content))
+    when :oneline
+      json = content.gsub(/\n/,'')
+    when :stringify
+      json = "\"#{content.gsub('"','\"')}\""
+    else
+      exit -1
+    end
+    output.print key, " = ", json, " ;\n"
+  end
+
+ensure
+  output.close
+end
+
+
+
+

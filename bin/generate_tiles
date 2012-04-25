@@ -1,0 +1,32 @@
+#!/bin/sh
+
+cd public/images
+
+cd entities
+
+echo Generating buildings.png ...
+files=`find buildings -type f -name "*.png" | grep -v "icon" |sort `
+montage -background transparent -tile x9999999 -geometry +0+0 $files buildings.png
+
+echo Generating castles.png
+files=`find castles/castle_* castles/campsite.png | sort`
+montage -background transparent -tile x9999999 -geometry +0+0 $files castles.png
+
+echo Generating decorations.png
+files=`find decorations -type f | grep -v icon | sort`
+montage -background transparent -tile x9999999 -geometry +0+0 $files decorations.png
+
+echo Generating farming.png
+files=`find farming -type f | grep -v icon | sort`
+montage -background transparent -tile x9999999 -geometry +0+0 $files farming.png
+
+echo Generating nature.png
+files=`find nature -type f | grep -v icon | sort`
+montage -background transparent -tile x9999999 -geometry +0+0 $files nature.png
+
+echo Generating paths.png
+files=`find paths -type f | grep -v icon | sort`
+montage -background transparent -tile x9999999 -geometry +0+0 $files paths.png
+
+
+

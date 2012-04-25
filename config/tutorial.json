@@ -1,0 +1,304 @@
+[
+    {
+        "arrow": {
+            "position": [
+                -14,
+                6
+            ],
+            "rotation": 0,
+            "left": 0,
+            "top": 10
+        },
+        "text": "Squaak! That's a hideous troll... Tap on him to fight!",
+        "center":[-16,5],
+        "scroll": true,
+        "next": "game:enemy/whack",
+        "show": null,
+        "can":["punch-enemy", "hardware/info"]
+
+    },
+     {
+         "arrow": {
+            "position": [
+                -14,
+                6
+            ],
+            "rotation": 0,
+            "left": 0,
+            "top": 10
+        },
+        "text": "Tap once more... On his head!",
+        "next": "game:enemy/whack",
+        "show": null,
+        "center":[-16,5],
+        "scroll": true,
+        "can":"punch-enemy"
+
+    },
+     {
+        "arrow": {
+            "position": [
+                -14,
+                6
+            ],
+            "rotation": 0,
+            "left": 0,
+            "top": 10
+        },
+        "text": "A final tap should scare him off!",
+        "next": "game:enemy/kill",
+        "show": null,
+        "center":[-16,5],
+        "scroll": true,
+        "can":["punch-enemy","kill-enemy", "progress-goal"]
+
+    },
+    {
+        "arrow": {
+            "position": "#goals-drawer",
+            "rotation": 0,
+            "left": 50,
+            "top": -15,
+            "type": "right"
+        },
+        "text": "Squaak! You fulfilled my King's wish! Tap the Magic Scroll to see his wishlist.",
+
+        "next": "view:goals/show",
+        "scroll": true,
+        "show": null,
+        "can": "enter-goals"
+    },
+    {
+        "arrow": {
+            "position": ".xgoals .subgoal-list .subgoal:nth-of-type(1) .description .button",
+            "rotation": 0,
+            "left": -230,
+            "top": -140
+        },
+        "text": "The King rewards generously for fulfilling his wishes! Collect your reward...",
+        "textY": 360,
+        "next": "game:goal/subgoal-collected",
+        "show": null,
+        "can": "collect-subgoal"
+    },
+    {
+        "arrow": {
+            "position": ".xgoals .head .cancel",
+            "rotation": 35,
+            "left": -70,
+            "top": 15
+        },
+        "text": "Tap the close button to proceed...",
+        "textY": 80,
+        "next": "view:goals/close",
+        "show": null,
+        "can": "close-goals"
+    },
+
+
+    {
+        "arrow": {
+            "position": "#showShopButton",
+            "rotation": 325,
+            "left": -65,
+            "top": -40
+        },
+        "text": "Let's build a house in this village... You can buy one in the Shop.",
+        "next": "view:shop/show",
+        "show": null,
+        "can": ["enter-shop", "show-overlay", "progress-goal"]
+    },
+    {
+        "arrow": {
+            "position": "[data-itemname=\"buildings/poor_house\"] .image img",
+            "rotation": 15,
+            "top": 25,
+            "left": 40,
+            "type": "left"
+        },
+        "text": "Buy a Peasant's House by tapping the green button...",
+        "show": [
+            "view:shop/show",
+            "view:shop/change-department"
+        ],
+        "next": "view:shop/preview",
+        "back": "view:shop/close",
+        "valid": {
+            "next": {
+                "key": "entityName",
+                "value": "buildings/poor_house"
+            },
+            "can": {
+                "key": "entityName",
+                "value": "buildings/poor_house"
+            }
+        },
+        "can": "shop/preview",
+        "center":[-14,6],
+        "scroll": true,
+        "hide": [
+            "view:shop/seed"
+        ]
+    },
+    {
+        "arrow": {
+            "position": [
+                -14,
+                5
+            ],
+            "top": 0,
+            "left": 16,
+            "type": "right"
+        },
+        "text": "Drag the house over to the highlighted area & confirm!",
+        "show": "view:shop/preview",
+        "hilite": {
+            "position": [
+                -12,
+                11
+            ],
+            "width": 2,
+            "height": 2
+        },
+        "center":[-14,6],
+        "can": ["shoppreviewmode/accept", "progress-goal"],
+        "valid": {
+            "can": [
+                {
+                    "key": "mapX",
+                    "value": -12
+                },
+                {
+                    "key": "mapY",
+                    "value": 11
+                }
+            ]
+        },
+        "next": [
+            "game:entity/buy"
+        ],
+        "subroutine": "housePlacementCorrections"
+    },
+    {
+        "arrow": {
+            "position": "#showCursorButton",
+            "rotation": 325,
+            "left": -65,
+            "top": -40
+        },
+        "text": "Houses need roads that lead to the Castle! Tap the Road button...",
+
+        "show": "view:shop/preview",
+        "can": ["enter-roads", "progress-goal"],
+        "next": "view:roadsMode/set"
+    },
+    {
+        "arrow": {
+            "position": [-9,9],
+            "rotation": 0,
+            "left": 0,
+            "top": -10,
+            "type": "right"
+        },
+         "hilite": {
+            "position": [
+                -10,
+                10
+            ],
+            "width": 1,
+            "height": 1
+        },
+          "valid": {
+            "can": [
+                {
+                    "key": "x",
+                    "value": -10
+                },
+                {
+                    "key": "y",
+                    "value": 10
+                }
+            ]
+        },
+        "text": "Build roads by tapping the map... One tap at the time!",
+        "show": null,
+        "scroll": true,
+        "can": "add-road",
+        "next": "game:road/add"
+    },
+    {
+         "arrow": {
+            "position": [-9,10],
+            "rotation": -35,
+            "left": 0,
+            "top": -10,
+            "type":"right"
+        },
+         "hilite": {
+            "position": [
+                -10,
+                11
+            ],
+            "width": 1,
+            "height": 1
+        },
+          "valid": {
+            "can": [
+                {
+                    "key": "x",
+                    "value": -10
+                },
+                {
+                    "key": "y",
+                    "value": 11
+                }
+            ]
+        },
+        "text": "Tap once more to connect the house.",
+        "show": null,
+        "scroll": true,
+        "can": "add-road",
+        "next": "game:road/add"
+    },
+    {
+        "arrow": {
+            "position": ".hud_mode.roads .close",
+            "rotation": 35,
+            "left": -70,
+            "top": 15
+        },
+        "text": "You are doing grrreat! Tap here to stop building roads.",
+        "textY": 80,
+        "show": null,
+        "scroll": true,
+        "can": "leave-roads",
+        "next": "view:roads/accept"
+    },
+    {
+        "arrow": {
+            "position": "#goals-drawer",
+            "left": 50,
+            "rotation":0,
+            "top": -15,
+           "type":"right"
+        },
+        "text": "Squaak! I sense the chosen one in you that the prophecy has foretold... Tap the Magic Scroll!",
+        "next": "view:goals/show",
+        "scroll": true,
+        "show": null,
+        "can": "enter-goals"
+    },
+    {
+        "arrow": {
+            "position": ".xgoals .subgoal-list .subgoal:nth-of-type(1) .description .button",
+             "rotation": 0,
+            "left": -230,
+            "top": -140
+        },
+        "text": "Fulfill all King's wishes to get generous rewards and to finish building your ship!",
+        "textY": 360,
+        "next": "game:goal/subgoal-collected",
+        "show": null,
+        "can": "collect-subgoal"
+    }
+]

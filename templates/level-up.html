@@ -1,0 +1,29 @@
+<div id="level-up" class="page">
+    <div class="wrap">
+        <div class="header">
+            <h1>LEVEL UP</h1>
+        </div>
+
+        <% if (data.rewards.length) { %>
+        <div class="rewards">
+            <span class=""><%= '+ ' + data.rewards[0].amount %></span>
+            <span class="<%= data.rewards[0].type %>"></span>
+            <span class=""><%= data.rewards[0].type %></span>
+        </div>
+        <% } %>
+
+        <% if (data.unlocked.length) { %>
+        <div class="unlocked">
+            <h2>unlocked</h2>
+            <div class="unlock-item">
+                <figure
+                    style="background-image: url(<%= data.unlocked[0].iconURL %>);" ></figure>
+            </div>
+        </div>
+        <% } %>
+        <div class="checkout">
+            <button class="share button">Continue</button>
+        </div>
+    </div>
+</div>
+

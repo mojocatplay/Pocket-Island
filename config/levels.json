@@ -1,0 +1,605 @@
+{
+    "predefined": [
+        null,
+        {
+            "nextLevel": 1,
+            "xp": 70,
+            "rewards": [
+                {
+                    "amount": 50,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 2,
+            "xp": 70,
+            "rewards": [
+                {
+                    "amount": 75,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 3,
+            "xp": 90,
+            "rewards": [
+                {
+                    "amount": 100,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 4,
+            "xp": 110,
+            "rewards": [
+                {
+                    "amount": 225,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 5,
+            "xp": 130,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 6,
+            "xp": 150,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 7,
+            "xp": 170,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 8,
+            "xp": 190,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 9,
+            "xp": 210,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 10,
+            "xp": 230,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 11,
+            "xp": 250,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 12,
+            "xp": 270,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 13,
+            "xp": 290,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 14,
+            "xp": 310,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 15,
+            "xp": 330,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 16,
+            "xp": 350,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 17,
+            "xp": 370,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 18,
+            "xp": 390,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 19,
+            "xp": 410,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 20,
+            "xp": 430,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 21,
+            "xp": 450,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 22,
+            "xp": 470,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 23,
+            "xp": 490,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 24,
+            "xp": 510,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 25,
+            "xp": 530,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 26,
+            "xp": 550,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 27,
+            "xp": 570,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 28,
+            "xp": 590,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 29,
+            "xp": 610,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 30,
+            "xp": 630,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 31,
+            "xp": 650,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 32,
+            "xp": 670,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 33,
+            "xp": 690,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 34,
+            "xp": 710,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 35,
+            "xp": 730,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 36,
+            "xp": 750,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 37,
+            "xp": 770,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 38,
+            "xp": 790,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 39,
+            "xp": 810,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 40,
+            "xp": 830,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 41,
+            "xp": 850,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 42,
+            "xp": 870,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 43,
+            "xp": 890,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 44,
+            "xp": 910,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 45,
+            "xp": 930,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 46,
+            "xp": 950,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 47,
+            "xp": 970,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 48,
+            "xp": 990,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 49,
+            "xp": 1010,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 50,
+            "xp": 1030,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 51,
+            "xp": 1050,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 52,
+            "xp": 1070,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 53,
+            "xp": 1090,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 54,
+            "xp": 1110,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 55,
+            "xp": 1130,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 56,
+            "xp": 1150,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 57,
+            "xp": 1170,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 58,
+            "xp": 1190,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 59,
+            "xp": 1210,
+            "rewards": [
+                {
+                    "amount": 250,
+                    "type": "food"
+                }
+            ]
+        },
+        {
+            "nextLevel": 60,
+            "xp": 1230,
+            "rewards": [
+                {
+                    "amount": 275,
+                    "type": "food"
+                }
+            ]
+        }
+    ]
+}

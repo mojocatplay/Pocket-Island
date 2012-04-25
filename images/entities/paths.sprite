@@ -1,0 +1,16 @@
+paths/road_corner_ne.png
+paths/road_corner_nw.png
+paths/road_corner_se.png
+paths/road_corner_sw.png
+paths/road_deadend_e.png
+paths/road_deadend_n.png
+paths/road_deadend_s.png
+paths/road_deadend_w.png
+paths/road_dot.png
+paths/road_fourway.png
+paths/road_straight_h.png
+paths/road_straight_v.png
+paths/road_threeway_e.png
+paths/road_threeway_n.png
+paths/road_threeway_s.png
+paths/road_threeway_w.png
