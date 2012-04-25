@@ -1,0 +1,588 @@
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -180px 0 0 -180px;
+    width: 360px;
+    height: 360px;
+    z-index:  8001;
+    font-family: GrilledCheeseBTNCn, sans-serif;
+}
+.popup h1 {
+    margin: 0; padding: 0;
+    color: #fff;
+    font-size: 25px;
+    font-family: GrilledCheeseBTNCn, sans-serif;
+}
+.popup h2 {
+    margin: 0; padding: 0;
+    color: #fff;
+    font-size: 13px;
+    font-family: GrilledCheeseBTNCn, sans-serif;
+}
+.xgoals button.cancel,
+.popup button.cancel {
+    position: absolute;
+    right: 37px; top: 36px;
+    width: 46px; height: 46px;
+    border: none;
+    background: url("../images/popup/close_button.png") no-repeat 0 0;
+    background-size: auto 100%;
+}
+.xgoals button.cancel:active,
+.popup button.cancel:active {
+    background-position: -46px 0;
+}
+
+
+
+#level-up {
+    background: url(../images/popup/levelup.png) no-repeat center;
+    border: none;
+    -webkit-border-image: none;
+}
+
+
+#level-up .header {
+    background: none;
+}
+#level-up .header h1 {
+    background: none;
+    color: red;
+    width: 100%;
+    margin-top: 28px;
+    text-align: center;
+    font: 48px/108px GrilledCheeseBTN, sans-serif;
+    font-weight: normal;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, .5), 0 -2px 0 rgba(255, 255, 255, .3);
+}
+#level-up h2 {
+    background: none;
+}
+#level-up .unlocked {
+    position: absolute;
+    background: none;
+    color: #6e1700;
+    top: 373px;
+    margin-left: 267px;
+    height: 50px;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, .5), 0 -2px 0 rgba(255, 255, 255, .3);
+}
+#level-up .unlocked figure{
+    height: 120px;
+    width: 120px;
+    margin-top: 0px;
+    display: inline-block;
+    background-size: 120px;
+    background-repeat: no-repeat;
+}
+#level-up .rewards {
+    position: absolute;
+    color: red;
+    margin-left: 0px;
+    width: 100%;
+    bottom: 115px;
+    font: 42px/90px GrilledCheeseBTNCn, sans-serif;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, .5), 0 -2px 0 rgba(255, 255, 255, .3);
+}
+#level-up .rewards figure{
+    height: 100px;
+    width: 64px;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+
+}
+
+#level-up .checkout {
+  bottom: 20px;
+}
+
+#level-up .rewards .gold{
+    background-image: url(../images/status/coins.png);
+    padding-bottom: 50px;
+    height: 70px;
+    width: 65px;
+    display: inline-block;
+}
+
+#level-up .rewards .food{
+    background-image: url(../images/popup/food.png);
+    height:43px;
+    width: 60px;
+    display: inline-block;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+
+   #level-up figure.gold{
+       background: url(../images/status/coins-small.png) no-repeat center;
+   }
+    #level-up .unlocked figure {
+        margin-top: 60px;
+    }
+    .popup {
+        margin: -420px 0 0 -360px;
+        width: 720px;
+        height: 720px;
+    }
+    .popup h1 {
+        font-size: 50px;
+    }
+    .popup h2 {
+        font-size: 26px;
+    }
+    .xgoals button.cancel,
+    .popup button.cancel {
+        right: 27px; top: 72px;
+        width: 92px; height: 92px;
+    }
+    .xgoals button.cancel:active,
+    .popup button.cancel:active {
+        background-position: 100% 0;
+    }
+    .popup button.share {
+        left: 186px; top: 624px;
+        width: 124px!important; height: 90px!important;
+        font-size: 46px;
+    }
+    .popup button.share:active {
+       text-shadow: 0 0 20px yellow, 0 0 20px yellow;
+    }
+
+
+    /* Level Up */
+
+    #level-up {
+        figure{
+        height: 24px; padding-top: 90px; width: 128px;
+        font-size: 22px;
+        line-height: 40px;
+        margin-top: -20px;
+        }
+
+    }
+}
+
+.ipad {
+    #level-up{
+        .wrap{
+            width: 500px;
+            left: 50%; top: 50%;
+            position: absolute;
+            margin: -460px 0 0 -250px;
+            height: 920px;
+
+        }
+        .header h1 {
+            margin-top: 5px;
+        }
+        .unlocked {
+            top: 371px;
+            margin-left: 255px;
+            height: 60px;
+            font: 30px/70px GrilledCheeseBTNCn, sans-serif;
+        }
+        .unlocked figure{
+            margin-top: 50px;
+        }
+        .rewards {
+            bottom: 105px;
+        }
+    }
+}
+
+#level-up-wrapper{ position: absolute; width: 100%; height: 100%; left: 0; top: 0; }
+
+/* Welcome Comic */
+
+.comic {
+    display: none;
+    padding-top: 25px;
+    border-width: none;
+    -webkit-border-image: none;
+    z-index: 100000;
+    text-align: center;
+    .wrap{
+        display: inline-block;
+        position: relative;
+        min-width: 309px;
+    }
+    .frame {
+        height: 98px;
+        width: 144px;
+        position: absolute;
+        border: 2px solid rgb(248,187,85);
+        -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.8);
+        background-image: url(../images/comic/blue-panels.jpg);
+        p {
+            margin: 4px 7px;
+            font: normal 16px/16px GrilledCheeseBTNCn, sans-serif;
+            text-shadow: 0 0 2px #1166a7, 0 0 2px #1166a7, 0 0 2px #1166a7, 0 0 2px #1166a7, 0 0 2px #1166a7;
+        }
+    }
+    .no1, .no4 {
+        width: 305px;
+        height: 93px;
+    }
+    .no1 { background-position: 0 0; margin: 5px 0 0 5px;}
+    .no2 { background-position: 0 -285px; margin: 95px 0 0 5px; z-index: 3;
+        p {
+            margin-top: 60px;
+            text-shadow: 0 0 2px #a84b00, 0 0 2px #a84b00, 0 0 2px #a84b00, 0 0 2px #a84b00, 0 0 2px #a84b00;
+        }
+    }
+    .no3 { background-position: 0 -187px; margin: 103px 0 0 166px; z-index: 3; }
+    .no4 { background-position: 0 -93px; margin: 198px 0 0 5px; }
+    .no5 { background-position: -144px -187px; margin: 285px 0 0 5px; }
+    .no6 { background-position: -144px -285px; margin: 285px 0 0 166px;
+        .logo {
+            margin-top: 4px;
+            background: url(../images/logo.png) no-repeat center;
+            height: 78px;
+            position: absolute;
+            width: 100%;
+            background-size: contain;
+        }
+        button {
+            margin: 80px 0 0 30px;
+            position: absolute;
+        }
+    }
+}
+.landscape {
+    .comic {
+        padding-top: 75px;
+        .no1 { margin: 5px 0 0 5px;}
+        .no2 { margin: 5px 0 0 320px; }
+        .no3 { margin: 110px 0 0 10px; z-index: 3; }
+        .no4 { margin: 97px 0 0 164px; width: 151px; background-position: -115px -93px;  }
+        .no5 { margin: 112px 0 0 325px; z-index: 3; height: 83px; }
+        .no6 {
+            margin: 204px 0 0 5px;
+            width: 462px; height: 50px;
+            z-index: 0;
+            background-size: 200% 400px;
+            background-position: bottom right;
+            .logo {
+                margin-top: -20px;
+                height: 80px;
+            }
+            button {
+                margin: 5px 0 0 360px;
+                position: absolute;
+            }
+        }
+    }
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+    .comic {
+        .wrap{
+
+            min-width: 640px;
+        }
+        .frame {
+            height: 196px;
+            width: 288px;
+            border: 4px solid rgb(248,187,85);
+            -webkit-box-shadow: 0 2px 8px rgba(0,0,0,.8);
+            background-image: url(../images/comic/blue-panels.jpg);
+            p {
+                margin: 8px 14px;
+                font: normal 30px/32px GrilledCheeseBTNCn, sans-serif;
+                text-shadow: 0 0 4px #1166a7, 0 0 4px #1166a7, 0 0 4px #1166a7, 0 0 4px #1166a7, 0 0 4px #1166a7;
+            }
+        }
+        .no1, .no4 {
+            width: 610px;
+            height: 187px;
+        }
+        .no1 { margin: -15px 0 0 10px;}
+        .no2 { background-position: 0 -570px; margin: 175px 0 0 25px; z-index: 3;
+            p {
+                margin-top: 120px;
+                text-shadow: 0 0 4px #a84b00, 0 0 4px #a84b00, 0 0 4px #a84b00, 0 0 4px #a84b00, 0 0 4px #a84b00;
+            }
+        }
+        .no3 { background-position: 0 -374px; margin: 205px 0 0 317px;}
+        .no4 { background-position: -300px -187px; margin: 400px 0 0 25px; width: 290px; z-index: 3;}
+        .no5 { background-position: -288px -374px; margin: 430px 0 0 317px; height: 187px; z-index: 3;}
+        .no6 { background-position: bottom; margin: 620px 0 0 10px; width: 610px; height: 187px; z-index: 3;
+            .logo {
+                margin-top: 13px;
+                height: 165px;
+            }
+            button {
+                margin: 205px 0 0 215px;
+            }
+        }
+    }
+    .browser {
+
+        /* horrible mobile browser adjustment */
+        .comic {
+            .frame {
+                top: -20px;
+            }
+            .no6 {
+                top: -80px;
+                button{
+                    top: -50px;
+                    right: 20px;
+
+                    margin-left: 0;
+                }
+            }
+
+        }
+    }
+    .landscape {
+        .comic {
+            .no1 { margin: 10px 0 0 10px;}
+            .no2 { margin: 10px 0 0 640px; }
+            .no3 { margin: 219px 0 0 20px; }
+            .no4 { margin: 195px 0 0 328px; width: 302px; background-position: -230px -187px;  }
+            .no5 { margin: 225px 0 0 650px; height: 166px; }
+            .no6 {
+                margin: 408px 0 0 10px;
+                width: 925px; height: 100px;
+                box-shadow: 0 2px 8px rgba(0,0,0,.6);
+                background-size: 200% 400px;
+                .logo {
+                    margin-top: -40px;
+                    height: 160px;
+                }
+                button {
+                    margin: 10px 0 0 740px;
+                }
+            }
+        }
+    }
+}
+.ipad {
+    .comic {
+        .wrap{
+
+            min-width: 681px;
+        }
+        padding: 50px 0 0 64px;
+        .frame {
+            height: 196px;
+            width: 288px;
+            border: 4px solid rgb(248,187,85);
+            -webkit-box-shadow: 0 2px 8px rgba(0,0,0,.8);
+            background-image: url(../images/comic/blue-panels.jpg);
+            p {
+                margin: 8px 14px;
+                font: normal 30px/32px GrilledCheeseBTNCn, sans-serif;
+                text-shadow: 0 0 4px #1166a7, 0 0 4px #1166a7, 0 0 4px #1166a7, 0 0 4px #1166a7, 0 0 4px #1166a7;
+            }
+        }
+        .no1, .no4 {
+            width: 610px;
+            height: 187px;
+        }
+        .no1 { margin: -15px 0 0 10px; }
+        .no2 { background-position: 0 -570px; margin: 190px 0 0 25px; z-index: 3;
+            p {
+                margin-top: 120px;
+                text-shadow: 0 0 4px #a84b00, 0 0 4px #a84b00, 0 0 4px #a84b00, 0 0 4px #a84b00, 0 0 4px #a84b00;
+            }
+        }
+       .no3 { background-position: 0 -374px; margin: 220px 0 0 317px;}
+        .no4 { background-position: -300px -187px; margin: 415px 0 0 25px; width: 288px; z-index: 3;}
+        .no5 { background-position: -288px -374px; margin: 445px 0 0 317px; height: 187px; z-index: 3;}
+        .no6 { background-position: bottom; margin: 650px 0 0 10px; width: 610px; height: 187px; z-index: 3;
+            .logo {
+               margin-top: 13px;
+                height: 165px;
+            }
+            button {
+                margin: 210px 0 0 230px;
+                font-size: 36px;
+                line-height: 32px;
+                padding: 9px 30px 9px 30px;
+            }
+        }
+    }
+    &.landscape {
+        .comic {
+            padding: 70px 0 0 32px;
+            .no1 { margin: 10px 0 0 10px;}
+            .no2 { margin: 10px 0 0 640px; }
+            .no3 { margin: 219px 0 0 20px; }
+            .no4 { margin: 195px 0 0 328px; width: 302px; background-position: -230px -187px;  }
+            .no5 { margin: 225px 0 0 650px; height: 166px; }
+            .no6 {
+                margin: 408px 0 0 10px;
+                width: 925px; height: 100px;
+                box-shadow: 0 2px 8px rgba(0,0,0,.6);
+                background-size: 200% 400px;
+                background-position: bottom right;
+                .logo {
+                    margin-top: -40px;
+                    height: 160px;
+                }
+                button {
+                    margin: 25px 0 0 760px;
+                }
+            }
+        }
+    }
+
+    /* fixes for tutorial screen on ipad */
+    .step_7 .tutarrow .arrow {
+        background: url(../images/hud/hand-right.png) top left no-repeat;
+    }
+}
+
+.intro {
+    display: none;
+    overflow: hidden;
+    z-index: 200000;
+    position :relative;
+    height: 100%;
+    width: 100%;
+    color: #543001;
+    background: rgba(0,0,0, 0.85);
+    /* starting game already. intro should still be ontop of everything */
+
+    .parrot {
+        background: url('../images/hud/parrot.png') center top no-repeat;
+        /*width: 424px;*/
+        width: 100%;
+        height: 538px;
+        margin-top: 75px;
+        &:before {
+            position: absolute;
+            top: 180px; left: 50%;
+            margin-left: -200px;
+            display: block;
+            content: "Squaak!";
+            font: normal 52px/32px GrilledCheeseBTNCn, sans-serif;
+            color: #fff;
+            text-shadow: 0 0 5px #000, 2px 2px 4px #000;
+        }
+    }
+
+    .intro-text {
+        position: relative;
+        margin: -190px auto 0;
+        font: normal 30px/32px GrilledCheeseBTNCn, sans-serif;
+        width: 401px;
+
+
+            padding: 10px 30px;
+            border: 4px solid #fff;
+            border-radius: 12px;
+            -webkit-box-shadow: 0 2px 8px rgba(0,0,0,.8), 0 1px 2px #d59d26 inset;
+            background: url('../images/popup/pergament.png') center;
+            background-size: cover;
+
+        p {
+            padding: .5em 0 .5em 0;
+        }
+
+
+    }
+    .button {
+        position: absolute;
+        left: 50%;
+        margin-top: 30px;
+        margin-left: -3em;
+    }
+}
+
+
+.connect {
+  padding: 20px;
+  text-align: center;
+}
+.connect img {
+  max-width: 90%;
+}
+.connect .embossed {
+  margin-top: 10px;
+}
+.connect .button {
+  margin-top: -8px;
+}
+.connect .button.play {
+  width: 200px;
+  font-size: 18px;
+  line-height: 25px;
+}
+.connect .button.facebook {
+  font-family: GrilledCheeseBTNCn;
+  border-color: #2a447e!important;
+  background-color: #617aac!important;
+}
+.ipad .connect {
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+  .connect {
+    padding: 40px;
+  }
+  .connect .embossed {
+    margin-top: 20px;
+  }
+  .connect .button {
+    margin-top: -15px;
+  }
+  .connect .button.play {
+    width: 400px;
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+    .ipad{
+        .comic{
+            .wrap{
+                margin-top: 100px;
+            }
+        }
+        .intro {
+            .parrot{
+                margin-top: 175px;
+            }
+        }
+
+        #level-up{
+
+            .unlocked{
+                margin-left: 195px!important;
+                margin-top: -20px;
+            }
+
+        }
+    }
+}
+
+#castle-complete {
+    z-index: 5001;
+}
+
+.browser {
+
+    &.ipad{
+        .comic {
+            .frame {
+                top: -20px;
+            }
+            .no6 {
+                top: -40px;
+                button{
+                    top: -40px;
+                }
+            }
+
+        }
+    }
+
+}
+
+

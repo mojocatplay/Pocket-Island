@@ -1,0 +1,193 @@
+#castle-complete .head {
+   background: url("../images/popup/shop_ribbon-nodiamonds.png") no-repeat;
+   background-size: 100%;
+   width: 228px; height: 39px;
+   margin: 7px auto 5px;
+   position: relative;
+   left: -23px; /* to compensate for cancel button */
+}
+#castle-complete div.head h1 {
+    width: 105px;
+    position: absolute;
+    right: 0px;
+    font: 20px/38px GrilledCheeseBTNCn, sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+}
+#castle-complete div.items {
+   padding: 10px 0px;
+   position: relative;
+   left: 0; right: 0;
+   bottom: 0;
+   top: 10px;
+   overflow: hidden;
+}
+#castle-complete hr {
+   bottom: 70px;
+   position: absolute;
+   display: none;
+}
+#castle-complete .description .embossed {
+    padding-bottom: 20px
+}
+#castle-complete .description {
+    text-align: center;
+    position: relative;
+    z-index: 12000;
+}
+#castle-complete .description button {
+    margin: -15px auto 0;
+}
+#castle-complete div.items .requiredItems li {
+   height: 80px;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+#castle-complete .specification {
+   padding: 8px 10px 10px 70px;
+}
+#castle-complete div.items .requiredItems li .invited{
+    display: block;
+    height: 45px;
+    margin-top: -12px;
+    text-indent: -10000;
+    background: url(../images/popup/tick.png) no-repeat center;
+}
+#castle-complete .image {
+   width: 50px;
+   height: 50px;
+   margin: 8px;
+   border: 2px solid #85511e;
+   border-radius: 6px;
+   float: left;
+   margin-right: 10px;
+   background: #76cffa url(../images/popup/unknown.png) no-repeat center;
+   background-size: 100%;
+   position: relative;
+}
+#castle-complete .specialistImg {
+   width: 50px;
+   height: 35px;
+   float: left;
+   margin-left: 5px;
+   margin-top: -3px;
+   position: relative;
+}
+#castle-complete img {
+   visibility: hidden;
+   height: 100%;
+   width: 100%;
+   position: relative;
+}
+#castle-complete h6 {
+   color: #6e1700;
+   text-transform: capitalize;
+   line-height: 20px;
+   font-size: 20px;
+   padding: 0;
+   margin: 0 0 10px 0;
+   display: block;
+}
+#castle-complete .specification {
+   text-align: center;
+}
+#castle-complete button.purchaseItem {
+   display: inline-block!important;
+   margin: -25px 10px 0 10px;
+   font-family: GrilledCheeseBTNCn, sans-serif;
+}
+li.unaffordable .purchaseItem  {
+   display: inline-block!important;
+   margin: -25px 10px 0 10px;
+   background-color: brown;
+   border-color: brown;
+}
+#castle-complete .checkout {
+   position: static;
+   text-align: center;
+}
+#castle-complete .checkout button {
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+   #castle-complete .head {
+      background: url("../images/popup/shop_ribbon-nodiamonds.png") no-repeat;
+      width: 456px; height: 76px;
+      margin: 14px auto 10px;
+      left: -46px; /* to compensate for cancel button */
+   }
+   #castle-complete div.head h1 {
+       width: 210px;
+       right: 0px;
+       font: 40px/76px GrilledCheeseBTNCn, sans-serif, sans-serif;
+   }
+   #castle-complete div.head div.diamonds {
+       display:none;
+   }
+
+   #castle-complete .description .embossed {
+       padding-bottom: 40px
+   }
+   #castle-complete .description button {
+       margin: -30px auto 0;
+   }
+
+   #castle-complete div.items {
+      padding: 20px 0px;
+      bottom: 0;
+      top: 20px;
+   }
+   #castle-complete hr {
+      bottom: 140px;
+   }
+   #castle-complete div.items .requiredItems {
+      border-width: 6px;
+      border-radius: 12px;
+      padding-bottom: 12px;
+   }
+   #castle-complete div.items .requiredItems li {
+      margin: 12px 20px 0px 20px;
+      height: 160px;
+   }
+   #castle-complete div.items .requiredItems li:last-child {
+      margin-bottom: 40px;
+   }
+
+   #castle-complete div.items .requiredItems li .invited{
+       height: 90px;
+       margin-top: -24px;
+       background: url(../images/popup/tick.png) no-repeat center;
+       position: relative;
+       z-index: 10000;
+   }
+   #castle-complete .image {
+      width: 100px;
+      height: 100px;
+      border-width: 4px;
+      border-radius: 12px;
+      margin: 16px 40px 16px 16px;
+      background-image: url(../images/popup/unknown.png);
+      background-size: 100%;
+   }
+   #castle-complete .specialistImg {
+      width: 99px;
+      height: 70px;
+      margin-left: 0px;
+      margin-top: -6px;
+    }
+   #castle-complete img {
+      visibility: hidden;
+   }
+   #castle-complete .specification {
+      padding: 16px 20px 20px 140px;
+   }
+   #castle-complete h6 {
+      line-height: 40px;
+      font-size: 40px;
+      margin: 0 0 20px 0;
+   }
+   #castle-complete button.purchaseItem {
+      margin: -50px 20px 0 20px;
+   }
+   #castle-complete .checkout button {
+   }
+}

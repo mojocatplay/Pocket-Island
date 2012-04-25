@@ -1,0 +1,473 @@
+#shop {
+    position: absolute;
+    top: 0px; right: 0; bottom: 0px; left: 0;
+    background: url("../images/popup/wood-rough.png") top center;
+    -webkit-border-image: url("../images/popup/bar.png") 16 0 16 0 repeat;
+    border-top-width: 16px;
+    border-right-width: 0px;
+    border-bottom-width: 16px;
+    border-left-width: 0px;
+    color: #fff;
+    z-index: 6000;
+    display: block;
+    opacity: 0;
+    -webkit-transform: scale(0, 0);
+    -webkit-transform-origin: 80% 100%;
+    -webkit-transition: opacity .4s, -webkit-transform .4s;
+    &.active {
+        opacity: 1;
+        -webkit-transform: scale(1, 1);
+    }
+    div.head {
+        position: relative;
+        background: url("../images/popup/shop_ribbon-nodiamonds.png") no-repeat;
+        width: 456px; height: 76px;
+        margin: 14px auto 10px;
+        left: -46px; /* to compensate for cancel button */
+        h1 {
+            position: absolute;
+            text-align: center;
+            text-transform: capitalize;
+            width: 260px;
+            right: 10px;
+            font: 40px/76px GrilledCheeseBTN, sans-serif;
+        }
+        div.diamonds {
+            display:none;
+        }
+        button.cancel {
+            position: absolute;
+            left: 100%; top: -4px;
+            width: 92px; height: 92px;
+            background: url("../images/popup/close_button.png") no-repeat 0 0;
+            -webkit-appearance: none;
+            margin: 0;
+            border: 0;
+            padding: 0;
+            &:active {
+                background-position: -92px 0;
+            }
+        }
+    }
+    div.departments_list_wrapper {
+        padding: 0 30px;
+    }
+    ul.departments_list {
+        height: 64px;
+        -webkit-box-shadow: 0 2px 3px #764d21, 0 2px 7px #ffffbe inset;
+        height: 32px;
+        display: table;
+        width: 100%;
+        -webkit-background-clip: padding-box;
+        border: 4px solid #804817;
+        border-radius: 14px;
+        background: url("../images/popup/wood-rough.png") center -700px;
+        li {
+            font: bold 36px/50px GrilledCheeseBTNCn, sans-serif, sans-serif;
+            text-transform: capitalize;
+            display: table-cell;
+            a {
+                color: #2f0101;
+                font-family: GrilledCheeseBTNCn, sans-serif;
+                font-weight: bold;
+                text-shadow: 0 1px 1px #ffffbe;
+                text-decoration: none;
+                border-right: 2px solid #411d05;
+                border-left: 2px solid #a9793a;
+                display: block;
+                height: 100%;
+                text-align: center;
+                line-height: 64px;
+                &.active {
+                    color: #ffe400;
+                    pointer-events: auto;
+                    opacity: 1;
+                }
+                &:active {
+                    background-color: rgba(49, 25, 0, 0.5);
+                }
+            }
+            &:first-child a {
+                border-left: none;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+            &:last-child a {
+                border-right: none;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+    }
+    .departments {
+        position: absolute;
+        top: 192px; bottom: 0px;
+        left: 30px; right: 30px;
+        overflow: hidden;
+        background: transparent;
+        -webkit-tap-higlight: none;
+        -webkit-user-select: none;
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
+    }
+    hr {
+        border: none;
+        border-radius: 4px;
+        padding: 0;
+        margin: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        z-index: 32000;
+        height: 16px;
+        background: url("../images/popup/bar.png") repeat-x;
+        -webkit-background-size: 100%;
+    }
+    .department {
+        display: none;
+        -webkit-tap-higlight: none;
+        -webkit-user-select: none;
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
+        &.active {
+            display: block;
+        }
+        &.population-maxed {
+            display: none;
+        }
+        li {
+            height: 220px;
+            margin-left: 0px;
+            margin-right: 0px!important;
+            -webkit-transform: translate3d(0, 0, 0);
+            .image {
+                float: left;
+                width: 144px;
+                height: 100%;
+                display: -webkit-box;
+                -webkit-box-pack: center;
+                -webkit-box-align: center;
+                img {
+                    height: 120px;
+                    display: block;
+                }
+            }
+            .specification {
+                height: 132px;
+                margin: 10px 10px 10px 160px;
+                h6 {
+                    margin: 0;
+                    padding: 0;
+                    font: normal 36px/56px GrilledCheeseBTN, sans-serif;
+                    display: block;
+                    letter-spacing: 0;
+                    text-align: center;
+                }
+            }
+            .house {
+                .population {
+                    position: absolute;
+                    font: normal 28px/30px GrilledCheeseBTN, sans-serif;
+                    width: 140px;
+                    margin: 155px 0 0 -160px;
+                    text-align: center;
+                    i {
+                        background: url(../images/status/population.png) no-repeat right;
+                        background-size: contain;
+                        width: 30px;
+                        height: 40px;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            &.population-maxed {
+                .population {
+                    color: red;
+                }
+            }
+        }
+        li.unaffordable,
+        li.population-maxed,
+        li.unalevelable {
+            background: #f4c555;
+        }
+        li.unaffordable .embossed,
+        li.population-maxed .button, li.population-maxed .embossed,
+        li.unalevelable .button, li.unalevelable .embossed {
+            display: none;
+        }
+        li.unaffordable .button {
+            background-color: brown;
+            border-color: brown;
+            margin-top: 80px;
+        }
+        li.unaffordable:before,
+        li.population-maxed:before,
+        li.unalevelable:before {
+            font: normal 48px/220px GrilledCheeseBTN, sans-serif;
+            text-align: center;
+            color: #a7610c;
+            position: absolute;
+            width: 100%;
+            text-indent: 120px;
+        }
+        li.unaffordable:before {
+            content:"Can not afford!";
+            /*"*/
+        }
+        li.unalevelable:before,
+        li.population-maxed:before {
+            content: attr(title);
+        }
+        .goldCost {
+            margin: 20px 10px 0 0;
+            padding-top: 12px;
+        }
+        .contract + .goldCost {
+            margin: -24px 30px 0 20px;
+        }
+        .contract {
+            margin-right: 5px;
+            span {
+                display: inline-block;
+                background-repeat: no-repeat;
+                line-height: 60px;
+                font-size: 36px;
+            }
+            .hint {
+                font-size: 32px;
+                opacity: .8;
+            }
+            .Food {
+                background-image: url(../images/popup/food.png);
+                padding-left: 66px;
+            }
+            .Time {
+                text-align: center;
+                background: url(../images/popup/arrow.png);
+                width: 88px;
+                margin: 0 10px;
+                font: normal 28px/48px GrilledCheeseBTNCn, sans-serif;
+            }
+            .Gold {
+                background-image: url(../images/status/coins-small.png);
+                background-position: 0 center;
+                padding-left: 40px;
+            }
+            .Area {
+                background-image: url(../images/popup/boost.png);
+                padding-left: 66px;
+            }
+        }
+    }
+    #upgrade-castle {
+        color: #422806;
+        text-align: center;
+        display: none;
+        left: 32px; right: 32px;
+        h6 {
+            margin: 100px 0;
+            font: normal 50px/44px GrilledCheeseBTN, sans-serif;
+            text-shadow: 0 2px 0px #ffdc87;
+        }
+        small {
+            display: block;
+            font-size: 30px;
+        }
+    }
+}
+
+#shop.locked ul.departments_list li a {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* iPad Version */
+
+.ipad {
+   #shop {
+      -webkit-transform: scale(1, 1) translateY(400px);
+      top: auto;
+      display: none;
+      -webkit-border-image: url("../images/popup/metal-border.jpg") 50 0 50 0 stretch;
+      border-top-width: 40px;
+      height: 320px;
+      &.active {
+          display: block;
+          -webkit-transform: scale(1, 1) translateY(0);
+      }
+      div.head {
+         position: absolute;
+         margin: -40px 0 0 50px;
+         width: 90%;
+         background: none;
+         text-align: left;
+         div.gold {
+             background: url(../images/popup/ribbon.png) no-repeat;
+             width: 200px;
+             height: 63px;
+             text-align: center;
+             font-size: 16px;
+             line-height: 58px;
+             margin: -15px 0 0 20px;
+             text-indent: -50px;
+         }
+         h1 {
+            position: static;
+            width: 209px;
+            height: 48px;
+            margin-top: -20px;
+            padding: 0;
+            line-height: 40px;
+            text-align: center;
+            background-image: url(../images/popup/h2.png);
+            font-size: 20px;
+         }
+         button.cancel {
+            position: absolute;
+            left: none;
+            right: 50px!important;
+            margin: -20px 0 0 -30px;
+         }
+      }
+      hr {
+         display: none;
+      }
+      div.departments_list_wrapper {
+          padding: 0;
+      }
+      ul.departments_list {
+         width: auto!important;
+         margin: -50px 0 0 265px!important;
+         border-width: 1px;
+         position: absolute;
+         li {
+             font-size: 18px;
+             text-shadow: 0 1px 0 #fff;
+             a {
+                 padding: 5px 30px 5px 30px;
+                 line-height: 48px;
+                 border-left-width: 1px;
+                 border-right-width: 1px;
+             }
+             &:first-child a {
+                 border-top-left-radius: 3px;
+                 border-bottom-left-radius: 3px;
+             }
+             &:last-child a {
+                 border-top-right-radius: 3px;
+                 border-bottom-right-radius: 3px;
+             }
+         }
+      }
+      .departments {
+         left: 0;
+         right: 0;
+         top: 40px;
+         overflow: hidden;
+         .department {
+            display: none;
+            padding: 0 20px;
+            &.active {
+               display: table;
+            }
+            &.population-maxed {
+                display: none;
+            }
+            position: absolute;
+            width: auto;
+            border-spacing: 3px;
+            li {
+               &.unaffordable:before,
+               &.population-maxed:before,
+               &.unalevelable:before{
+                  font: normal 16px/16px GrilledCheeseBTN, sans-serif;
+                  text-indent: 0;
+                  margin-top: 200px;
+               }
+               display: table-cell;
+               min-width: 220px;
+               max-width: 220px;
+               height: 250px;
+               background-size: 100% 100%;
+               .image {
+                  float: none;
+                  text-align: center;
+                  width: 100%;
+                  height: 90px;
+                  position: absolute;
+                  margin-top: 50px;
+                  img {
+                     margin: 0 auto;
+                     max-height: 70px;
+                     height: auto;
+                  }
+               }
+               .population {
+                  font: normal 14px/15px GrilledCheeseBTN, sans-serif;
+                  width: 190px;
+                  margin: 120px 0 0 0;
+                  i {
+                      width: 25px;
+                      height: 25px;
+                  }
+               }
+               div.specification {
+                  margin: 5px 10px;
+                  h6 {
+                     margin: 0px 0 90px;
+                     font-size: 25px;
+                     line-height: 22px;
+                     height: 50px;
+                     vertical-align: middle;
+                     line-height: 21px;
+                     display: -webkit-box;
+                     -webkit-box-pack: center;
+                     -webkit-box-align: center;
+                  }
+                  .embossed {
+                     padding: 10px 0 15px;
+                  }
+               }
+               .button {
+                  padding: 7px 0;
+                  margin-top: -10px;
+               }
+               .contract {
+                   span {
+                       line-height: 30px;
+                       font-size: 18px;
+                   }
+                   .hint {
+                       font-size: 16px;
+                   }
+                   .Food {
+                       background-image: url(../images/popup/food.png);
+                       padding-left: 33px;
+                   }
+                   .Time {
+                       background: url(../images/popup/arrow.png);
+                       width: 44px;
+                       margin: 0 5px;
+                       font: normal 14px/24px GrilledCheeseBTNCn, sans-serif;
+                   }
+                   .Gold {
+                       background-image: url(../images/status/coins-small.png);
+                       background-size: contain;
+                       padding-left: 30px;
+                   }
+                   .Area {
+                       background-image: url(../images/popup/boost.png);
+                       padding-left: 33px;
+                   }
+               }
+            }
+         }
+      }
+      #upgrade-castle h6 {
+        margin: 40px 0 50px;
+      }
+   }
+}
+
+

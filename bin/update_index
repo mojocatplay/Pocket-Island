@@ -1,0 +1,82 @@
+#!/usr/bin/env ruby
+
+begin
+  require 'rubygems'
+  require 'json'
+rescue LoadError
+  $stderr.puts "Install json: \"gem install json\" to continue."
+  exit -1
+end
+
+require 'optparse'
+require 'stringio'
+
+
+INSERTIONS = {
+  'entityDefinitions' => 'entities.json',
+  'goals' => 'goals.json',
+  'playerData' => 'player.json',
+  'levels' => 'levels.json',
+  'shopItems' => 'shop.json',
+  'tutorial' => 'tutorial.json',
+  'version' => 'version'}
+
+CONFDIR = 'config'
+
+if ARGV.include?('--config-files')
+  puts INSERTIONS.values.map{|f| "#{CONFDIR}/#{f}"}.join("\n")
+  exit 0
+end
+
+if $stdin.tty? && ARGV.size != 1
+  $stderr.puts "Usage: #{File.basename $0} [input_file|--config-files]  "
+  $stderr.puts "  Update the index.html with the values of the config/*.json files"
+  $stderr.puts "  --config-files\tList dependcies config fiels"
+  exit -1
+end
+
+
+
+
+def update!(input_stream, output_stream)
+  input_stream.each_line do |line|
+
+    line.gsub!(/(window\.wooga\.castle\.(#{INSERTIONS.keys.join("|")})\s*=\s*).*(;)/) do |s|
+      filename = File.join(CONFDIR, INSERTIONS[$2])
+      $1 << get_json(filename) << $3 #update with the content of the file
+    end
+
+    output_stream << line
+  end
+end
+
+
+def get_json(filename)
+  raise "File #{filename} not found" unless File.file?(filename)
+
+  contents = File.read(filename)
+  if filename =~ /goals\.json/
+    contents.gsub(/\n/,'')
+  else
+    JSON.fast_generate(JSON.parse(contents))
+  end
+rescue JSON::ParserError => e
+  $stderr.puts e.class.to_s
+  $stderr.puts "Syntax error in #{file}"
+  $stderr.puts e.message
+  exit -1
+end
+
+pipe = $stdin.tty? && !ARGV.empty?
+
+input = pipe ? File.open(ARGV[0],'r') : $stdin
+output = StringIO.new
+
+update!(input,output)
+
+input.close
+output.rewind
+real_output = pipe ? File.open(ARGV[0],'w') : $stdout
+real_output.write output.read
+real_output.close
+

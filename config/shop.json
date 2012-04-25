@@ -1,0 +1,54 @@
+{
+
+    "houses" : [
+        "buildings/poor_house",
+        "buildings/villager_house",
+        "buildings/knights_house",
+        "buildings/fairy_house",
+        "buildings/ladys_house",
+        "buildings/jokers_house",
+        "buildings/wizards_house",
+        "buildings/crazy_hogs_pub",
+        "buildings/wedding_chapel",
+        "buildings/straight_a_schoolhouse",
+        "buildings/horse_stable",
+        "buildings/shoe_house",
+        "buildings/theatre",
+        "buildings/dwarf_house",
+        "buildings/bakery",
+        "buildings/unicorn_stable",
+        "buildings/gingerbread_house",
+		"buildings/silver_mine",
+		"buildings/royal_summer_house",
+		"buildings/artist_studio",
+		"buildings/medieval_university",
+		"buildings/tailor_shop",
+		"buildings/gold_mine",
+		"buildings/bath_house",
+		"buildings/observatory"
+    ],
+
+    "farming": [
+        "farming/basic_plot",
+        "farming/seed-melon",
+        "farming/seed-beans",
+        "farming/seed-grapes",
+        "farming/seed-pumpkin",
+        "farming/seed-strawberry",
+        "farming/seed-wheat"
+    ],
+    
+    "decoration": [
+        "decorations/flower_rose",
+        "decorations/flower_sunflower",
+        "decorations/flower_daisy",
+        "decorations/pond",
+        "decorations/haybale",
+        "decorations/flower_dalia",
+        "decorations/windmill",
+        "decorations/scarecrow",
+        "decorations/well",
+        "decorations/fountain_rock"
+    ]
+
+}

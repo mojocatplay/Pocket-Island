@@ -1,0 +1,66 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+
+
+OPTIONS = {}
+$help = nil;
+OptionParser.new do |opts|
+  $help = opts
+  opts.banner = "Usage: only_one_css_or_script [OPTIONS]"
+
+
+  opts.separator ""
+  opts.separator "Read from stdin an html file, looks for '<script src='...'' or <link rel='stylesheet' href='...' and agrupate all of the in just one. Then output the result in the stdout."
+  opts.separator ""
+
+  opts.on("-j", "--js-name FILENAME", "Generated js filename") do |filename|
+    OPTIONS[:js_filename] = filename
+  end
+
+  opts.on("-c", "--css-name FILENAME", "Generated css filename") do |filename|
+    OPTIONS[:css_filename] = filename
+  end
+
+  opts.separator ""
+
+  opts.on("-h", "--help", "Show this help") do
+    puts opts
+    exit 0
+  end
+
+end.parse!
+
+if $stdin.tty?
+  die("You should use this command inside a pipe")
+end
+
+def die(msg)
+  puts "ERROR: #{msg}"
+  puts $help
+  exit -1
+end
+
+
+JS_REGEXP  = /^.*(\<script\s*src\=("|')([^'"]*)('|")\s*([^>]*\s*)*>)\s*<\/script>.*$/i
+CSS_REGEXP = /^.*\<link\s*(rel\=("|')stylesheet('|")\s*href\=("|')([^'"]*)('|"))\s*\/\>.*$/i
+@body = $stdin.read
+
+
+if OPTIONS[:js_filename]
+  count = 0
+  @body.gsub!(JS_REGEXP){|f|
+    count += 1
+   count == 1 ? "<script language=\"javascript\" src=\"#{OPTIONS[:js_filename]}\"></script>" : ''
+  }
+end
+
+if OPTIONS[:css_filename]
+  count = 0
+  @body.gsub!(CSS_REGEXP){|f|
+    count +=1
+    count == 1 ? "<link rel=\"stylesheet\" href=\"#{OPTIONS[:css_filename]}\"/>" : ''
+  }
+end
+
+$stdout.print @body

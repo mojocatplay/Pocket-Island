@@ -1,0 +1,121 @@
+#!/usr/bin/env ruby
+
+module ExtractFiles
+  VERSION = "0.0.2"
+
+  extend self
+
+  DEFAULT_EXTENSIONS = %w(png jpeg jpg gif css js)
+
+  # Process the input io, or anything that respond to __read__ and return a string.
+  # options are:
+  #
+  #   * **extensions**: Array of extensions to look for. Default is DEFAULT_EXTENSIONS
+  #
+  #   * **base**: Base directory. Image a relative path for a image **bg.png** in a css file inside the **styles** folder. The default output
+  #       will say "../images/bg.png". If you say that the base directory is "styles" the output will be "styles/../images/bg.png". Is unset by default.
+  #
+  #   * **expand**: If the output is somehing like "sytles/../images/bg.png" expand will convert that in "images/bg.png". Is enabled by false.
+  #
+  #   * **full_path**: Show the full_path
+  #
+  # If no **block** is passed, it will output to the stdout throught puts. If a block is given, it will yield each founded entry.
+  #
+  def extract!(io, options = {})
+    raise "Incorrect format for IO" unless io.respond_to?(:read)
+
+    options = {:extensions => DEFAULT_EXTENSIONS}.merge(options)
+
+    ext = "(" + options[:extensions].join("|") + ")"
+    re = /([a-z0-9\-_\/\.]*[a-z0-9]*\.#{ext})/i
+
+    io.read.scan(re).each do |match|
+      path = match[0]
+      path = File.join(options[:base], path) if options[:base]
+      path = simplify_path(path)             if options[:expand]
+      path = File.expand_path(path)          if options[:full_path]
+      if block_given?
+        yield path
+      else
+        puts path
+      end
+    end
+
+  end
+
+  # get! is a wrapper for extract! that returns and array of the matches.
+  def get!(io,options)
+    matches = []
+    extract!(io,options){|match| matches<<match}
+    matches
+  end
+
+  protected
+
+  def simplify_path(string)
+    string.gsub(/[^\/]*\/\.\.\//,'').gsub(/^\.\//,'').gsub(/\.\//,'')
+  end
+
+
+end
+
+require 'optparse'
+
+
+options = {:extensions => []}
+OptionParser.new do |opts|
+  opts.banner = "Usage: #{File.basename $0} [options] file"
+
+
+  opts.on("-e", "--ext EXT", "Extract files with extension EXT. Can be used several times.") do |v|
+    options[:extensions] << v
+  end
+
+	opts.separator ""
+
+  opts.on("-b", "--base-directory DIR", "Use DIR as a base directory") do |base_dir|
+    options[:base] = base_dir
+  end
+
+  opts.on("-p", "--expand-path", "Remove .. from output directories") do |e|
+    options[:expand] = true
+  end
+
+	opts.on("-f", "--full-path", "Show full path") do
+		options[:full_path] = true
+	end
+
+	opts.separator ""
+
+	opts.on("-v", "--version", "Show the version") do
+		puts ExtractFiles::VERSION
+		exit 0
+	end
+
+  opts.on_tail("-h", "--help", "Show this help") do
+    puts opts
+    exit 0
+  end
+
+end.parse!
+
+if ARGV.empty? && !$stdin.tty?
+	ExtractFiles.extract!($stdin, options)
+	exit 0
+end
+
+ARGV.each do |file|
+  (raise "File #{file} not found" ; exit -1) unless File.exists?(file)
+
+  if options[:extensions].any?
+
+		begin
+			file = File.open(file)
+			ExtractFiles.extract!(file, options)
+		ensure
+			file.close
+		end
+  end
+
+
+end

@@ -1,0 +1,67 @@
+/*
+    Animations used in Magic Land Mobile
+*/
+
+@-webkit-keyframes popOverlay {
+    0%   { opacity: 0; -webkit-transform: scale(.3); }
+    50%  { opacity: 1; -webkit-transform: scale(1.05); }
+    70%  { -webkit-transform: scale(.9); }
+    100% { -webkit-transform: scale(1); }
+}
+@-webkit-keyframes appear {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-webkit-keyframes bounce {
+    0%   { -webkit-transform: translate3d(0,0,0); }
+    100% { -webkit-transform: translate3d(20%,0,0); }
+}
+@-webkit-keyframes shake{
+    from { -webkit-transform: rotate(0); }
+    25%  { -webkit-transform: rotate(-6deg); }
+    75%  { -webkit-transform: rotate(6deg); }
+    to   { -webkit-transform: rotate(0); }
+}
+@-webkit-keyframes blink-in {
+    to   { top: 12px; opacity: 1; }
+}
+@-webkit-keyframes blink-out {
+    to   { top: 0px; opacity: 0; }
+}
+@-webkit-keyframes revealandslideOutter {
+    0%   { opacity: 0; }
+    10%  { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-webkit-keyframes revealandslideInner {
+    0%   { width: 0; }
+    10%  { width: 0; }
+    90%  { width: 100%; }
+    100% { width: 100%; }
+}
+@-webkit-keyframes fadePlusSlideUp {
+    0%   { margin-top: -100px; }
+    10%  { margin-top: -50px; }
+    90%  { margin-top: -50px; }
+    100% { margin-top: -120px; }
+}
+@-webkit-keyframes floatUp {
+    0%   { margin-top: -50px; }
+    100% { margin-top: -120px; }
+}
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+    @-webkit-keyframes floatUp {
+        0%   { margin-top: -100px; }
+        100% { margin-top: -240px; }
+    }
+}
+@-webkit-keyframes pulse {
+    from { -webkit-transform: scale(0.95); }
+    to   { -webkit-transform: scale(1.05); }
+}
+@-webkit-keyframes fadeout-unlockable {
+    from { opacity: 1; }
+    99%  { display: block; }
+    to   { opacity: 0; display: none; }
+}

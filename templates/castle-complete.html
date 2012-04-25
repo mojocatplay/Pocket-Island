@@ -1,0 +1,34 @@
+<div id="castle-complete" class="page">
+    <div class="head">
+        <button class="cancel"></button>
+        <h1>Complete Castle</h1>
+        <div class="value gold"></div>
+    </div>
+
+    <div class="description">
+        <div class="embossed" id="castleInfo">
+        </div>
+        <button class="askFriends">Ask Friends</button>
+        <div class="checkout">
+                <button class="ok" style="display: none;">Complete</button>
+        </div>
+    </div>
+
+    <div class="items">
+        <hr />
+        <ul class="requiredItems">
+            <li class="item hidden panel">
+                <div class="image"><img src="<%= urlFor('/images/popup/unknown.png') %>" alt="" /></div>
+                <div class="specification">
+                    <div class="embossed">
+                        <div class="specialistImg"><img src="<%= urlFor('/images/popup/unknown.png') %>" alt="" /></div>
+                        <h6>Item Name </h6>
+                    </div>
+                    <button class="invite purchaseItem"><span class="cost">Fill position</span></button>
+                    <span class="invited hidden"></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</div>

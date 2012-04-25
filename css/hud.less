@@ -1,0 +1,738 @@
+
+#hud-goals.shake .goalIcon{
+    -webkit-animation-name: shake;
+    -webkit-animation-duration: .2s;
+    -webkit-animation-iteration-count: 20;
+    -webkit-animation-fill-mode: alternate;
+}
+
+html,
+body,
+header,
+aside nav,
+ul,
+li,
+section,
+h1,
+label {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-family: sans-serif;
+}
+header .board {
+    position: absolute;
+    width: 580px;
+    height: 65px;
+    left: 50%;
+    background: rgba(0,0,0,.55);
+    border-radius: 10px;
+    z-index: -1;
+    margin: 8px 0 0 -290px;
+    padding-top: 0;
+}
+header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+top:-5px;
+padding-top: 10px;
+  z-index: 1101;
+  text-align: center;
+  color: #fff;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  border-radius: 10px;
+}
+header > div {
+  display: inline-block;
+  margin: 22px 10px 0;
+  width: 100px;
+  height: 80px;
+  vertical-align: top;
+}
+header #coins, header #food, header #population, header #level {
+    margin-top: 1px;
+    padding-top: 20px;
+}
+header div.doober-tooltips{
+    pointer-events: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0;
+    top: 50px;
+    overflow: hidden;
+}
+
+#ui #main-stats .doober-tooltips{
+    pointer-events: none;
+}
+    header div.doober-tooltip{
+        display: inline-block;
+        text-shadow: 1px 1px 0px black;
+        font: normal 28px/62px GrilledCheeseBTNCn;
+        width: 100px;
+        margin: 0 10px;
+        -webkit-transition: all .3s;
+        -webkit-transform: translate3d(0, -100%, 0);
+        text-align: center;
+        color: #fff;
+    }
+    header div.doober-tooltip.on{
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    header div.doober-tooltip[data-for=food]{
+        margin-left: 20px;
+    }
+    header div.doober-tooltip[data-for=level]{
+        margin-left: 140px;
+    }
+
+header #coins {
+  text-shadow: 2px 2px 4px #000;
+  font: bold 28px/62px sans-serif;
+  background: transparent url(../images/status/coins.png) no-repeat 0 10px;
+  padding-left: 60px;
+  width: auto;
+  text-align: left;
+  height: 60px;
+  top: -11px;
+  position: relative;
+
+}
+header .info {
+  position: absolute;
+  background: #f50a11;
+  border: 4px solid #fff;
+  border-radius: 10px;
+  padding: 4px 10px;
+  font: bold 22px/30px sans-serif;
+  margin: 60px auto 0;
+  min-width: 72px;
+  -webkit-transform: translate(0,0);
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  -webkit-animation-name: blink-out;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: steps(1);
+  top: 12px;
+}
+
+
+header .info:before {
+  content: ' ';
+  width: 14px;
+  height: 14px;
+  background: #000;
+  border-left: 4px solid #fff;
+  border-top: 4px solid #fff;
+  position: absolute;
+  margin: -16px 0 0 26px;
+  -webkit-transform: rotate(45deg);
+}
+header .active .info, header :active .info {
+  -webkit-animation-name: blink-in;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+header .bar {
+  height: 32px;
+  background: #f50a11;
+  border: 4px solid #fff;
+  border-left: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+header .bar:before {
+  content: ' ';
+  width: 40px;
+  height: 60px;
+  margin: -10px 0 0 -20px;
+  position: absolute;
+}
+header #food {
+  margin-left: 38px;
+}
+header #food .bar:before {
+  content: ' ';
+  width: 66px;
+  margin: -14px 0 0 -38px;
+  background: url(../images/status/food.png) no-repeat;
+}
+header #population .bar {
+    margin-left: 18px;
+    background: #813206;
+    -webkit-box-shadow: 0 0 4px #923907 inset;
+}
+header #population .bar:before {
+  width: 52px;
+  margin: -14px 0 0 -26px;
+  background: url(../images/status/population.png) no-repeat;
+}
+header #population .info {
+    background: #813206;
+}
+header #population .info:before {
+    /*display: none;*/
+}
+header #level {
+  margin-left: 26px;
+}
+header #level .bar {
+  background: #0b3bab;
+}
+header #level .bar:before {
+  content: attr(title);
+  width: 52px;
+  margin: -14px 0 0 -26px;
+  background: url(../images/status/level.png) no-repeat;
+  font-size: 20px;
+  line-height: 62px;
+  text-shadow: 0 0 4px #fff;
+  color: #0587f5;
+}
+header .progress {
+  height: 32px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(0.2, rgba(255, 255, 255, 0.4)), color-stop(1, rgba(0, 0, 0, 0)));
+}
+header #food .progress, header #food .info, header #food .info:before {
+  background-color: #f344b8;
+}
+header #food .progress, header #population .progress {
+  width: 60%;
+  /* fixed width as long as there is no food limit */
+}
+#ratio {
+    text-shadow: 0 1px 1px #813206;
+    font: bold 22px/32px sans-serif;
+    width: 100%;
+}
+header #level .progress, header #level .info, header #level .info:before {
+  background-color: #179df1;
+}
+header #population .progress, header #population .info, header #population .info:before {
+  background-color: #ffa200
+}
+/* Navigation */
+nav, aside {
+    position: absolute;
+    bottom: 0;
+    z-index: 5000;
+    height: 131px;
+}
+nav {
+    width: 239px;
+    height: 131px;
+    right: 0;
+    display: -webkit-box;
+}
+aside {
+    pointer-events: none!important;
+    width: 142px;
+    left: 0;
+}
+aside *{
+    pointer-events: auto;
+}
+nav a, aside a {
+    text-decoration: none;
+    -webkit-touch-callout: none;
+}
+nav a {
+    background: url(../images/hud/nav.png) no-repeat;
+    text-indent: -10000px;
+    height: 131px;
+    display: block;
+    position: absolute;
+}
+aside a{
+    text-indent: 0;
+    display: block;
+    width: 142px;
+}
+#hud-goals {
+    background: url(../images/hud/goal_button.png) no-repeat left bottom;
+}
+#showShopButton {
+    background-position: left bottom;
+    width: 115px;
+}
+#showCursorButton {
+    background-position: right bottom;
+    width: 124px;
+    margin-left: 115px;
+}
+#showShopButton.active, #showShopButton:active {
+    background-position: left -1px;
+}
+#showCursorButton.active, #showCursorButton:active {
+    background-position: right -1px;
+}
+
+
+
+
+#shop article {
+  display: none;
+}
+#shop article.active {
+  display: block;
+}
+/* HUDs for Game Modes */
+.hud_mode {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+.hud_mode button.close {
+  position: absolute;
+  -webkit-appearance: none;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  left: 50%;
+  top: 12px;
+  margin-left: 220px;
+  width: 92px;
+  height: 92px;
+  background: url("../images/popup/close_button.png") no-repeat 0 0;
+
+}
+.hud_mode button.close:active {
+    background-position: -92px 0;
+}
+.hud_mode .specification {
+    padding: 18px 54px 20px 160px;
+}
+
+.hud_mode.seed .specification {
+    padding-left: 180px;
+}
+
+.hud_mode.info,
+.hud_mode.shop,
+.hud_mode.seed,
+.hud_mode.roads,
+.hud_mode.move {
+  pointer-events: none;
+}
+.hud_mode h6, .hud_mode p {
+  margin: 0 0 4px 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 22px;
+}
+.hud_mode.seed .gold {
+  display: inline-block;
+  position: absolute;
+  font-style: normal;
+  color: white;
+  font-weight: bold;
+  left: 58px;
+  top: 102px;
+  font-size: 24px;
+}
+.hud_mode.seed p {
+  padding-top: 6px;
+  color: #6e1700;
+  font: normal 26px/32px GrilledCheeseBTN, sans-serif;
+}
+.hud_mode .progress {
+  width: 250px;
+  margin: 0 auto;
+  border: 4px solid #52b417;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #a24f7b;
+}
+.hud_mode .progress div {
+  height: 12px;
+  border-radius: 7px;
+  background: #84d024;
+}
+.hud_mode .infoPanel {
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+}
+.hud_mode.info .infoPanel {
+  width: 561px;
+  height: 120px;
+  font: normal 40px/120px GrilledCheeseBTNCn, sans-serif;
+  color: #2f0101;
+}
+.hud_mode.roads .infoPanel {
+  background: url(../images/mode/roadModeInfoPanelBg.png) no-repeat center top;
+  width: 518px;
+  height: 123px;
+}
+.hud_mode.move .infoPanel, .hud_mode.shop .infoPanel {
+  background: url(../images/mode/moveModeInfoPanelBg.png) no-repeat center top;
+  width: 511px;
+  height: 120px;
+}
+.hud_mode.seed .infoPanel {
+  background: url(../images/mode/panelWithGoldDisplay.png) no-repeat center top;
+  width: 531px;
+  height: 140px;
+  position: relative;
+}
+.hud_mode.shop h6 {
+      display: none;
+}
+.hud_mode.shop p {
+  padding-top: 6px;
+  color: #6e1700;
+  font: normal 26px/32px GrilledCheeseBTNCn, sans-serif;
+}
+.destroy_entity .infoPanel, .castle_upgrade .infoPanel {
+    background: #FDF7E1 url(../images/popup/pergament.png) center;
+    background-size: 100% 100%;
+    border: 2px solid #fff;
+    position: absolute;
+    -webkit-transform: scale(0) translate3d(0,0,0);
+    border-width: 4px;
+    border-radius: 20px;
+    padding: 20px 20px;
+    width: 460px;
+    margin: 0px 0 0 -250px;
+
+}
+.destroy_entity, .castle_upgrade {
+    display: block;
+}
+.destroy_entity.active .infoPanel, .castle_upgrade.active .infoPanel {
+    -webkit-transform: scale(1) translate3d(0,0,0);
+    -webkit-transition: -webkit-transform .2s linear;
+    -webkit-backface-visibility: hidden;
+}
+.destroy_entity p.specification, .castle_upgrade p.specification {
+    font: normal 32px/32px GrilledCheeseBTNCn;
+    color: #6e1700;
+    padding: 0!important;
+}
+.destroy_entity .menu, .castle_upgrade .menu {
+    border: 2px solid #c6ad84;
+    background: #fff7e7;
+    margin: 16px 38px 0 30px;
+    height: 70px;
+    border-radius: 10px;
+    display: -webkit-box;
+    pointer-events: auto;
+    a {
+        display: -webkit-box;
+        -webkit-box-flex: 1;
+        width: 50%;
+        text-decoration: none;
+        text-indent: -10000px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: -10px 0;
+        &.cancel {
+          background-image: url(../images/hud/cancel_icon.png);
+        }
+        &.confirm {
+          background-image: url(../images/hud/ok_icon.png);
+        }
+    }
+    a:active:before {
+      content: " ";
+      width: 170px;
+      eight: 130px;
+      margin: -30px 0 0 8px;
+      position: absolute;
+      background-image: -webkit-gradient(radial, center center, 0, center center, 50, from(rgba(255,255,0,1)), to(rgba(255,255,0,0)));
+    }
+    a.custom:active:before{
+
+          background: transparent;
+          display: none;
+    }
+}
+.hud_mode.seed .infoPanel img {
+  width: 80px;
+  position: absolute;
+  top: 0px;
+  margin: 14px 0 0 48px;
+}
+.hud_mode button {
+  -webkit-appearance: none;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  pointer-events: auto;
+  position: absolute;
+  top: 70%;
+  width: 100px;
+  height: 100px;
+}
+.hud_mode button[disabled] {
+  opacity: 0.5;
+  pointer-events: none;
+  /* TODO: is it the right way? not */
+
+}
+.hud_mode .population {
+  font-size: 30px;
+  line-height: 40px;
+}
+.in-place-actions {
+  background: url(../images/hud/bg_2_icons.png) bottom center no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: auto;
+  width: 225px;
+  height: 115px;
+  padding-top: 38px;
+  margin-left: -112px;
+}
+.in-place-actions a {
+  display: block;
+  background: 50% 50% no-repeat;
+  background-size: contain;
+  float: left;
+  width: 96px;
+  height: 96px;
+  margin-left: 10px;
+}
+.in-place-actions a.disabled {
+  opacity: .4;
+}
+.in-place-actions a.move {
+  background-image: url(../images/hud/move_icon.png);
+}
+.in-place-actions a.destroy {
+  background-image: url(../images/hud/remove_icon.png);
+}
+.in-place-actions a.upgrade {
+  background-image: url(../images/hud/update_icon.png);
+}
+.in-place-actions a.confirm {
+  background-image: url(../images/hud/ok_icon.png);
+}
+.in-place-actions a.cancel {
+  background-image: url(../images/hud/cancel_icon.png);
+}
+.in-place-actions a:active:before {
+  content: " ";
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: -50px 0 0 -50px;
+  background-image: -webkit-gradient(radial, center center, 0, center center, 100, from(rgba(255,255,0,1)), to(rgba(255,255,0,0)));
+}
+    .in-place-actions a.custom:active:before{
+
+          background: transparent;
+          display: none;
+    }
+
+
+.ipad {
+  .in-place-actions {
+    width: 112px;
+    height: 57px;
+    padding-top: 19px;
+    background: url(../images/hud/bg_2_icons.png) bottom center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -56px;
+    pointer-events: auto;
+  }
+  .in-place-actions a {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: 50% 50% no-repeat;
+    background-size: contain;
+    margin-left: 5px;
+    float: left;
+  }
+  .in-place-actions a.disabled {
+    opacity: .4;
+  }
+  .in-place-actions a.move {
+    background-image: url(../images/hud/move_icon.png);
+  }
+  .in-place-actions a.destroy {
+    background-image: url(../images/hud/remove_icon.png);
+  }
+  .in-place-actions a.upgrade {
+    background-image: url(../images/hud/update_icon.png);
+  }
+  .in-place-actions a.confirm {
+    background-image: url(../images/hud/ok_icon.png);
+  }
+  .in-place-actions a.cancel {
+    background-image: url(../images/hud/cancel_icon.png);
+  }
+  .in-place-actions a:active:before {
+     content: " ";
+     display: block;
+     width: 100px;
+     height: 100px;
+     margin: -25px 0 0 -25px;
+     background-image: -webkit-gradient(radial, center center, 0, center center, 50, from(rgba(255,255,0,1)), to(rgba(255,255,0,0)));
+  }
+    .in-place-actions a.custom:active:before{
+
+          background: transparent;
+          display: none;
+    }
+}
+
+.landscape aside, .landscape nav {
+  display: none;
+}
+.ipad.landscape aside, .ipad.landscape nav {
+  display: block;
+}
+
+/* New Info Mode */
+
+.inPlace-info {
+    pointer-events: all;
+    display: none;
+    position: absolute;
+    color: #8c5a21;
+    width: 350px;
+    height: 277px;
+    margin: -267px 0 0 -180px;
+    background: url(../images/mode/info-panel-up.png) no-repeat;
+    z-index: 10300;
+    text-align: center;
+    &.reversed{
+        background: transparent;
+        margin-top: 0;
+        &:before{
+            content: url(../images/mode/info-panel-down.png);
+            position: absolute;
+            z-index: 100;
+        }
+        *{
+            position: relative;
+            z-index: 101;
+        }
+        button.close {
+            top: 10px;
+            z-index: 102;
+        }
+
+    }
+    h1 {
+        text-shadow: 0 1px 1px #fff;
+        margin: 20px 26px 0 18px;
+        height: 50px;
+        font: normal 32px/50px GrilledCheeseBTNCn, sans-serif;
+    }
+    .specification {
+        margin: 0 26px 0 18px;
+        height: 60px;
+        padding-top: 14px;
+        p {
+            padding: 2px 0;
+            font: normal 24px/28px GrilledCheeseBTNCn, sans-serif;
+        }
+        .population {
+            font-size: 28px;
+            line-height: 36px;
+        }
+        .progress {
+          border: 4px solid #52b417;
+          width: 250px;
+          border-radius: 12px;
+          margin: 0 auto;
+          overflow: hidden;
+          background: #a24f7b;
+          div {
+              height: 16px;
+              background: #84d024;
+          }
+        }
+    }
+    .menu {
+        margin: 8px 38px 0 28px;
+        height: 70px;
+        display: -webkit-box;
+        a {
+            display: -webkit-box;
+            -webkit-box-flex: 1;
+            width: 50%;
+            text-decoration: none;
+            text-indent: -10000px;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: -10px 0;
+            &.move {
+                  background-image: url(../images/hud/move_icon.png);
+            }
+            &.destroy {
+                  background-image: url(../images/hud/remove_icon.png);
+            }
+            &.upgrade {
+              background-image: url(../images/hud/update_icon.png);
+              background-position: 20px center;
+              text-indent: 120px;
+              font: normal 40px/90px GrilledCheeseBTNCn, sans-serif;
+              color: #8c5a21;
+              text-transform: capitalize;
+            }
+        }
+        a:active:before {
+            width: 170px;
+            height: 130px;
+            margin: -30px 0 0 -20px;
+            background-image: -webkit-gradient(radial, center center, 0, center center, 100, from(rgba(255,255,0,1)), to(rgba(255,255,0,0)));
+            content: " ";
+            position: absolute;
+          }
+        a.custom:active:before{
+
+              background: transparent;
+              display: none;
+        }
+    }
+    button.close {
+      position: absolute;
+      -webkit-appearance: none;
+      border: 0;
+      padding: 0;
+      top: 0;
+      right: 0;
+      margin: -30px -30px 0 0;
+      width: 92px;
+      height: 92px;
+      background: url("../images/popup/close_tooltip_button.png") no-repeat 0 0;
+      &:active {
+        background-position: -92px 0;
+      }
+    }
+}
+
+
+#game_overlay .finished{
+    margin-top: 0;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+    .ipad {
+        .in-place-actions {
+            background-size: 100%;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+BASEDIR=`dirname $0`
+PROGRAM_NAME=`basename $0`
+VERSION=2.4.7
+JAR_PATH=$BASEDIR/$PROGRAM_NAME-$VERSION.jar
+exec java -jar $JAR_PATH $*
+

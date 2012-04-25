@@ -1,0 +1,2540 @@
+{
+    "coastmap": {
+        "url": "coastmap.png"
+    },
+    "backgrounds/coast": {
+        "url": "backgrounds/coast.png"
+    },
+    "buildings/castle_construction": {
+        "url": "castles/castle_construction.png"
+    },
+    "invites/carpenter": {
+        "name": "Hire a Carpenter",
+        "cost": 200,
+        "specialistImg": "invites/carpenter.png"
+    },
+    "invites/mason": {
+        "name": "Hire a Mason",
+        "cost": 1000,
+        "specialistImg": "invites/mason.png"
+    },
+    "invites/locksmith": {
+        "name": "Hire a Locksmith",
+        "cost": 3000,
+        "specialistImg": "invites/locksmith.png"
+    },
+    "invites/roofer": {
+        "name": "Hire a Roofer",
+        "cost": 5000,
+        "specialistImg": "invites/roofer.png"
+    },
+    "invites/mechanic": {
+        "name": "Hire a Mechanic",
+        "cost": 10000,
+        "specialistImg": "invites/mechanic.png"
+    },
+    "invites/architect": {
+        "name": "Hire an Architect",
+        "cost": 20000,
+        "specialistImg": "invites/architect.png"
+    },
+    "invites/smith": {
+        "name": "Hire a Smith",
+        "cost": 30000,
+        "specialistImg": "invites/smith.png"
+    },
+    "invites/painter": {
+        "name": "Hire a Painter",
+        "cost": 40000,
+        "specialistImg": "invites/painter.png"
+    },
+    "invites/plumber": {
+        "name": "Hire a Plumber",
+        "cost": 50000,
+        "specialistImg": "invites/plumber.png"
+    },
+    "invites/landscaper": {
+        "name": "Hire a Landscaper",
+        "cost": 50000,
+        "specialistImg": "invites/landscaper.png"
+    },
+    "buildings/castle_1": {
+        "class": "castle",
+        "name": "Castle 1",
+        "url": "castles.png",
+        "icon": "castles/castle-icon.png",
+        "spritey": 8,
+        "width": 5,
+        "height": 8,
+        "offsetY": -3,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "unlockCost": 10,
+        "goldCost": 500,
+        "upgradeCost": 175,
+        "population": 5,
+        "friendsToUpgrade": 1,
+        "partyInvites": [
+            "invites/carpenter"
+        ],
+        "upgradeTo": "buildings/castle_2",
+        "diamondCost": 0,
+        "destroyGainGold": 125,
+        "rootRoadPosition": {
+            "x": 2,
+            "y": 5
+        }
+    },
+    "buildings/castle_2": {
+        "class": "castle",
+        "name": "Castle 2",
+        "url": "castles.png",
+        "icon": "castles/castle-icon.png",
+        "spritey": 16,
+        "width": 5,
+        "height": 8,
+        "offsetY": -3,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "unlockCost": 10,
+        "goldCost": 500,
+        "upgradeCost": 50,
+        "population": 7,
+        "friendsToUpgrade": 1,
+        "partyInvites": [
+            "invites/mason"
+        ],
+        "upgradeTo": "buildings/castle_3",
+        "diamondCost": 0,
+        "destroyGainGold": 125,
+        "rootRoadPosition": {
+            "x": 2,
+            "y": 5
+        }
+    },
+    "buildings/castle_3": {
+        "class": "castle",
+        "name": "Castle 3",
+        "url": "castles.png",
+        "icon": "castles/castle-icon.png",
+        "spritey": 24,
+        "width": 5,
+        "height": 8,
+        "offsetY": -3,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "unlockCost": 10,
+        "goldCost": 500,
+        "upgradeCost": 1025,
+        "population": 9,
+        "friendsToUpgrade": 1,
+        "partyInvites": [
+            "invites/mason"
+        ],
+        "upgradeTo": "buildings/castle_4",
+        "diamondCost": 0,
+        "destroyGainGold": 125,
+        "rootRoadPosition": {
+            "x": 2,
+            "y": 5
+        }
+    },
+    "buildings/castle_4": {
+        "class": "castle",
+        "name": "Castle 4",
+        "url": "castles.png",
+        "icon": "castles/castle-icon.png",
+        "spritey": 32,
+        "width": 5,
+        "height": 8,
+        "offsetY": -3,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "unlockCost": 10,
+        "goldCost": 500,
+        "upgradeCost": 300,
+        "population": 11,
+        "friendsToUpgrade": 1,
+        "partyInvites": [
+            "invites/locksmith"
+        ],
+        "upgradeTo": "buildings/castle_5",
+        "diamondCost": 0,
+        "destroyGainGold": 125,
+        "rootRoadPosition": {
+            "x": 2,
+            "y": 5
+        }
+    },
+    "buildings/castle_5": {
+        "class": "castle",
+        "name": "Castle 5",
+        "url": "castles.png",
+        "icon": "castles/castle-icon.png",
+        "spritey": 40,
+        "width": 5,
+        "height": 8,
+        "offsetY": -3,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "unlockCost": 10,
+        "goldCost": 500,
+        "upgradeCost": 675,
+        "population": 13,
+        "friendsToUpgrade": 3,
+        "partyInvites": [
+            "invites/carpenter",
+            "invites/locksmith",
+            "invites/mason"
+        ],
+        "upgradeTo": "buildings/castle_6",
+        "diamondCost": 0,
+        "destroyGainGold": 125,
+        "rootRoadPosition": {
+            "x": 2,
+            "y": 5
+        }
+    },
+    "buildings/castle_6": {
+        "class": "castle",
+        "name": "Castle 6",
+        "url": "castles.png",
+        "icon": "castles/castle-icon.png",
+        "spritey": 48,
+        "width": 5,
+        "height": 8,
+        "offsetY": -3,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "unlockCost": 10,
+        "goldCost": 500,
+        "upgradeCost": 750,
+        "population": 15,
+        "friendsToUpgrade": 2,
+        "partyInvites": [
+            "invites/mason",
+            "invites/roofer"
+        ],
+        "upgradeTo": "buildings/castle_7",
+        "diamondCost": 0,
+        "destroyGainGold": 125,
+        "rootRoadPosition": {
+            "x": 2,
+            "y": 5
+        }
+    },
+    "buildings/castle_7": {
+        "class": "castle",
+        "name": "Castle 7",
+        "url": "castles.png",
+        "icon": "castles/castle-icon.png",
+        "spritey": 56,
+        "width": 5,
+        "height": 8,
+        "offsetY": -3,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "unlockCost": 10,
+        "goldCost": 500,
+        "upgradeCost": 925,
+        "population": 17,
+        "friendsToUpgrade": 2,
+        "partyInvites": [
+            "invites/locksmith",
+            "invites/roofer"
+        ],
+        "upgradeTo": "buildings/castle_8",
+        "diamondCost": 0,
+        "destroyGainGold": 125,
+        "rootRoadPosition": {
+            "x": 2,
+            "y": 5
+        }
+    },
+    "buildings/castle_8": {
+        "class": "castle",
+        "name": "Castle 8",
+        "url": "castles.png",
+        "icon": "castles/castle-icon.png",
+        "spritey": 64,
+        "width": 5,
+        "height": 8,
+        "offsetY": -3,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "unlockCost": 10,
+        "goldCost": 500,
+        "upgradeCost": 7000,
+        "population": 19,
+        "friendsToUpgrade": 3,
+        "partyInvites": [
+            "invites/mason",
+            "invites/locksmith",
+            "invites/carpenter"
+        ],
+        "upgradeTo": "buildings/castle_9",
+        "diamondCost": 0,
+        "destroyGainGold": 125,
+        "rootRoadPosition": {
+            "x": 2,
+            "y": 5
+        }
+    },
+    "buildings/castle_9": {
+        "class": "castle",
+        "name": "Castle 9",
+        "url": "castles.png",
+        "icon": "castles/castle-icon.png",
+        "spritey": 72,
+        "width": 5,
+        "height": 8,
+        "offsetY": -3,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "unlockCost": 10,
+        "goldCost": 500,
+        "upgradeCost": 500,
+        "population": 21,
+        "friendsToUpgrade": 4,
+        "partyInvites": [
+            "invites/mason",
+            "invites/locksmith",
+            "invites/roofer",
+            "invites/mechanic"
+        ],
+        "upgradeTo": "buildings/castle_10",
+        "diamondCost": 0,
+        "destroyGainGold": 125,
+        "rootRoadPosition": {
+            "x": 2,
+            "y": 5
+        }
+    },
+    "buildings/castle_10": {
+        "class": "castle",
+        "name": "Castle 10",
+        "url": "castles.png",
+        "icon": "castles/castle-icon.png",
+        "spritey": 80,
+        "width": 5,
+        "height": 8,
+        "offsetY": -3,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "unlockCost": 10,
+        "goldCost": 500,
+        "upgradeCost": 8000,
+        "population": 23,
+        "friendsToUpgrade": 4,
+        "partyInvites": [
+            "invites/mason",
+            "invites/locksmith",
+            "invites/roofer",
+            "invites/mechanic"
+        ],
+        "upgradeTo": "buildings/castle_11",
+        "diamondCost": 0,
+        "destroyGainGold": 125,
+        "rootRoadPosition": {
+            "x": 2,
+            "y": 5
+        }
+    },
+    "buildings/castle_11": {
+        "class": "castle",
+        "name": "Castle 11",
+        "url": "castles.png",
+        "icon": "castles/castle-icon.png",
+        "spritey": 88,
+        "width": 5,
+        "height": 8,
+        "offsetY": -3,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "unlockCost": 10,
+        "goldCost": 500,
+        "upgradeCost": 2000,
+        "population": 25,
+        "friendsToUpgrade": 4,
+        "partyInvites": [
+            "invites/mason",
+            "invites/roofer",
+            "invites/mechanic",
+            "invites/architect"
+        ],
+        "upgradeTo": "buildings/castle_12",
+        "diamondCost": 0,
+        "destroyGainGold": 125,
+        "rootRoadPosition": {
+            "x": 2,
+            "y": 5
+        }
+    },
+    "buildings/castle_12": {
+        "class": "castle",
+        "name": "Castle 12",
+        "url": "castles.png",
+        "icon": "castles/castle-icon.png",
+        "spritey": 96,
+        "width": 5,
+        "height": 8,
+        "offsetY": -3,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "unlockCost": 10,
+        "goldCost": 500,
+        "upgradeCost": 12000,
+        "population": 27,
+        "friendsToUpgrade": 4,
+        "partyInvites": [
+            "invites/mason",
+            "invites/roofer",
+            "invites/mechanic",
+            "invites/architect"
+        ],
+        "upgradeTo": "buildings/castle_13",
+        "diamondCost": 0,
+        "destroyGainGold": 125,
+        "rootRoadPosition": {
+            "x": 2,
+            "y": 5
+        }
+    },
+    "buildings/castle_13": {
+        "class": "castle",
+        "name": "Castle 13",
+        "url": "castles.png",
+        "icon": "castles/castle-icon.png",
+        "spritey": 104,
+        "width": 5,
+        "height": 8,
+        "offsetY": -3,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "unlockCost": 10,
+        "goldCost": 500,
+        "upgradeCost": 24000,
+        "population": 29,
+        "friendsToUpgrade": 4,
+        "partyInvites": [
+            "invites/mason",
+            "invites/roofer",
+            "invites/mechanic",
+            "invites/architect"
+        ],
+        "upgradeTo": "buildings/castle_14",
+        "diamondCost": 0,
+        "destroyGainGold": 125,
+        "rootRoadPosition": {
+            "x": 2,
+            "y": 5
+        }
+    },
+    "buildings/castle_14": {
+        "class": "castle",
+        "name": "Castle 14",
+        "url": "castles.png",
+        "icon": "castles/castle-icon.png",
+        "spritey": 112,
+        "width": 5,
+        "height": 8,
+        "offsetY": -3,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "unlockCost": 10,
+        "goldCost": 500,
+        "upgradeCost": 8000,
+        "population": 31,
+        "friendsToUpgrade": 5,
+        "partyInvites": [
+            "invites/mason",
+            "invites/roofer",
+            "invites/mechanic",
+            "invites/architect",
+            "invites/smith"
+        ],
+        "upgradeTo": "buildings/castle_15",
+        "diamondCost": 0,
+        "destroyGainGold": 125,
+        "rootRoadPosition": {
+            "x": 2,
+            "y": 5
+        }
+    },
+    "buildings/castle_15": {
+        "class": "castle",
+        "name": "Castle 15",
+        "url": "castles.png",
+        "icon": "castles/castle-icon.png",
+        "spritey": 120,
+        "width": 5,
+        "height": 8,
+        "offsetY": -3,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "unlockCost": 10,
+        "goldCost": 500,
+        "upgradeCost": 23000,
+        "population": 33,
+        "friendsToUpgrade": 5,
+        "partyInvites": [
+            "invites/mason",
+            "invites/roofer",
+            "invites/mechanic",
+            "invites/architect",
+            "invites/smith"
+        ],
+        "upgradeTo": "buildings/castle_16",
+        "diamondCost": 0,
+        "destroyGainGold": 125,
+        "rootRoadPosition": {
+            "x": 2,
+            "y": 5
+        }
+    },
+    "buildings/castle_16": {
+        "class": "castle",
+        "name": "Castle 16",
+        "url": "castles.png",
+        "icon": "castles/castle-icon.png",
+        "spritey": 128,
+        "width": 5,
+        "height": 8,
+        "offsetY": -3,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "unlockCost": 10,
+        "goldCost": 500,
+        "upgradeCost": 1000,
+        "population": 35,
+        "friendsToUpgrade": 6,
+        "partyInvites": [
+            "invites/mason",
+            "invites/roofer",
+            "invites/mechanic",
+            "invites/architect",
+            "invites/smith",
+            "invites/painter"
+        ],
+        "upgradeTo": "buildings/castle_17",
+        "diamondCost": 0,
+        "destroyGainGold": 125,
+        "rootRoadPosition": {
+            "x": 2,
+            "y": 5
+        }
+    },
+    "buildings/castle_17": {
+        "class": "castle",
+        "name": "Castle 17",
+        "url": "castles.png",
+        "icon": "castles/castle-icon.png",
+        "spritey": 136,
+        "width": 5,
+        "height": 8,
+        "offsetY": -3,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "unlockCost": 10,
+        "goldCost": 500,
+        "upgradeCost": 17200,
+        "population": 37,
+        "friendsToUpgrade": 6,
+        "partyInvites": [
+            "invites/mason",
+            "invites/roofer",
+            "invites/mechanic",
+            "invites/architect",
+            "invites/smith",
+            "invites/painter"
+        ],
+        "upgradeTo": "buildings/castle_18",
+        "diamondCost": 0,
+        "destroyGainGold": 125,
+        "rootRoadPosition": {
+            "x": 2,
+            "y": 5
+        }
+    },
+    "buildings/castle_18": {
+        "class": "castle",
+        "name": "Castle 18",
+        "url": "castles.png",
+        "icon": "castles/castle-icon.png",
+        "spritey": 144,
+        "width": 5,
+        "height": 8,
+        "offsetY": -3,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "unlockCost": 10,
+        "goldCost": 500,
+        "upgradeCost": 1000,
+        "population": 39,
+        "friendsToUpgrade": 5,
+        "partyInvites": [
+            "invites/mason",
+            "invites/architect",
+            "invites/smith",
+            "invites/painter",
+            "invites/landscaper"
+        ],
+        "upgradeTo": "buildings/castle_19",
+        "diamondCost": 0,
+        "destroyGainGold": 125,
+        "rootRoadPosition": {
+            "x": 2,
+            "y": 5
+        }
+    },
+    "buildings/castle_19": {
+        "class": "castle",
+        "name": "Castle 19",
+        "url": "castles.png",
+        "icon": "castles/castle-icon.png",
+        "spritey": 152,
+        "width": 5,
+        "height": 8,
+        "offsetY": -3,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "unlockCost": 10,
+        "goldCost": 500,
+        "upgradeCost": 500,
+        "population": 41,
+        "friendsToUpgrade": 4,
+        "partyInvites": [
+            "invites/architect",
+            "invites/painter",
+            "invites/plumber",
+            "invites/landscaper"
+        ],
+        "upgradeTo": "buildings/castle_19",
+        "diamondCost": 0,
+        "destroyGainGold": 125,
+        "rootRoadPosition": {
+            "x": 2,
+            "y": 5
+        }
+    },
+    "buildings/poor_house": {
+        "class": "uhouse",
+        "name": "Peasant House",
+        "url": "buildings0.png",
+        "spritey": 5,
+        "icon": "buildings/poor_house-icon.png",
+        "width": 2,
+        "height": 3,
+        "offsetY": -1,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "population": 1,
+        "unlockValue": 1,
+        "unlockCost": 10,
+        "goldCost": 150,
+        "diamondCost": 1,
+        "destroyGainGold": 50,
+        "contract": {
+            "requiredFood": 0,
+            "requiredTime": 180000,
+            "providedGold": 10,
+            "providedXP": 1,
+            "constructionTime": 5000
+        }
+    },
+    "buildings/villager_house": {
+        "class": "uhouse",
+        "name": "Villager's House",
+        "url": "buildings0.png",
+        "spritey": 8,
+        "icon": "buildings/villager_house-icon.png",
+        "width": 3,
+        "height": 3,
+        "offsetY": -1,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "unlockCost": 10,
+        "goldCost": 500,
+        "diamondCost": 1,
+        "destroyGainGold": 167,
+        "contract": {
+            "requiredFood": 0,
+            "requiredTime": 300000,
+            "providedGold": 15,
+            "providedXP": 1,
+            "constructionTime": 30000
+        }
+    },
+    "buildings/bakery": {
+        "class": "house",
+        "name": "Bakery",
+        "url": "buildings20.png",
+        "spritey": 14,
+        "icon": "buildings/bakery-icon.png",
+        "width": 4,
+        "height": 4,
+        "offsetY": -2,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "unlockCost": 10,
+        "goldCost": 800,
+        "diamondCost": 1,
+        "destroyGainGold": 267,
+        "contract": {
+            "requiredFood": 15,
+            "requiredTime": 60000,
+            "providedGold": 35,
+            "providedXP": 1,
+            "constructionTime": 60000
+        }
+    },
+    "buildings/crazy_hogs_pub": {
+        "class": "house",
+        "name": "Crazy Hogs Pub",
+        "url": "buildings30.png",
+        "spritey": 11,
+        "icon": "buildings/crazy_hogs_pub-icon.png",
+        "width": 4,
+        "height": 4,
+        "offsetY": -1,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 2,
+        "unlockCost": 10,
+        "goldCost": 600,
+        "diamondCost": 2,
+        "destroyGainGold": 200,
+        "contract": {
+            "requiredFood": 40,
+            "requiredTime": 30000,
+            "providedGold": 62,
+            "providedXP": 1,
+            "constructionTime": 300000
+        }
+    },
+    "buildings/fairy_house": {
+        "class": "uhouse",
+        "name": "Fairy's House",
+        "url": "buildings0.png",
+        "spritey": 15,
+        "icon": "buildings/fairy_house-icon.png",
+        "width": 3,
+        "height": 4,
+        "offsetY": -1,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 3,
+        "unlockCost": 10,
+        "goldCost": 1100,
+        "diamondCost": 3,
+        "destroyGainGold": 367,
+        "contract": {
+            "requiredFood": 0,
+            "requiredTime": 7200000,
+            "providedGold": 100,
+            "providedXP": 2,
+            "constructionTime": 600000
+        }
+    },
+    "buildings/knights_house": {
+        "class": "uhouse",
+        "name": "Knight's House",
+        "url": "buildings0.png",
+        "spritey": 11,
+        "icon": "buildings/knights_house-icon.png",
+        "width": 3,
+        "height": 4,
+        "offsetY": -2,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 4,
+        "unlockCost": 10,
+        "goldCost": 800,
+        "diamondCost": 4,
+        "destroyGainGold": 267,
+        "contract": {
+            "requiredFood": 0,
+            "requiredTime": 82800000,
+            "providedGold": 200,
+            "providedXP": 28,
+            "constructionTime": 6000000
+        }
+    },
+    "buildings/dwarf_house": {
+        "class": "uhouse",
+        "name": "Dwarf's House",
+        "url": "buildings20.png",
+        "spritey": 11,
+        "icon": "buildings/dwarf_house-icon.png",
+        "width": 4,
+        "height": 3,
+        "offsetY": -1,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 5,
+        "unlockCost": 10,
+        "goldCost": 1400,
+        "diamondCost": 5,
+        "destroyGainGold": 467,
+        "contract": {
+            "requiredFood": 0,
+            "requiredTime": 32400000,
+            "providedGold": 160,
+            "providedXP": 11,
+            "constructionTime": 12000000
+        }
+    },
+    "buildings/artist_studio": {
+        "class": "house",
+        "name": "Artist Studio",
+        "url": "buildings30.png",
+        "spritey": 4,
+        "icon": "buildings/artist_studio-icon.png",
+        "width": 4,
+        "height": 4,
+        "offsetY": -1,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 6,
+        "unlockCost": 10,
+        "goldCost": 1200,
+        "diamondCost": 6,
+        "destroyGainGold": 400,
+        "contract": {
+            "requiredFood": 80,
+            "requiredTime": 90000,
+            "providedGold": 125,
+            "providedXP": 1,
+            "constructionTime": 24000000
+        }
+    },
+    "buildings/shoe_house": {
+        "class": "uhouse",
+        "name": "Shoe House",
+        "url": "buildings20.png",
+        "spritey": 4,
+        "icon": "buildings/shoe_house-icon.png",
+        "width": 4,
+        "height": 3,
+        "offsetY": -1,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 7,
+        "unlockCost": 10,
+        "goldCost": 1900,
+        "diamondCost": 7,
+        "destroyGainGold": 633,
+        "contract": {
+            "requiredFood": 0,
+            "requiredTime": 82800000,
+            "providedGold": 250,
+            "providedXP": 28,
+            "constructionTime": 48000000
+        }
+    },
+    "buildings/tailor_shop": {
+        "class": "house",
+        "name": "Tailor Shop",
+        "url": "buildings40.png",
+        "spritey": 15,
+        "icon": "buildings/tailor_shop-icon.png",
+        "width": 3,
+        "height": 4,
+        "offsetY": -1,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 8,
+        "unlockCost": 10,
+        "goldCost": 1800,
+        "diamondCost": 8,
+        "destroyGainGold": 600,
+        "contract": {
+            "requiredFood": 30,
+            "requiredTime": 120000,
+            "providedGold": 65,
+            "providedXP": 1,
+            "constructionTime": 96000000
+        }
+    },
+    "buildings/straight_a_schoolhouse": {
+        "class": "house",
+        "name": "Straight A Schoolhouse",
+        "url": "buildings10.png",
+        "spritey": 13,
+        "icon": "buildings/straight_a_schoolhouse-icon.png",
+        "width": 4,
+        "height": 4,
+        "offsetY": -1,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 9,
+        "unlockCost": 10,
+        "goldCost": 2100,
+        "diamondCost": 9,
+        "destroyGainGold": 700,
+        "contract": {
+            "requiredFood": 20,
+            "requiredTime": 60000,
+            "providedGold": 40,
+            "providedXP": 1,
+            "constructionTime": 48000000
+        }
+    },
+    "buildings/wizards_house": {
+        "class": "uhouse",
+        "name": "Wizard's House",
+        "url": "buildings10.png",
+        "spritey": 4,
+        "icon": "buildings/wizards_house-icon.png",
+        "width": 4,
+        "height": 4,
+        "offsetY": -1,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 9,
+        "unlockCost": 10,
+        "goldCost": 3000,
+        "diamondCost": 9,
+        "destroyGainGold": 1000,
+        "contract": {
+            "requiredFood": 0,
+            "requiredTime": 57600000,
+            "providedGold": 200,
+            "providedXP": 19,
+            "constructionTime": 48000000
+        }
+    },
+    "buildings/horse_stable": {
+        "class": "house",
+        "name": "Horse Stable",
+        "url": "buildings20.png",
+        "spritey": 0,
+        "icon": "buildings/horse_stable-icon.png",
+        "width": 4,
+        "height": 4,
+        "offsetY": -1,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 11,
+        "unlockCost": 10,
+        "goldCost": 3500,
+        "diamondCost": 11,
+        "destroyGainGold": 1167,
+        "contract": {
+            "requiredFood": 40,
+            "requiredTime": 90000,
+            "providedGold": 72,
+            "providedXP": 1,
+            "constructionTime": 48000000
+        }
+    },
+    "buildings/bath_house": {
+        "class": "house",
+        "name": "Bath House",
+        "url": "buildings30.png",
+        "spritey": 8,
+        "icon": "buildings/bath_house-icon.png",
+        "width": 4,
+        "height": 3,
+        "offsetY": -1,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 12,
+        "unlockCost": 10,
+        "goldCost": 4000,
+        "diamondCost": 12,
+        "destroyGainGold": 1333,
+        "contract": {
+            "requiredFood": 45,
+            "requiredTime": 120000,
+            "providedGold": 84,
+            "providedXP": 1,
+            "constructionTime": 48000000
+        }
+    },
+    "buildings/observatory": {
+        "class": "house",
+        "name": "Observatory",
+        "url": "buildings40.png",
+        "spritey": 3,
+        "icon": "buildings/observatory-icon.png",
+        "width": 3,
+        "height": 4,
+        "offsetY": -2,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 15,
+        "unlockCost": 10,
+        "goldCost": 4600,
+        "diamondCost": 15,
+        "destroyGainGold": 1533,
+        "contract": {
+            "requiredFood": 60,
+            "requiredTime": 30000,
+            "providedGold": 88,
+            "providedXP": 1,
+            "constructionTime": 68000000
+        }
+    },
+    "buildings/theatre": {
+        "class": "house",
+        "name": "Open Air Theatre",
+        "url": "buildings20.png",
+        "spritey": 7,
+        "icon": "buildings/theatre-icon.png",
+        "width": 4,
+        "height": 4,
+        "offsetY": -1,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 17,
+        "unlockCost": 10,
+        "goldCost": 5000,
+        "diamondCost": 17,
+        "destroyGainGold": 1667,
+        "contract": {
+            "requiredFood": 40,
+            "requiredTime": 180000,
+            "providedGold": 89,
+            "providedXP": 1,
+            "constructionTime": 38000000
+        }
+    },
+    "buildings/jokers_house": {
+        "class": "uhouse",
+        "name": "Joker's House",
+        "url": "buildings10.png",
+        "spritey": 0,
+        "icon": "buildings/jokers_house-icon.png",
+        "width": 4,
+        "height": 5,
+        "offsetY": -2,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 19,
+        "unlockCost": 10,
+        "goldCost": 6000,
+        "diamondCost": 19,
+        "destroyGainGold": 2000,
+        "contract": {
+            "requiredFood": 0,
+            "requiredTime": 21600000,
+            "providedGold": 190,
+            "providedXP": 7,
+            "constructionTime": 28000000
+        }
+    },
+    "buildings/unicorn_stable": {
+        "class": "house",
+        "name": "Unicorn Stable",
+        "url": "buildings30.png",
+        "spritey": 0,
+        "icon": "buildings/unicorn_stable-icon.png",
+        "width": 4,
+        "height": 4,
+        "offsetY": -1,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 21,
+        "unlockCost": 10,
+        "goldCost": 6900,
+        "diamondCost": 21,
+        "destroyGainGold": 2300,
+        "contract": {
+            "requiredFood": 35,
+            "requiredTime": 180000,
+            "providedGold": 81,
+            "providedXP": 1,
+            "constructionTime": 58000000
+        }
+    },
+    "buildings/gingerbread_house": {
+        "class": "uhouse",
+        "name": "Gingerbread House",
+        "url": "buildings30.png",
+        "spritey": 15,
+        "icon": "buildings/gingerbread_house-icon.png",
+        "width": 3,
+        "height": 4,
+        "offsetY": -1,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 22,
+        "unlockCost": 10,
+        "goldCost": 7500,
+        "diamondCost": 22,
+        "destroyGainGold": 2500,
+        "contract": {
+            "requiredFood": 0,
+            "requiredTime": 25200000,
+            "providedGold": 160,
+            "providedXP": 8,
+            "constructionTime": 78000000
+        }
+    },
+    "buildings/gold_mine": {
+        "class": "house",
+        "name": "Gold Mine",
+        "url": "buildings30.png",
+        "spritey": 19,
+        "icon": "buildings/gold_mine-icon.png",
+        "width": 4,
+        "height": 4,
+        "offsetY": -1,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 26,
+        "unlockCost": 10,
+        "goldCost": 9000,
+        "diamondCost": 26,
+        "destroyGainGold": 3000,
+        "contract": {
+            "requiredFood": 35,
+            "requiredTime": 240000,
+            "providedGold": 90,
+            "providedXP": 1,
+            "constructionTime": 58000000
+        }
+    },
+    "buildings/ladys_house": {
+        "class": "uhouse",
+        "name": "Lady's House",
+        "url": "buildings0.png",
+        "spritey": 19,
+        "icon": "buildings/ladys_house-icon.png",
+        "width": 4,
+        "height": 4,
+        "offsetY": -1,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 30,
+        "unlockCost": 10,
+        "goldCost": 12000,
+        "diamondCost": 30,
+        "destroyGainGold": 4000,
+        "contract": {
+            "requiredFood": 0,
+            "requiredTime": 57600000,
+            "providedGold": 230,
+            "providedXP": 19,
+            "constructionTime": 18000000
+        }
+    },
+    "buildings/medieval_university": {
+        "class": "house",
+        "name": "Medieval University",
+        "url": "buildings40.png",
+        "spritey": 0,
+        "icon": "buildings/medieval_university-icon.png",
+        "width": 4,
+        "height": 3,
+        "offsetY": -1,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 34,
+        "unlockCost": 10,
+        "goldCost": 20000,
+        "diamondCost": 34,
+        "destroyGainGold": 6667,
+        "contract": {
+            "requiredFood": 40,
+            "requiredTime": 240000,
+            "providedGold": 95,
+            "providedXP": 1,
+            "constructionTime": 58000000
+        }
+    },
+    "buildings/wedding_chapel": {
+        "class": "uhouse",
+        "name": "Wedding Chapel",
+        "url": "buildings10.png",
+        "spritey": 8,
+        "icon": "buildings/wedding_chapel-icon.png",
+        "width": 3,
+        "height": 4,
+        "offsetY": -2,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 40,
+        "unlockCost": 10,
+        "goldCost": 35000,
+        "diamondCost": 40,
+        "destroyGainGold": 11667,
+        "contract": {
+            "requiredFood": 0,
+            "requiredTime": 43200000,
+            "providedGold": 260,
+            "providedXP": 14,
+            "constructionTime": 78000000
+        }
+    },
+    "buildings/silver_mine": {
+        "class": "house",
+        "name": "Silver Mine",
+        "url": "buildings40.png",
+        "spritey": 11,
+        "icon": "buildings/silver_mine-icon.png",
+        "width": 4,
+        "height": 4,
+        "offsetY": -1,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 46,
+        "unlockCost": 10,
+        "goldCost": 50000,
+        "diamondCost": 46,
+        "destroyGainGold": 16667,
+        "contract": {
+            "requiredFood": 70,
+            "requiredTime": 300000,
+            "providedGold": 140,
+            "providedXP": 1,
+            "constructionTime": 88000000
+        }
+    },
+    "buildings/royal_summer_house": {
+        "class": "uhouse",
+        "name": "Royal Summer House",
+        "url": "buildings40.png",
+        "spritey": 7,
+        "icon": "buildings/royal_summer_house-icon.png",
+        "width": 4,
+        "height": 4,
+        "offsetY": -1,
+        "selectable": true,
+        "draggable": true,
+        "unlockCondition": "level",
+        "unlockValue": 48,
+        "unlockCost": 10,
+        "goldCost": 80000,
+        "diamondCost": 48,
+        "destroyGainGold": 26667,
+        "contract": {
+            "requiredFood": 0,
+            "requiredTime": 43200000,
+            "providedGold": 290,
+            "providedXP": 14,
+            "constructionTime": 38000000
+        }
+    },
+    "buildings/ship_stage_1": {
+        "class": "ship",
+        "name": "Drydock",
+        "url": "buildings0.png",
+        "spritey": 0,
+        "width": 5,
+        "height": 5,
+        "selectable": true,
+        "upgradeTo": "buildings/ship_stage_2",
+        "requiredItem": "item/key1",
+        "upgradeCost": 100,
+        "offsetY": -3,
+        "contract": {
+            "requiredTime": 60000,
+            "rewards": [
+                {
+                    "type": "gold",
+                    "amount": 1000
+                }
+            ]
+        }
+    },
+    "buildings/ship_stage_2": {
+        "class": "ship",
+        "name": "Drydock 2",
+        "url": "drydock.png",
+        "width": 5,
+        "spritey": 0,
+        "height": 5,
+        "selectable": true,
+        "requiredItem": "item/key2",
+        "upgradeCost": 100,
+        "upgradeTo": "buildings/ship_stage_3",
+        "offsetY": -3,
+        "contract": {
+            "requiredTime": 480000,
+            "rewards": [
+                {
+                    "type": "gold",
+                    "amount": 2000
+                }
+            ]
+        }
+    },
+    "buildings/ship_stage_3": {
+        "class": "ship",
+        "name": "Drydock 3",
+        "url": "drydock.png",
+        "width": 5,
+        "spritey": 5,
+        "height": 5,
+        "selectable": true,
+        "requiredItem": "item/key3",
+        "upgradeCost": 100,
+        "upgradeTo": "buildings/ship_stage_4",
+        "offsetY": -3,
+        "contract": {
+            "requiredTime": 480000,
+            "rewards": [
+                {
+                    "type": "gold",
+                    "amount": 10000
+                }
+            ]
+        }
+    },
+    "buildings/ship_stage_4": {
+        "class": "ship",
+        "name": "Drydock 4",
+        "url": "drydock.png",
+        "width": 5,
+        "spritey": 10,
+        "height": 5,
+        "selectable": true,
+        "requiredItem": "item/key4",
+        "upgradeCost": 100,
+        "upgradeTo": "buildings/ship_stage_5",
+        "offsetY": -3,
+        "contract": {
+            "requiredTime": 880000,
+            "rewards": [
+                {
+                    "type": "gold",
+                    "amount": 20000
+                }
+            ]
+        }
+    },
+    "buildings/ship_stage_5": {
+        "class": "ship",
+        "name": "Drydock 5",
+        "url": "drydock.png",
+        "width": 5,
+        "spritey": 15,
+        "height": 5,
+        "selectable": true,
+        "requiredItem": "item/key5",
+        "upgradeCost": 100,
+        "upgradeTo": "buildings/ship_stage_6",
+        "offsetY": -3,
+        "contract": {
+            "requiredTime": 1280000,
+            "rewards": [
+                {
+                    "type": "gold",
+                    "amount": 35000
+                }
+            ]
+        }
+    },
+    "buildings/ship_stage_6": {
+        "class": "ship",
+        "name": "Drydock 6",
+        "url": "drydock.png",
+        "width": 5,
+        "spritey": 20,
+        "height": 5,
+        "offsetY": -3,
+        "selectable": true
+    },
+    "construction/2x2": {
+        "url": "construction.png",
+        "spritey": 0,
+        "width": 2,
+        "height": 3,
+        "offsetY": -1
+    },
+    "construction/3x2": {
+        "url": "construction.png",
+        "spritey": 3,
+        "width": 3,
+        "height": 3,
+        "offsetY": -1
+    },
+    "construction/3x3": {
+        "url": "construction.png",
+        "spritey": 6,
+        "width": 3,
+        "height": 4,
+        "offsetY": -1
+    },
+    "construction/4x2": {
+        "url": "construction.png",
+        "spritey": 10,
+        "width": 4,
+        "height": 3,
+        "offsetY": -1
+    },
+    "construction/4x3": {
+        "url": "construction.png",
+        "spritey": 13,
+        "width": 4,
+        "height": 4,
+        "offsetY": -1
+    },
+    "construction/4x4": {
+        "url": "construction.png",
+        "spritey": 17,
+        "width": 4,
+        "height": 5,
+        "offsetY": -1
+    },
+    "characters/troll": {
+        "class": "enemy",
+        "name": "Troll",
+        "url": "characters/troll.png",
+        "icon": "characters/troll-icon.png",
+        "width": 8,
+        "height": 5,
+        "offsetY": -4,
+        "xOffsetLeft": 1,
+        "xOffsetRight": -4,
+        "zIndex": 10,
+        "selectable": false,
+        "draggable": false,
+        "animation": {
+            "length": 6
+        },
+        "hp": 3,
+        "whackRewards": [
+            {
+                "amount": 1,
+                "type": "xp"
+            }
+        ],
+        "killRewards": [
+            {
+                "amount": 100,
+                "type": "gold"
+            }
+        ]
+    },
+    "characters/goblins": {
+        "class": "enemy",
+        "name": "Goblins",
+        "url": "characters/goblins.png",
+        "icon": "characters/goblins.png",
+        "width": 5,
+        "height": 4,
+        "offsetY": -3,
+        "xOffsetLeft": 1,
+        "xOffsetRight": -1,
+        "zIndex": 10,
+        "selectable": false,
+        "draggable": false,
+        "animation": {
+            "length": 6
+        },
+        "hp": 3,
+        "whackRewards": [
+            {
+                "amount": 1,
+                "type": "xp"
+            }
+        ],
+        "killRewards": [
+            {
+                "amount": 100,
+                "type": "gold"
+            }
+        ]
+    },
+    "characters/giant": {
+        "class": "enemy",
+        "name": "Giant",
+        "url": "characters/giant.png",
+        "icon": "characters/giant.png",
+        "width": 6,
+        "height": 6,
+        "offsetY": -5,
+        "xOffsetLeft": 2,
+        "xOffsetRight": -2,
+        "zIndex": 10,
+        "selectable": false,
+        "draggable": false,
+        "animation": {
+            "length": 6
+        },
+        "hp": 3,
+        "whackRewards": [
+            {
+                "amount": 1,
+                "type": "xp"
+            }
+        ],
+        "killRewards": [
+            {
+                "amount": 100,
+                "type": "gold"
+            }
+        ]
+    },
+    "enemy/dying": {
+        "url": "characters/poof.png",
+        "width": 3,
+        "height": 3,
+        "animation": {
+            "length": 26
+        }
+    },
+    "farming/basic_plot": {
+        "class": "farm",
+        "name": "Farm plot",
+        "url": "farming.png",
+        "spritey": 0,
+        "icon": "farming/basic_plot-icon.png",
+        "width": 2,
+        "height": 2,
+        "offsetY": 0,
+        "selectable": true,
+        "draggable": true,
+        "goldCost": 100,
+        "destroyGainGold": 20,
+        "unlockCondition": "level",
+        "unlockValue": -1
+    },
+    "farming/seed-melon": {
+        "class": "seeds",
+        "name": "Watermelons",
+        "url": "farming.png",
+        "spritey": 6,
+        "icon": "farming/seed-melon-icon.png",
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "contract": {
+            "requiredGold": 10,
+            "requiredTime": 180000,
+            "providedFood": 10,
+            "providedXP": 1
+        }
+    },
+    "farming/seed-beans": {
+        "class": "seeds",
+        "name": "Beans",
+        "url": "farming.png",
+        "spritey": 2,
+        "icon": "farming/seed-beans-icon.png",
+        "unlockCondition": "level",
+        "unlockValue": 3,
+        "contract": {
+            "requiredGold": 18,
+            "requiredTime": 1800000,
+            "providedFood": 37,
+            "providedXP": 1
+        }
+    },
+    "farming/seed-grapes": {
+        "class": "seeds",
+        "name": "Grapes",
+        "url": "farming.png",
+        "spritey": 12,
+        "icon": "farming/seed-vineyard-icon.png",
+        "unlockCondition": "level",
+        "unlockValue": 1,
+        "contract": {
+            "requiredGold": 40,
+            "requiredTime": 14400000,
+            "providedFood": 100,
+            "providedXP": 1
+        }
+    },
+    "farming/seed-pumpkin": {
+        "class": "seeds",
+        "name": "Pumpkins",
+        "url": "farming.png",
+        "spritey": 8,
+        "icon": "farming/seed-pumpkin-icon.png",
+        "unlockCondition": "level",
+        "unlockValue": 4,
+        "contract": {
+            "requiredGold": 50,
+            "requiredTime": 25200000,
+            "providedFood": 140,
+            "providedXP": 1
+        }
+    },
+    "farming/seed-strawberry": {
+        "class": "seeds",
+        "name": "Strawberries",
+        "url": "farming.png",
+        "spritey": 10,
+        "icon": "farming/seed-strawberry-icon.png",
+        "unlockCondition": "level",
+        "unlockValue": 5,
+        "contract": {
+            "requiredGold": 65,
+            "requiredTime": 43200000,
+            "providedFood": 240,
+            "providedXP": 1
+        }
+    },
+    "farming/seed-wheat": {
+        "class": "seeds",
+        "name": "Wheat",
+        "url": "farming.png",
+        "spritey": 14,
+        "icon": "farming/seed-wheat-icon.png",
+        "unlockCondition": "level",
+        "unlockValue": 6,
+        "contract": {
+            "requiredGold": 75,
+            "requiredTime": 86400000,
+            "providedFood": 240,
+            "providedXP": 1
+        }
+    },
+    "decorations/flower_rose": {
+        "class": "decoration",
+        "name": "Rose",
+        "url": "decorations.png",
+        "spritey": 0,
+        "icon": "decorations/flower_rose-icon.png",
+        "width": 1,
+        "height": 1,
+        "offsetY": 0,
+        "unlockCondition": "level",
+        "unlockValue": 3,
+        "goldCost": 50,
+        "destroyGainGold": 17,
+        "selectable": true,
+        "draggable": true,
+        "goldBoost": 1,
+        "foodBoost": 0,
+        "influenceArea": 1
+    },
+    "decorations/flower_daisy": {
+        "class": "decoration",
+        "name": "Daisy",
+        "url": "decorations.png",
+        "spritey": 4,
+        "icon": "decorations/flower_daisy-icon.png",
+        "width": 1,
+        "height": 1,
+        "offsetY": 0,
+        "unlockCondition": "level",
+        "unlockValue": 3,
+        "goldCost": 50,
+        "destroyGainGold": 17,
+        "selectable": true,
+        "draggable": true,
+        "goldBoost": 1,
+        "foodBoost": 0,
+        "influenceArea": 1
+    },
+    "decorations/fairy_lamp_post": {
+        "class": "decoration",
+        "name": "Fairy Lamp Post",
+        "url": "decorations.png",
+        "spritey": 1,
+        "icon": "decorations/fairy_lamp_post-icon.png",
+        "width": 1,
+        "height": 3,
+        "offsetY": -2,
+        "unlockCondition": "level",
+        "unlockValue": 60,
+        "goldCost": 100,
+        "destroyGainGold": 33,
+        "selectable": true,
+        "draggable": true,
+        "goldBoost": 1,
+        "foodBoost": 1,
+        "influenceArea": 2
+    },
+    "decorations/pond": {
+        "class": "decoration",
+        "name": "Pond",
+        "url": "decorations.png",
+        "spritey": 21,
+        "icon": "decorations/pond-icon.png",
+        "width": 2,
+        "height": 3,
+        "offsetY": -1,
+        "unlockCondition": "level",
+        "unlockValue": 9,
+        "goldCost": 800,
+        "destroyGainGold": 267,
+        "selectable": true,
+        "draggable": true,
+        "goldBoost": 8,
+        "foodBoost": 0,
+        "influenceArea": 2
+    },
+    "decorations/haybale": {
+        "class": "decoration",
+        "name": "Hay Bale",
+        "url": "decorations.png",
+        "spritey": 13,
+        "icon": "decorations/haybale-icon.png",
+        "width": 1,
+        "height": 2,
+        "offsetY": -1,
+        "unlockCondition": "level",
+        "unlockValue": 3,
+        "goldCost": 100,
+        "destroyGainGold": 33,
+        "selectable": true,
+        "draggable": true,
+        "goldBoost": 0,
+        "foodBoost": 1,
+        "influenceArea": 1
+    },
+    "decorations/flower_dalia": {
+        "class": "decoration",
+        "name": "Dalia",
+        "url": "decorations.png",
+        "spritey": 5,
+        "icon": "decorations/flower_dalia-icon.png",
+        "width": 1,
+        "height": 1,
+        "offsetY": 0,
+        "unlockCondition": "level",
+        "unlockValue": 3,
+        "goldCost": 50,
+        "destroyGainGold": 17,
+        "selectable": true,
+        "draggable": true,
+        "goldBoost": 1,
+        "foodBoost": 0,
+        "influenceArea": 1
+    },
+    "decorations/flower_sunflower": {
+        "class": "decoration",
+        "name": "Sunflower",
+        "url": "decorations.png",
+        "spritey": 6,
+        "icon": "decorations/flower_sunflower-icon.png",
+        "width": 1,
+        "height": 2,
+        "offsetY": -1,
+        "unlockCondition": "level",
+        "unlockValue": 9,
+        "goldCost": 200,
+        "destroyGainGold": 67,
+        "selectable": true,
+        "draggable": true,
+        "goldBoost": 2,
+        "foodBoost": 0,
+        "influenceArea": 2
+    },
+    "decorations/windmill": {
+        "class": "decoration",
+        "name": "Windmill",
+        "url": "decorations.png",
+        "spritey": 41,
+        "icon": "decorations/windmill-icon.png",
+        "width": 2,
+        "height": 3,
+        "offsetY": -1,
+        "unlockCondition": "level",
+        "unlockValue": 7,
+        "goldCost": 800,
+        "destroyGainGold": 267,
+        "selectable": true,
+        "draggable": true,
+        "goldBoost": 0,
+        "foodBoost": 8,
+        "influenceArea": 1
+    },
+    "decorations/scarecrow": {
+        "class": "decoration",
+        "name": "Scarecrow",
+        "url": "decorations.png",
+        "spritey": 24,
+        "icon": "decorations/scarecrow-icon.png",
+        "width": 2,
+        "height": 3,
+        "offsetY": -2,
+        "unlockCondition": "level",
+        "unlockValue": 9,
+        "goldCost": 1500,
+        "destroyGainGold": 500,
+        "selectable": true,
+        "draggable": true,
+        "goldBoost": 0,
+        "foodBoost": 12,
+        "influenceArea": 1
+    },
+    "decorations/well": {
+        "class": "decoration",
+        "name": "Well",
+        "url": "decorations.png",
+        "spritey": 36,
+        "icon": "decorations/well-icon.png",
+        "width": 2,
+        "height": 2,
+        "offsetY": -1,
+        "unlockCondition": "level",
+        "unlockValue": 11,
+        "goldCost": 3000,
+        "destroyGainGold": 1000,
+        "selectable": true,
+        "draggable": true,
+        "goldBoost": 12,
+        "foodBoost": 0,
+        "influenceArea": 1
+    },
+    "decorations/fountain_rock": {
+        "class": "decoration",
+        "name": "Fountain",
+        "url": "decorations.png",
+        "spritey": 11,
+        "icon": "decorations/fountain_rock-icon.png",
+        "width": 2,
+        "height": 2,
+        "offsetY": -1,
+        "unlockCondition": "level",
+        "unlockValue": 15,
+        "goldCost": 10000,
+        "destroyGainGold": 3333,
+        "selectable": true,
+        "draggable": true,
+        "goldBoost": 20,
+        "foodBoost": 0,
+        "influenceArea": 1
+    },
+    "decorations/watchtower": {
+        "class": "decoration",
+        "name": "Watchtower",
+        "url": "decorations.png",
+        "spritey": 31,
+        "icon": "decorations/watchtower-icon.png",
+        "width": 2,
+        "height": 5,
+        "offsetY": -3,
+        "unlockCondition": "level",
+        "unlockValue": 61,
+        "goldCost": 15000,
+        "destroyGainGold": 5000,
+        "selectable": true,
+        "draggable": true,
+        "goldBoost": 30,
+        "foodBoost": 0,
+        "influenceArea": 2
+    },
+    "nature/rock": {
+        "class": "rock",
+        "url": "nature/rocks.png",
+        "hasWhackStates": true,
+        "width": 2,
+        "height": 2,
+        "rewards": {
+            "whack": [
+                {
+                    "type": "xp",
+                    "amount": 3
+                }
+            ],
+            "complete": [
+                {
+                    "type": "gold",
+                    "amount": 30
+                }
+            ]
+        },
+        "whacks": 4,
+        "offsetY": 0
+    },
+    "nature/tree-big-2-b": {
+        "class": "tree",
+        "hasWhackStates": true,
+        "url": "nature/big-treev2-squashed.png",
+        "icon": "nature/tree-big-icon.png",
+        "width": 3,
+        "height": 4,
+        "rewards": {
+            "whack": [],
+            "complete": [
+                {
+                    "type": "xp",
+                    "amount": 4
+                }
+            ]
+        },
+        "whacks": 4,
+        "offsetY": -3
+    },
+    "nature/tree-big-2-d": {
+        "class": "tree",
+        "hasWhackStates": true,
+        "url": "nature/big-treev2-squashed.png",
+        "icon": "nature/tree-big-icon.png",
+        "width": 3,
+        "height": 4,
+        "spritey": 4,
+        "rewards": {
+            "whack": [],
+            "complete": [
+                {
+                    "type": "xp",
+                    "amount": 4
+                }
+            ]
+        },
+        "whacks": 4,
+        "offsetY": -3
+    },
+    "nature/tree-big-2-y": {
+        "class": "tree",
+        "hasWhackStates": true,
+        "url": "nature/big-treev2-squashed.png",
+        "icon": "nature/tree-big-icon.png",
+        "width": 3,
+        "height": 4,
+        "spritey": 8,
+        "rewards": {
+            "whack": [],
+            "complete": [
+                {
+                    "type": "xp",
+                    "amount": 4
+                }
+            ]
+        },
+        "whacks": 4,
+        "offsetY": -3
+    },
+    "nature/tree-big-2-r": {
+        "class": "tree",
+        "hasWhackStates": true,
+        "url": "nature/big-treev2-squashed.png",
+        "icon": "nature/tree-big-icon.png",
+        "width": 3,
+        "height": 4,
+        "spritey": 12,
+        "rewards": {
+            "whack": [],
+            "complete": [
+                {
+                    "type": "xp",
+                    "amount": 4
+                }
+            ]
+        },
+        "whacks": 4,
+        "offsetY": -3
+    },
+    "nature/tree-big-1-b": {
+        "class": "tree",
+        "hasWhackStates": true,
+        "url": "nature/big-treev1-squashed.png",
+        "icon": "nature/tree-big-icon.png",
+        "width": 3,
+        "height": 4,
+        "rewards": {
+            "whack": [],
+            "complete": [
+                {
+                    "type": "xp",
+                    "amount": 4
+                }
+            ]
+        },
+        "whacks": 4,
+        "offsetY": -3
+    },
+    "nature/tree-big-1-d": {
+        "class": "tree",
+        "hasWhackStates": true,
+        "url": "nature/big-treev1-squashed.png",
+        "icon": "nature/tree-big-icon.png",
+        "width": 3,
+        "height": 4,
+        "spritey": 4,
+        "rewards": {
+            "whack": [],
+            "complete": [
+                {
+                    "type": "xp",
+                    "amount": 4
+                }
+            ]
+        },
+        "whacks": 4,
+        "offsetY": -3
+    },
+    "nature/tree-big-1-y": {
+        "class": "tree",
+        "hasWhackStates": true,
+        "url": "nature/big-treev1-squashed.png",
+        "icon": "nature/tree-big-icon.png",
+        "width": 3,
+        "height": 4,
+        "spritey": 8,
+        "rewards": {
+            "whack": [],
+            "complete": [
+                {
+                    "type": "xp",
+                    "amount": 4
+                }
+            ]
+        },
+        "whacks": 4,
+        "offsetY": -3
+    },
+    "nature/tree-big-1-r": {
+        "class": "tree",
+        "hasWhackStates": true,
+        "url": "nature/big-treev1-squashed.png",
+        "icon": "nature/tree-big-icon.png",
+        "width": 3,
+        "height": 4,
+        "spritey": 12,
+        "rewards": {
+            "whack": [],
+            "complete": [
+                {
+                    "type": "xp",
+                    "amount": 4
+                }
+            ]
+        },
+        "whacks": 4,
+        "offsetY": -3
+    },
+    "nature/tree-small-b": {
+        "class": "tree",
+        "hasWhackStates": true,
+        "url": "nature/small-tree-squashed.png",
+        "icon": "nature/tree-small-icon.png",
+        "spritey": 0,
+        "rewards": {
+            "whack": [],
+            "complete": [
+                {
+                    "type": "xp",
+                    "amount": 2
+                }
+            ]
+        },
+        "whacks": 5,
+        "width": 2,
+        "height": 4,
+        "offsetY": -3
+    },
+    "nature/tree-small-d": {
+        "class": "tree",
+        "hasWhackStates": true,
+        "url": "nature/small-tree-squashed.png",
+        "icon": "nature/tree-small-icon.png",
+        "spritey": 4,
+        "rewards": {
+            "whack": [],
+            "complete": [
+                {
+                    "type": "xp",
+                    "amount": 2
+                }
+            ]
+        },
+        "whacks": 5,
+        "width": 2,
+        "height": 4,
+        "offsetY": -3
+    },
+    "nature/tree-small-y": {
+        "class": "tree",
+        "hasWhackStates": true,
+        "url": "nature/small-tree-squashed.png",
+        "icon": "nature/tree-small-icon.png",
+        "spritey": 8,
+        "rewards": {
+            "whack": [],
+            "complete": [
+                {
+                    "type": "xp",
+                    "amount": 2
+                }
+            ]
+        },
+        "whacks": 5,
+        "width": 2,
+        "height": 4,
+        "offsetY": -3
+    },
+    "nature/tree-small-r": {
+        "class": "tree",
+        "hasWhackStates": true,
+        "url": "nature/small-tree-squashed.png",
+        "icon": "nature/tree-small-icon.png",
+        "spritey": 12,
+        "rewards": {
+            "whack": [],
+            "complete": [
+                {
+                    "type": "xp",
+                    "amount": 2
+                }
+            ]
+        },
+        "whacks": 5,
+        "width": 2,
+        "height": 4,
+        "offsetY": -3
+    },
+    "contracts/exclamation": {
+        "url": "contracts/exclamation_mark.png",
+        "width": 1.64,
+        "height": 1.64
+    },
+    "contracts/contract": {
+        "url": "contracts/contract.png",
+        "width": 2,
+        "height": 3
+    },
+    "contracts/repair": {
+        "url": "contracts/dryd_01.png",
+        "width": 2.33,
+        "height": 2
+    },
+    "contracts/repairing": {
+        "url": "contracts/dryd_02.png",
+        "width": 1,
+        "height": 2
+    },
+    "contracts/repaired": {
+        "url": "contracts/dryd_03.png",
+        "width": 2,
+        "height": 2
+    },
+    "contracts/constructed": {
+        "url": "contracts/dryd_03.png",
+        "width": 2,
+        "height": 2
+    },
+    "contracts/gold": {
+        "url": "contracts/gold.png",
+        "width": 2,
+        "height": 2
+    },
+    "contracts/level": {
+        "url": "contracts/level.png",
+        "width": 1,
+        "height": 1
+    },
+    "contracts/food": {
+        "url": "contracts/food.png",
+        "width": 2,
+        "height": 2
+    },
+    "contracts/no_road": {
+        "url": "contracts/no_road.png",
+        "width": 1.5,
+        "height": 1.5
+    },
+    "contracts/hidden": {
+        "url": "unlock/why_does_it_always_rain_on_me.png",
+        "width": 4,
+        "height": -1,
+        "offsetY": -3
+    },
+    "paths/road": {
+        "class": "path",
+        "width": 1,
+        "height": 1,
+        "offsetY": 0
+    },
+    "paths/road-0": {
+        "url": "paths.png",
+        "spritey": 8
+    },
+    "paths/road-1": {
+        "url": "paths.png",
+        "spritey": 5
+    },
+    "paths/road-2": {
+        "url": "paths.png",
+        "spritey": 4
+    },
+    "paths/road-3": {
+        "url": "paths.png",
+        "spritey": 0
+    },
+    "paths/road-4": {
+        "url": "paths.png",
+        "spritey": 6
+    },
+    "paths/road-5": {
+        "url": "paths.png",
+        "spritey": 11
+    },
+    "paths/road-6": {
+        "url": "paths.png",
+        "spritey": 2
+    },
+    "paths/road-7": {
+        "url": "paths.png",
+        "spritey": 12
+    },
+    "paths/road-8": {
+        "url": "paths.png",
+        "spritey": 7
+    },
+    "paths/road-9": {
+        "url": "paths.png",
+        "spritey": 1
+    },
+    "paths/road-10": {
+        "url": "paths.png",
+        "spritey": 10
+    },
+    "paths/road-11": {
+        "url": "paths.png",
+        "spritey": 13
+    },
+    "paths/road-12": {
+        "url": "paths.png",
+        "spritey": 3
+    },
+    "paths/road-13": {
+        "url": "paths.png",
+        "spritey": 15
+    },
+    "paths/road-14": {
+        "url": "paths.png",
+        "spritey": 14
+    },
+    "paths/road-15": {
+        "url": "paths.png",
+        "spritey": 9
+    },
+    "unlock/1": {
+        "class": "unlockable",
+        "url": "backgrounds/unlockies.png",
+        "spritey": 24,
+        "spritex": 32,
+        "width": 16,
+        "height": 6,
+        "x": -16,
+        "y": -6,
+        "unlock": 5,
+        "name": "Dark Forest",
+        "contract": {
+            "requiredTime": 300000
+        }
+    },
+    "unlock/2": {
+        "class": "unlockable",
+        "url": "backgrounds/unlockies.png",
+        "spritey": 0,
+        "spritex": 0,
+        "width": 16,
+        "height": 8,
+        "x": -16,
+        "y": -14,
+        "unlock": 10,
+        "name": "Enchanted Outpost",
+        "contract": {
+            "requiredTime": 600000
+        }
+    },
+    "unlock/3": {
+        "class": "unlockable",
+        "url": "backgrounds/unlockies.png",
+        "spritey": 18,
+        "spritex": 16,
+        "width": 16,
+        "height": 18,
+        "x": 0,
+        "y": 0,
+        "unlock": 15,
+        "name": "Haunted Gardens",
+        "contract": {
+            "requiredTime": 1200000
+        }
+    },
+    "unlock/4": {
+        "class": "unlockable",
+        "url": "backgrounds/unlockies.png",
+        "spritey": 24,
+        "spritex": 16,
+        "width": 16,
+        "height": 6,
+        "x": 0,
+        "y": -6,
+        "unlock": 24,
+        "name": "Oracle's Lair",
+        "contract": {
+            "requiredTime": 86400000
+        }
+    },
+    "unlock/5": {
+        "class": "unlockable",
+        "url": "backgrounds/unlockies.png",
+        "spritey": 0,
+        "spritex": 16,
+        "width": 16,
+        "height": 8,
+        "x": 0,
+        "y": -14,
+        "unlock": 32,
+        "name": "Mystical Forge",
+        "contract": {
+            "requiredTime": 86400000
+        }
+    },
+    "unlock/key": {
+        "url": "unlock/key.png",
+        "width": 2,
+        "height": 2
+    },
+    "item/key1": {
+        "name": "Hammer and Nails",
+        "url": "unlock/hammer_nails.png",
+        "width": 2,
+        "height": 2
+    },
+    "item/key2": {
+        "name": "Steering Wheel",
+        "url": "unlock/ship_wheel.png",
+        "width": 2,
+        "height": 2
+    },
+    "item/key3": {
+        "name": "Anchor",
+        "url": "unlock/anchor.png",
+        "width": 2,
+        "height": 2
+    },
+    "item/key4": {
+        "name": "Rudder",
+        "url": "unlock/rudder.png",
+        "width": 2,
+        "height": 2
+    },
+    "item/key5": {
+        "name": "Sails",
+        "url": "unlock/sails.png",
+        "width": 2,
+        "height": 2
+    },
+    "buildings/lighthouse": {
+        "class": "statichouse",
+        "name": "Swamp Lighthouse",
+        "url": "buildings/lighthouse.png",
+        "spritey": 0,
+        "icon": "buildings/royal_summer_house-icon.png",
+        "width": 4,
+        "height": 6,
+        "offsetY": -4,
+        "xOffsetLeft": 1,
+        "xOffsetRight": -1,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "item",
+        "unlockValue": "unlock/key",
+        "drops": "item/key1",
+        "unlockCost": 1,
+        "goldCost": 0,
+        "diamondCost": 10,
+        "destroyGainGold": 0,
+        "contract": {
+            "requiredFood": 0,
+            "requiredTime": 82800000,
+            "providedGold": 600,
+            "providedXP": 20
+        }
+    },
+    "buildings/lighthouse-hidden": {
+        "url": "buildings/lighthouse-hidden.png",
+        "spritey": 0,
+        "width": 4,
+        "height": 6
+    },
+    "buildings/fortress": {
+        "class": "statichouse",
+        "name": "Fortified Fortress",
+        "url": "buildings/fortress.png",
+        "spritey": 0,
+        "icon": "buildings/royal_summer_house-icon.png",
+        "width": 3,
+        "height": 5,
+        "offsetY": -2,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "item",
+        "unlockValue": "unlock/key",
+        "drops": "item/key2",
+        "unlockCost": 1,
+        "goldCost": 0,
+        "diamondCost": 10,
+        "destroyGainGold": 0,
+        "contract": {
+            "requiredFood": 0,
+            "requiredTime": 82800000,
+            "providedGold": 620,
+            "providedXP": 21
+        }
+    },
+    "buildings/fortress-hidden": {
+        "url": "buildings/fortress-hidden.png",
+        "spritey": 0,
+        "width": 3,
+        "height": 4
+    },
+    "buildings/elves": {
+        "class": "statichouse",
+        "name": "Tree House",
+        "url": "buildings/elves.png",
+        "spritey": 0,
+        "icon": "buildings/royal_summer_house-icon.png",
+        "width": 3,
+        "height": 5,
+        "offsetY": -1,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "item",
+        "unlockValue": "unlock/key",
+        "drops": "item/key3",
+        "unlockCost": 1,
+        "goldCost": 0,
+        "diamondCost": 10,
+        "destroyGainGold": 0,
+        "contract": {
+            "requiredFood": 0,
+            "requiredTime": 82800000,
+            "providedGold": 640,
+            "providedXP": 22
+        }
+    },
+    "buildings/elves-hidden": {
+        "url": "buildings/elves-hidden.png",
+        "spritey": 0,
+        "width": 3,
+        "height": 5
+    },
+    "buildings/ozzystent": {
+        "class": "statichouse",
+        "name": "Ozzy's Tent",
+        "url": "buildings/ozzystent.png",
+        "spritey": 0,
+        "icon": "buildings/royal_summer_house-icon.png",
+        "width": 3,
+        "height": 5,
+        "offsetY": -2,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "item",
+        "unlockValue": "unlock/key",
+        "drops": "item/key4",
+        "unlockCost": 1,
+        "goldCost": 0,
+        "diamondCost": 10,
+        "destroyGainGold": 0,
+        "contract": {
+            "requiredFood": 0,
+            "requiredTime": 82800000,
+            "providedGold": 660,
+            "providedXP": 23
+        }
+    },
+    "buildings/ozzystent-hidden": {
+        "url": "buildings/ozzystent-hidden.png",
+        "spritey": 0,
+        "width": 3,
+        "height": 4
+    },
+    "buildings/vikingsmith": {
+        "class": "statichouse",
+        "name": "Formidable Forge",
+        "url": "buildings/vikingsmith.png",
+        "spritey": 0,
+        "icon": "buildings/royal_summer_house-icon.png",
+        "width": 4,
+        "height": 4,
+        "offsetY": -2,
+        "selectable": true,
+        "draggable": false,
+        "unlockCondition": "item",
+        "unlockValue": "unlock/key",
+        "drops": "item/key5",
+        "unlockCost": 1,
+        "goldCost": 0,
+        "diamondCost": 10,
+        "destroyGainGold": 0,
+        "contract": {
+            "requiredFood": 0,
+            "requiredTime": 82800000,
+            "providedGold": 680,
+            "providedXP": 24
+        }
+    },
+    "buildings/vikingsmith-hidden": {
+        "url": "buildings/vikingsmith-hidden.png",
+        "spritey": 0,
+        "width": 4,
+        "height": 4
+    },
+    "characters/person-skin": {
+        "class": "person",
+        "url": "person.png",
+        "width": 1,
+        "height": 1,
+        "zIndex": 5,
+        "animationLength": 1
+    }
+}
