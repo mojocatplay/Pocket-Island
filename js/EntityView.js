@@ -304,12 +304,12 @@
             fontSizeFill = this.view.gridUnit/1.5,
             fontSizeStroke = this.view.gridUnit/1.49;
 
-        ctx.font = fontSizeStroke + "px GrilledCheeseBTNCn";
+        ctx.font = fontSizeStroke + "px 'Luckiest Guy'";
         ctx.strokeStyle ="rgba(0, 0, 0, 1)";
         ctx.strokeText(messageL1, this.x + this.view.scrollLeft + xPosShift1, this.y + this.width/2   + this.view.scrollTop);
         ctx.strokeText(messageL2, this.x + this.view.scrollLeft + xPosShift2, this.y + this.width/2 + this.view.gridUnit/1.7 + this.view.scrollTop);
 
-        ctx.font = fontSizeFill + "px GrilledCheeseBTNCn";
+        ctx.font = fontSizeFill + "px 'Luckiest Guy'";
         ctx.fillStyle = "rgba(86, 255, 255, 1)";
         ctx.fillText(messageL1, this.x + this.view.scrollLeft + xPosShift1, this.y + this.width/2   + this.view.scrollTop);
         ctx.fillText(messageL2, this.x + this.view.scrollLeft + xPosShift2, this.y + this.width/2 + this.view.gridUnit/1.7 + this.view.scrollTop );
