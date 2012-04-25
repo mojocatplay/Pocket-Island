@@ -186,7 +186,6 @@ FILES_TO_COPY.add IMAGES_FROM_CSS
 FILES_TO_COPY.add IMAGES_FROM_ENTITIES
 FILES_TO_COPY.add IMAGES_FROM_GOALS
 FILES_TO_COPY.add IMAGES_FROM_INDEX
-FILES_TO_COPY.add "loading.html"
 FILES_TO_COPY.add "ipad.html"
 FILES_TO_COPY.add File.read('config/extra_build_files').split
 
