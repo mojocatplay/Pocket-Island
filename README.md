@@ -23,14 +23,14 @@ run `rake` to generate all config files, sprite images, etc.
 
 ## Rake tasks
 
-- `rake all` :	# Build the exact version that will be shipped to the wrapper
-- `rake check_missing_files` : 	# List files that are reference on the game, but doesn't exists
-- `rake clean` : 	# Remove any temporary products.
-- `rake clobber` : 	# Remove any generated file.
-- `rake default` : 	# Update local files like index.html with the content of the config files, or the css from the less files
-- `rake lint` : 	# Look for syntax errors in the files
-- `rake list_extra_files` : 	# List the files that are not references from the game but are still present
-- `rake remove_trailing_spaces` : 	# Remove trailing spaces at the end of the line
+- `rake all` : Build project. Copies final files to build/
+- `rake check_missing_files` : List files that are referenced by the game, but don't exist
+- `rake clean` : Remove any temp file.
+- `rake clobber` : Remove any generated file.
+- `rake default` : what does it do?
+- `rake lint` : Run jslint
+- `rake list_extra_files` : List files that are not referenced by the game but are in the project
+- `rake remove_trailing_spaces` : Remove trailing spaces
 
 
 ### Adding new sprites

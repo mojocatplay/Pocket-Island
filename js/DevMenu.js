@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     "use strict";
 
+    wooga.castle.DEV = wooga.castle.DEV || false;
+
     function q(id){
         return document.querySelector(id);
     }

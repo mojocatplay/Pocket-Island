@@ -129,7 +129,7 @@
         this.createBufferCanvas();
         this.createGridCanvas();
         // TODO: make available via dev menu
-        //this.createInfoCanvas();
+        this.createInfoCanvas();
 
         this.initWorldInteractions();
         this.initScrollability();
@@ -265,7 +265,9 @@
         canvas.width = this.mapWidthPx;
         canvas.height = this.mapHeightPx;
 
-        this.drawInfoGrid(ctx);
+        if(wooga.castle.DEV) {
+            this.drawInfoGrid(ctx);
+        }
         this.infoCanvas = canvas;
         this.rootNode.parentNode.appendChild(canvas);
     };
@@ -463,7 +465,7 @@
         var bgStyle = document.getElementById("bg").style;
         var overlayStyle = document.getElementById("game_overlay").style;
         var gridStyle = this.gridCanvas.style;
-        //var infoStyle = this.infoCanvas.style;
+        var infoStyle = this.infoCanvas.style;
         this.scrollTo(this.scrollLeft, this.scrollTop);
 
         var prevNow, tick = 0;
@@ -475,9 +477,9 @@
             tick++;
 
             // TODO: make available via dev menu
-            //if(tick %  50 === 0) {
-            //    self.drawInfoGrid(self.infoCanvas.getContext('2d'));
-            //}
+            if(wooga.castle.DEV && tick %  50 === 0) {
+                self.drawInfoGrid(self.infoCanvas.getContext('2d'));
+            }
 
             //console.log('loop', self.rendering, self.animating);
 
@@ -488,7 +490,7 @@
                     bgStyle.webkitTransform = translation;
                     overlayStyle.webkitTransform = translation;
                     gridStyle.webkitTransform = translation;
-                    //infoStyle.webkitTransform = translation;
+                    infoStyle.webkitTransform = translation;
                     that.isScrolled = false;
                 }
 
