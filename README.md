@@ -1,3 +1,6 @@
+# Play Pocket Island
+http://wooga.github.com/Pocket-Island/
+
 # Build Dependencies
 
 To build the game you need the following tools:
