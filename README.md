@@ -55,3 +55,5 @@ Remember to divide pixel values by 48 before entering them in ``entities.json``.
 
 ## License
 All code provided in this repository is covered by an MIT license, as described here https://github.com/wooga/Pocket-Island/blob/master/license.html
+
+Images are licensed under a Creative Commons License and are provided separately.
