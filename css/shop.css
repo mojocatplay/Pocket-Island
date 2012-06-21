@@ -38,7 +38,7 @@
   text-transform: capitalize;
   width: 260px;
   right: 10px;
-  font: 40px/76px GrilledCheeseBTN, sans-serif;
+  font: 40px/76px 'Luckiest Guy', sans-serif;
 }
 #shop div.head div.diamonds {
   display: none;
@@ -73,13 +73,13 @@
   background: url("../images/popup/wood-rough.png") center -700px;
 }
 #shop ul.departments_list li {
-  font: bold 36px/50px GrilledCheeseBTNCn, sans-serif, sans-serif;
+  font: bold 36px/50px 'Bubblegum Sans', sans-serif, sans-serif;
   text-transform: capitalize;
   display: table-cell;
 }
 #shop ul.departments_list li a {
   color: #2f0101;
-  font-family: GrilledCheeseBTNCn, sans-serif;
+  font-family: 'Bubblegum Sans', sans-serif;
   font-weight: bold;
   text-shadow: 0 1px 1px #ffffbe;
   text-decoration: none;
@@ -171,14 +171,14 @@
 #shop .department li .specification h6 {
   margin: 0;
   padding: 0;
-  font: normal 36px/56px GrilledCheeseBTN, sans-serif;
+  font: normal 36px/56px 'Luckiest Guy', sans-serif;
   display: block;
   letter-spacing: 0;
   text-align: center;
 }
 #shop .department li .house .population {
   position: absolute;
-  font: normal 28px/30px GrilledCheeseBTN, sans-serif;
+  font: normal 28px/30px 'Luckiest Guy', sans-serif;
   width: 140px;
   margin: 155px 0 0 -160px;
   text-align: center;
@@ -194,9 +194,7 @@
 #shop .department li.population-maxed .population {
   color: red;
 }
-#shop .department li.unaffordable,
-#shop .department li.population-maxed,
-#shop .department li.unalevelable {
+#shop .department li.unaffordable, #shop .department li.population-maxed, #shop .department li.unalevelable {
   background: #f4c555;
 }
 #shop .department li.unaffordable .embossed,
@@ -211,10 +209,8 @@
   border-color: brown;
   margin-top: 80px;
 }
-#shop .department li.unaffordable:before,
-#shop .department li.population-maxed:before,
-#shop .department li.unalevelable:before {
-  font: normal 48px/220px GrilledCheeseBTN, sans-serif;
+#shop .department li.unaffordable:before, #shop .department li.population-maxed:before, #shop .department li.unalevelable:before {
+  font: normal 48px/220px 'Bubblegum Sans', sans-serif;
   text-align: center;
   color: #a7610c;
   position: absolute;
@@ -226,8 +222,7 @@
   /*"*/
 
 }
-#shop .department li.unalevelable:before,
-#shop .department li.population-maxed:before {
+#shop .department li.unalevelable:before, #shop .department li.population-maxed:before {
   content: attr(title);
 }
 #shop .department .goldCost {
@@ -259,7 +254,7 @@
   background: url(../images/popup/arrow.png);
   width: 88px;
   margin: 0 10px;
-  font: normal 28px/48px GrilledCheeseBTNCn, sans-serif;
+  font: normal 24px/44px 'Bubblegum Sans', sans-serif;
 }
 #shop .department .contract .Gold {
   background-image: url(../images/status/coins-small.png);
@@ -279,7 +274,7 @@
 }
 #shop #upgrade-castle h6 {
   margin: 100px 0;
-  font: normal 50px/44px GrilledCheeseBTN, sans-serif;
+  font: normal 50px/44px 'Luckiest Guy', sans-serif;
   text-shadow: 0 2px 0px #ffdc87;
 }
 #shop #upgrade-castle small {
@@ -393,10 +388,8 @@
   height: 250px;
   background-size: 100% 100%;
 }
-.ipad #shop .departments .department li.unaffordable:before,
-.ipad #shop .departments .department li.population-maxed:before,
-.ipad #shop .departments .department li.unalevelable:before {
-  font: normal 16px/16px GrilledCheeseBTN, sans-serif;
+.ipad #shop .departments .department li.unaffordable:before, .ipad #shop .departments .department li.population-maxed:before, .ipad #shop .departments .department li.unalevelable:before {
+  font: normal 16px/16px 'Bubblegum Sans', sans-serif;
   text-indent: 0;
   margin-top: 200px;
 }
@@ -414,7 +407,7 @@
   height: auto;
 }
 .ipad #shop .departments .department li .population {
-  font: normal 14px/15px GrilledCheeseBTN, sans-serif;
+  font: normal 14px/15px 'Luckiest Guy', sans-serif;
   width: 190px;
   margin: 120px 0 0 0;
 }
@@ -451,14 +444,14 @@
   font-size: 16px;
 }
 .ipad #shop .departments .department li .contract .Food {
-  background-image: url(../images/popup/food.png);
+  background-image: url(../images/popup/food-small.png);
   padding-left: 33px;
 }
 .ipad #shop .departments .department li .contract .Time {
   background: url(../images/popup/arrow.png);
   width: 44px;
   margin: 0 5px;
-  font: normal 14px/24px GrilledCheeseBTNCn, sans-serif;
+  font: normal 14px/24px 'Bubblegum Sans', sans-serif;
 }
 .ipad #shop .departments .department li .contract .Gold {
   background-image: url(../images/status/coins-small.png);

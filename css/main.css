@@ -206,7 +206,7 @@ div.navigation .buttons {
 }
 .anim .text {
   color: #fff;
-  font-family: GrilledCheeseBTNCn, sans-serif;
+  font-family: 'Bubblegum Sans', sans-serif;
   text-shadow: -1px -1px 1px #000000;
   text-align: center;
 }
@@ -235,7 +235,7 @@ div.navigation .buttons {
   height: 96px;
   margin-left: -100px;
   text-align: center;
-  font: normal 14px GrilledCheeseBTNCn, sans-serif;
+  font: normal 14px 'Bubblegum Sans', sans-serif;
   color: #fff;
   position: absolute;
   background: no-repeat 0 0;
@@ -281,7 +281,7 @@ div.navigation .buttons {
   -webkit-transition: all 2s ease-in, opacity 1.6s 0.4s ease-in;
   -webkit-transform: scale3d(1, 1, 1);
   -webkit-animation: dummy 2.5s 1;
-  font: 1.6em/normal GrilledCheeseBTNCn;
+  font: 1.6em/normal 'Bubblegum Sans';
   color: white;
   -webkit-text-stroke: 1px black;
 }
@@ -385,7 +385,7 @@ body[data-level-treshold="4"] .feedback_anim {
   top: 100px;
   left: 50%;
   margin-left: -230px;
-  font: bold 32px/42px GrilledCheeseBTNCn, sans-serif;
+  font: bold 32px/42px 'Bubblegum Sans', sans-serif;
   color: #543001;
   width: 400px;
   padding: 10px 30px;

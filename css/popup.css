@@ -6,24 +6,23 @@
   width: 360px;
   height: 360px;
   z-index: 8001;
-  font-family: GrilledCheeseBTNCn, sans-serif;
+  font-family: 'Bubblegum Sans', sans-serif;
 }
 .popup h1 {
   margin: 0;
   padding: 0;
   color: #fff;
   font-size: 25px;
-  font-family: GrilledCheeseBTNCn, sans-serif;
+  font-family: 'Bubblegum Sans', sans-serif;
 }
 .popup h2 {
   margin: 0;
   padding: 0;
   color: #fff;
   font-size: 13px;
-  font-family: GrilledCheeseBTNCn, sans-serif;
+  font-family: 'Bubblegum Sans', sans-serif;
 }
-.xgoals button.cancel,
-.popup button.cancel {
+.xgoals button.cancel, .popup button.cancel {
   position: absolute;
   right: 37px;
   top: 36px;
@@ -33,8 +32,7 @@
   background: url("../images/popup/close_button.png") no-repeat 0 0;
   background-size: auto 100%;
 }
-.xgoals button.cancel:active,
-.popup button.cancel:active {
+.xgoals button.cancel:active, .popup button.cancel:active {
   background-position: -46px 0;
 }
 #level-up {
@@ -51,7 +49,7 @@
   width: 100%;
   margin-top: 28px;
   text-align: center;
-  font: 48px/108px GrilledCheeseBTN, sans-serif;
+  font: 48px/108px 'Luckiest Guy', sans-serif;
   font-weight: normal;
   text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(255, 255, 255, 0.3);
 }
@@ -81,7 +79,7 @@
   margin-left: 0px;
   width: 100%;
   bottom: 115px;
-  font: 42px/90px GrilledCheeseBTNCn, sans-serif;
+  font: 42px/90px 'Bubblegum Sans', sans-serif;
   text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(255, 255, 255, 0.3);
 }
 #level-up .rewards figure {
@@ -125,15 +123,13 @@
   .popup h2 {
     font-size: 26px;
   }
-  .xgoals button.cancel,
-  .popup button.cancel {
+  .xgoals button.cancel, .popup button.cancel {
     right: 27px;
     top: 72px;
     width: 92px;
     height: 92px;
   }
-  .xgoals button.cancel:active,
-  .popup button.cancel:active {
+  .xgoals button.cancel:active, .popup button.cancel:active {
     background-position: 100% 0;
   }
   .popup button.share {
@@ -171,7 +167,7 @@
   top: 371px;
   margin-left: 255px;
   height: 60px;
-  font: 30px/70px GrilledCheeseBTNCn, sans-serif;
+  font: 30px/70px 'Bubblegum Sans', sans-serif;
 }
 .ipad #level-up .unlocked figure {
   margin-top: 50px;
@@ -210,11 +206,10 @@
 }
 .comic .frame p {
   margin: 4px 7px;
-  font: normal 16px/16px GrilledCheeseBTNCn, sans-serif;
+  font: normal 16px/16px 'Bubblegum Sans', sans-serif;
   text-shadow: 0 0 2px #1166a7, 0 0 2px #1166a7, 0 0 2px #1166a7, 0 0 2px #1166a7, 0 0 2px #1166a7;
 }
-.comic .no1,
-.comic .no4 {
+.comic .no1, .comic .no4 {
   width: 305px;
   height: 93px;
 }
@@ -312,11 +307,10 @@
   }
   .comic .frame p {
     margin: 8px 14px;
-    font: normal 30px/32px GrilledCheeseBTNCn, sans-serif;
+    font: normal 30px/32px 'Bubblegum Sans', sans-serif;
     text-shadow: 0 0 4px #1166a7, 0 0 4px #1166a7, 0 0 4px #1166a7, 0 0 4px #1166a7, 0 0 4px #1166a7;
   }
-  .comic .no1,
-  .comic .no4 {
+  .comic .no1, .comic .no4 {
     width: 610px;
     height: 187px;
   }
@@ -429,11 +423,10 @@
 }
 .ipad .comic .frame p {
   margin: 8px 14px;
-  font: normal 30px/32px GrilledCheeseBTNCn, sans-serif;
+  font: normal 30px/32px 'Bubblegum Sans', sans-serif;
   text-shadow: 0 0 4px #1166a7, 0 0 4px #1166a7, 0 0 4px #1166a7, 0 0 4px #1166a7, 0 0 4px #1166a7;
 }
-.ipad .comic .no1,
-.ipad .comic .no4 {
+.ipad .comic .no1, .ipad .comic .no4 {
   width: 610px;
   height: 187px;
 }
@@ -548,14 +541,14 @@
   margin-left: -200px;
   display: block;
   content: "Squaak!";
-  font: normal 52px/32px GrilledCheeseBTNCn, sans-serif;
+  font: normal 52px/32px 'Bubblegum Sans', sans-serif;
   color: #fff;
   text-shadow: 0 0 5px #000, 2px 2px 4px #000;
 }
 .intro .intro-text {
   position: relative;
   margin: -190px auto 0;
-  font: normal 30px/32px GrilledCheeseBTNCn, sans-serif;
+  font: normal 30px/32px 'Bubblegum Sans', sans-serif;
   width: 401px;
   padding: 10px 30px;
   border: 4px solid #fff;
@@ -592,7 +585,7 @@
   line-height: 25px;
 }
 .connect .button.facebook {
-  font-family: GrilledCheeseBTNCn;
+  font-family: 'Bubblegum Sans';
   border-color: #2a447e!important;
   background-color: #617aac!important;
 }
