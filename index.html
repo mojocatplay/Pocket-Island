@@ -1,0 +1,380 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Pocket Island</title>
+
+<!--
+                    .:::-`            `-:::.
+                     -/:/sssyo`        `/::ossss:
+                    .oosssyyhdy        +ossssyhhd-
+                    .syyyhddmmy        +yyyhhdmmm-
+                   //:ydmmmmmy.        `oddmmmmm//+
+                   /os//+oo/.            ./oo+/:shh`
+                  .+hhhhhh/                :yyyhdmm-
+                  -ohhddms                  oddddmm:
+                  -shddmm.                  .hddmmm/
+                  .ydddmh        -::-        shdmmm:
+                  `ydddmy      -+oyhhh/      oydmmm.
+                   odddmh`   `/shhddddds`    oydmmh
+                   :dddmm.  `oyddmmmmmmmh.  .ohdmN/
+                    yddddo .shdmms- ommmdh- /ydmmd`
+                    :ddddh+yhdmm-    -hmddh+hdmmN/
+                     oddddddmmm-      .dmmdddmmNs
+                     `smddmmmm-        -dmmmmmNh`
+                   ```.smmmNm/``````````:dmmNNh.```
+                  ``..../ss+-............-+sy+....``
+                     `````````````  ``````````````
+ -->
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name='HandheldFriendly' content='True' />
+    <meta name="viewport" id="viewport" content="initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <script>
+      window.wooga = {
+        'castleIOS': {}
+      };
+    </script>
+
+    <style type="text/css" >
+        #loadingScreen {
+            position: absolute;
+            top: 0; left: 0;
+            bottom: 0; right: 0;
+            text-align: center;
+            z-index: 1000001;
+            background: #0d8000 url(images/default-ipad.jpg) no-repeat center;
+        }
+        #loadingScreen .progress {
+            position: absolute;
+            top: 50%;
+            left: 20%; right: 20%;
+            height: 40px;
+            padding: 6px 8px;
+            margin-top: 300px;
+            border-radius: 40px;
+            background: rgba(0,0,0,.5);
+            -webkit-box-shadow: 0 4px 10px rgba(0,0,0,.5) inset;
+        }
+        #loadingScreen .progress > span {
+            display: block;
+            height: 40px;
+            background-color: #ff8000;
+            border-radius: 40px;
+            -webkit-box-shadow: 0 4px 10px rgba(0,0,0,.5);
+            background-image: -webkit-gradient(
+               linear,
+               left bottom,
+               left top,
+               color-stop(0,  rgba(255,255,255,0)),
+               color-stop(1, rgba(255,255,100,.8))
+            ),-webkit-gradient(
+                  linear,
+                  left bottom,
+                  right bottom,
+                  color-stop(0,  rgba(255,255,255,0)),
+                  color-stop(1, rgba(255,255,100,.5))
+            );
+            width: 0;
+            transition: width 5s;
+            -webkit-transition: width 5s; /* Safari and Chrome */
+        	-webkit-animation-name: pulsate;
+        	-webkit-animation-duration: 1s;
+        	-webkit-animation-iteration-count: infinite;
+        	-webkit-animation-direction: alternate;
+        	-webkit-animation-timing-function: linear;
+        }
+        @-webkit-keyframes pulsate {
+        	0% {
+        		background-color: #ff8000;
+        		-webkit-box-shadow: 0 0 1px #ff8000;
+        	}
+        	100% {
+        		background-color: #ffc600;
+        		-webkit-box-shadow: 0 0 18px #fff;
+        	}
+        }
+        @media all and (min-device-width: 768px) {
+            #loadingScreen .progress {
+                top: 50%;
+                margin-top: 280px;
+            }
+        }
+        @media all and (min-device-width: 768px) and (-webkit-device-pixel-ratio:2) {
+            #loadingScreen {
+                background-size: 2048px 2048px;
+            }
+            #loadingScreen .progress {
+                top: 50%;
+                margin-top: 560px;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/animations.css"/>
+    <link rel="stylesheet" href="css/font.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/ui.css"/>
+    <link rel="stylesheet" href="css/hud.css"/>
+    <link rel="stylesheet" href="css/popup.css"/>
+    <link rel="stylesheet" href="css/shop.css"/>
+    <link rel="stylesheet" href="css/castle-complete.css"/>
+    <link rel="stylesheet" href="css/goals.css"/>
+    <link rel="stylesheet" href="css/dev-menu.css"/>
+
+</head>
+<body>
+    <div id="loadingScreen">
+        <div class="progress">
+            <span></span>
+        </div>
+    </div>
+
+    <div class="page comic">
+        <div class="wrap">
+            <div class="frame no1"><p>You are a brave knight&hellip;</p></div>
+            <div class="frame no2"><p><br>on an Epic Quest &hellip;</p></div>
+            <div class="frame no3"><p>when a freak storm &hellip;</p></div>
+            <div class="frame no4"><p>hits your ship &hellip;<p></div>
+            <div class="frame no5"><p>and crashes it on &hellip;</p></div>
+            <div class="frame no6"><div class="logo" id="logoTest" ></div>
+            <button class="button share">Start</button></div>
+        </div>
+    </div>
+
+    <div class="intro">
+        <div class="parrot"></div>
+        <div class="intro-text">
+            <p>I am Sir Talk-a-lot, peace keeper of Pocket Island!</p>
+            <p>I promise to fix your ship in return for a favor&hellip;</p>
+        </div>
+        <button class="button">Sure!</button>
+    </div>
+
+    <div id="mlm-content"> <!-- TODO: we should rename it somehow -->
+
+        <div id="game">
+            <div id="bg"></div>
+            <div id="game_overlay"></div>
+        </div>
+
+        <div id="ui" style="display: none;">
+            <header id=main-stats>
+                <div class="board"> </div>
+                <div id="coins">
+                    <div class="info"></div>
+                </div>
+                <div id="food">
+                    <div class="info"></div>
+                    <div class="bar"><div class="progress">&nbsp;</div></div>
+                </div>
+                <div id="population">
+                    <div class="info">Population</div>
+                    <div class="bar"><div class="progress"><div id="ratio">--/--</div></div></div>
+                </div>
+                <div id="level">
+                    <div id="levelStar"></div>
+                    <div class="info"></div>
+                    <div class="bar"><div class="progress">&nbsp;</div></div>
+                </div>
+            </header>
+            <nav>
+                <a id="showShopButton" href="#">&nbsp;</a>
+                <a id="showCursorButton" href="#">&nbsp;</a>
+            </nav>
+            <aside id="hud-goals">
+                <div id="goals-drawer"></div>
+            </aside>
+        </div>
+    </div>
+
+    <div id="dev-menu" class="head done"><h2>Options</h2>
+        <div class="regard">
+            <button class="cancel">cancel</button>
+            <button name="clear_storage" class="button">Remove local data</button>
+            <button name="reload" class="button">Force Reload</button>
+            <button name="activate_fast" class="button">Activate Fast Mode</button>
+            <button name="giveme_money" class="button">Giveme Money</button>
+            <button name="giveme_food" class="button">Giveme Food</button>
+            <button name="giveme_xp"   class="button">Giveme XP</button>
+            <button name="reconnect"  class="button">Connect to other url</button>
+            <button name="unlock" class="button">Unlock areas</button>
+            <button name="untree" class="button">Deforest</button>
+        </div>
+    </div>
+
+    <script>
+
+        (function(){
+            // toggle fake loading animation. TODO: proper loading screen
+            try{
+                document.querySelector('#loadingScreen span').style.width = '100%';
+            } catch (e) {
+            }
+
+            setTimeout(function(){
+                if (wooga.castle.capabilities.iPod) {
+                    return;
+                }
+                document.querySelector('#loadingScreen').style.display = 'none';
+                wooga.castle.dispatchUIEvent('loaderReady');
+            }, 5000);
+
+            window._gaq = [];
+
+
+            function detectScreenSize () {
+                if (window.devicePixelRatio === 2) {
+                    return "large";
+                }
+                if (window.screen.width >= 768 || window.screen.height >= 768) {
+                    return 'medium';
+                }
+                return "small"
+            }
+
+            var referral = (function getReferral () {
+
+                var referralQueryString = window.location.search.substring(1).split("&").filter(function (a) {
+                    if (a.indexOf("referral=") === 0) {
+                        return true;
+                    }
+                })[0];
+
+                if (referralQueryString) {
+                    return unescape(referralQueryString.replace(/^referral=/,''));
+                }
+
+            }());
+
+            wooga.castle = {};
+
+
+            wooga.castle.dispatchUIEvent = function (eventName, node, data) {
+                node = node || document.body;
+                data = data || {};
+                var ev = document.createEvent("UIEvents");
+                ev.initUIEvent(eventName, true, true, window, 1);
+                node.dispatchEvent(ev);
+                return ev;
+            }
+
+            wooga.castle.config = {};
+            wooga.castle.config.version = 'UNKOWN';
+            wooga.castle.config.wrapperIOS = false;
+            wooga.castle.config.enableOffline = true;
+
+            wooga.castle.switches = {
+                //adds various "shortcuts"
+                "cheatmode": /cheatmode/i.test(window.location),
+                //invalidates localStorage and loads data from the server
+                "nolocal": /noLocal/i.test(window.location),
+                //skips tutorial and welcome message
+                "nowelcome": /noTutorial/i.test(window.location),
+                //reduces times by a factor of 100
+                "fast": /fast/i.test(window.location.search),
+                //fbrequests handling
+                "dynamicviewport": /dynamicviewport/i.test(window.location.search),
+                //enables drydock functionalities -- keep false on staging for now
+                "enabledrydock": /drydock/i.test(window.location.search),
+                //disables persistency
+                "noPersistency": /noPersistency/i.test(window.location.search),
+                //disables desktop sniffing
+                "iframed": /iframed/i.test(window.location.search)
+            };
+
+        })();
+
+    </script>
+
+<script language="javascript" src="app.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,61 @@
+
+<div class="screens">
+
+
+    <div class="xgoals">
+        <div class="head">
+            <div class="value gold current" id="gold-in-goal-sceen"></div>
+            <h1><%= data.storyTitle %></h1>
+            <button class="cancel"></button>
+        </div>
+        <div class="finished">
+            <div class="bubble"><%= data.finishedText  %></div>
+            <h1>Congratulations</h1>
+            <div class="details">
+                <h2>Reward</h2>
+                <% for( var i in data.rewards ){ var _reward = data.rewards[i] %>
+                <div class="<%= _reward.type %>"><%= _reward.amount %></div>
+                <% } %>
+            </div>
+            <button class="button collect-goal">Collect</button>
+        </div>
+        <hr>
+		<div class="subgoals">
+        <ul class="subgoal-list">
+	        <% for( var i in data.subgoals ){ var _subgoal = data.subgoals[i] %>
+
+		        <li class="subgoal" id="subgoal-<%= _subgoal.subgoalID %>">
+	                <div class="thumbnail">
+	                    <img src="<%= _subgoal.imageSrc %>">
+	                    <figure><span class="have"><%= _subgoal.have %></span>/<%= _subgoal.amount %></figure>
+	                </div>
+	                <div class="description">
+	                    <h5><%= _subgoal.subgoalText %></h5>
+	                    <p><%= _subgoal.subgoalHint %></p>
+                        <% if(_subgoal.rewards) { %>
+	                    <div class="reward">
+                                <div class="details">
+                                    Reward: <% for( var i in _subgoal.rewards ){ var _reward = _subgoal.rewards[i] %>
+                                    <div class="<%= _reward.type %>"><%= _reward.amount %></div>
+                                <% } %>
+                                </div>
+                                <button class="button">Touch to Collect <% for( var i in _subgoal.rewards ){ var _reward = _subgoal.rewards[i] %>
+                                    <div class="<%= _reward.type %>"><%= _reward.amount %></div>
+                                <% } %></button>
+	                    </div>
+                        <% } else { %>
+                        <div class="reward no-rewards"></div>
+                        <% } %>
+	                </div>
+	            </li>
+
+            <% } %>
+        </ul>
+		</div>
+        <hr>
+    </div>
+
+
+
+</div>
+
