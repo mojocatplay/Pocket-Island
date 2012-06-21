@@ -17,9 +17,16 @@ To build the game you need the following tools:
 
 # Getting Started
 
-`git clone git@github.com:wooga/pocket_island.git`
+* __`git clone git@github.com:wooga/pocket_island.git`
 
-run `rake` to generate all config files, sprite images, etc.
+* __Get the art assets from cdn-mkt.wooga.com/downloads/images.zip and extract them into ./Pocket-Island/images.
+
+* __Run `rake` to generate all config files, sprite images, etc.
+
+* __Run a HTTP server: You can for example use the SimpleHTTPServer module of python and run `python -m SimpleHTTPServer` on the command line.
+
+* __Finally, open http://0.0.0.0:8000/ipad.html to play the game (preferably in Chrome or Safari). 
+
 
 ## Rake tasks
 
