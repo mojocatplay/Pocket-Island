@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+}
+@font-face {
+  font-family: 'GrilledCheeseBTN';
+  font-weight: normal;
+  font-style: normal;/*
+      you can get the font here:
+      http://www.myfonts.com/fonts/btn/grilled-cheese-btn/
+      src: url(data:font/opentype;charset=utf-8;base64,.....) format('truetype');
+      */
+}
+@font-face {
+  font-family: 'GrilledCheeseBTNCn';
+  font-weight: normal;
+  font-style: normal;/*
+      you can get the font here:
+      http://www.myfonts.com/fonts/btn/grilled-cheese-btn/cn/
+      src: url(data:font/opentype;charset=utf-8;base64,.....) format('truetype');
+      */
+}

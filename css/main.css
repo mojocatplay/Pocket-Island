@@ -1,0 +1,526 @@
+/* variables */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  position: relative;
+}
+body {
+  overflow: hidden;
+  background: #109805 url("../images/load.gif") center no-repeat;
+}
+*, a, button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+canvas {
+  position: relative;
+  z-index: 199;
+  display: block;
+  -webkit-user-select: none;
+}
+#info-grid {
+  opacity: 0.5;
+}
+#info-grid, #grid-map {
+  left: 0;
+  z-index: 200;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-transition: opacity .4s;
+}
+.invisible {
+  display: block;
+  opacity: 0;
+}
+#mlm-content {
+  background: #109805 repeat 0 0;
+}
+.time_inc {
+  width: 50px;
+  height: 50px;
+}
+#bg,
+#game_overlay,
+#info-grid,
+#grid-map {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  background: transparent no-repeat 0 0;
+}
+#game_overlay {
+  pointer-events: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  z-index: 1000;
+}
+#game_overlay .actionIcon {
+  pointer-events: none;
+  opacity: 0;
+  background-repeat: no-repeat;
+  -webkit-transition: opacity .4s;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-name: pulse;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: .8s;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: ease;
+}
+#game_overlay .actionIcon.idle.house {
+  -webkit-animation-name: pulse;
+}
+#game_overlay .actionIcon.paused.statichouse {
+  background-size: contain;
+  display: block!important;
+  opacity: 1;
+  -webkit-animation-name: none;
+}
+#game_overlay, #info-grid, #grid-map {
+  width: 1536px;
+  height: 1728px;
+}
+body[data-mode=basic] #game_overlay .actionIcon,
+body[data-mode=info] #game_overlay .actionIcon,
+body[data-mode=roads] #game_overlay .actionIcon.paused,
+body[data-mode=shop] #grid-map,
+body[data-mode=roads] #grid-map,
+body[data-mode=move] #grid-map {
+  opacity: 1;
+}
+#doobers, #in-place-notifications {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 200000;
+}
+#in-place-notifications {
+  z-index: 200001;
+}
+#doobers,
+#doobers *,
+#in-place-notifications,
+#in-place-notifications * {
+  pointer-events: none!important;
+}
+#bg {
+  width: 1536px;
+  height: 1728px;
+  z-index: 198;
+  background-image: url("../images/entities/backgrounds/coast.png");
+}
+.actionIcon {
+  position: absolute;
+  pointer-events: none;
+}
+body[data-mode=basic] #game_overlay .actionIcon {
+  pointer-events: none;
+}
+#game {
+  min-height: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+@media all and (min-device-height: 480px) {
+  #game {
+    min-height: 831px;
+    height: 100% !important;
+  }
+}
+body > div.stats {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#hud {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+#hud div {
+  display: inline-block;
+  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 10px;
+}
+#ui {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#ui.hide {
+  display: none;
+}
+#ui * {
+  pointer-events: auto;
+}
+div.navigation {
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+div.navigation .buttons {
+  pointer-events: auto;
+}
+#placeButtons {
+  pointer-events: auto;
+  display: none;
+  position: absolute;
+  top: 100px;
+  z-index: 30001;
+}
+.anim {
+  position: absolute;
+  opacity: 0;
+  margin-top: 5px;
+  background: url("../images/status/emptybar.png") no-repeat 0 100%;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: revealandslideOutter;
+  pointer-events: none;
+}
+.anim .text {
+  color: #fff;
+  font-family: GrilledCheeseBTNCn, sans-serif;
+  text-shadow: -1px -1px 1px #000000;
+  text-align: center;
+}
+.anim .progress {
+  width: 0;
+  background: url("../images/status/filledbar.png") no-repeat 0 0px;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-name: revealandslideInner;
+}
+.anim {
+  width: 140px;
+  margin-left: -70px;
+  background: url("../images/status/emptybar.png") no-repeat 0 100%;
+}
+.anim .text {
+  font-size: 27px;
+}
+.anim .progress {
+  height: 40px;
+  background: url("../images/status/filledbar.png") no-repeat 0 0px;
+}
+.quick-notif {
+  opacity: 0;
+  width: 200px;
+  height: 96px;
+  margin-left: -100px;
+  text-align: center;
+  font: normal 14px GrilledCheeseBTNCn, sans-serif;
+  color: #fff;
+  position: absolute;
+  background: no-repeat 0 0;
+  background-size: contain;
+  -webkit-animation-name: revealandslideOutter, fadePlusSlideUp;
+  -webkit-animation-duration: 1.5s;
+  pointer-events: none;
+  -webkit-user-select: none;
+}
+.quick-notif.flyout {
+  -webkit-animation-name: revealandslideOutter, floatUp;
+}
+.quick-notif.bonus {
+  color: #4ffaf3;
+  -webkit-animation-name: revealandslideOutter;
+  -webkit-animation-duration: 3.0s;
+}
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+  .anim {
+    -webkit-transform: scale3d(1, 1, 1);
+    margin-top: 10px;
+  }
+  .quick-notif {
+    margin-left: -100px;
+    font-size: 28px;
+  }
+  @-webkit-keyframes floatUp {
+    0% {
+      margin-top: -100px;
+    }
+    100% {
+      margin-top: -240px;
+    }
+  }
+}
+.feedback_anim {
+  pointer-events: none;
+  -webkit-user-select: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  -webkit-transition: all 2s ease-in, opacity 1.6s 0.4s ease-in;
+  -webkit-transform: scale3d(1, 1, 1);
+  -webkit-animation: dummy 2.5s 1;
+  font: 1.6em/normal GrilledCheeseBTNCn;
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+.feedback_anim.to_level, .feedback_anim.to_xp {
+  -webkit-transition-delay: .2s;
+}
+.feedback_anim img {
+  vertical-align: middle;
+}
+body[data-level-treshold="4"] .feedback_anim {
+  -webkit-transition: all .8s, opacity .45s .35s;
+  -webkit-animation-duration: .8s;
+}
+@-webkit-keyframes dummy {
+  0% {
+    text-align: inherit;
+  }
+  100% {
+    text-align: inherit;
+  }
+}
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.tuthilite {
+  pointer-events: none!important;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  display: block;
+  outline: 3px solid #64ff64;
+  background: rgba(100, 255, 100, 0.4);
+  z-index: 10000;
+  position: absolute;
+}
+.tutarrow {
+  pointer-events: none!important;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  display: block;
+  width: 178px;
+  height: 177px;
+  position: absolute;
+  z-index: 10001;
+  -webkit-transform-origin-y: 50%;
+}
+.tutarrow .arrow {
+  background: url(../images/hud/hand.png) no-repeat;
+  background-size: contain;
+  pointer-events: none!important;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  position: relative;
+  left: 0;
+  top: 0;
+  margin: 0;
+  width: 178px;
+  height: 177px;
+  display: block;
+  -webkit-animation-name: bounce;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-duration: .5s;
+}
+.tutarrow .arrow.right {
+  background: url(../images/hud/hand-right.png) no-repeat;
+}
+.tutscreen.step_8 .tutarrow .arrow {
+  -webkit-animation: follow 3s infinite;
+}
+@-webkit-keyframes follow {
+  to {
+    -webkit-transform: translate3d(96px, 240px, 0);
+  }
+}
+.tutscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  pointer-events: none;
+  z-index: 80001;
+  -webkit-user-select: none;
+}
+.tutscreen * {
+  pointer-events: auto;
+}
+.tutorial-text {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -230px;
+  font: bold 32px/42px GrilledCheeseBTNCn, sans-serif;
+  color: #543001;
+  width: 400px;
+  padding: 10px 30px;
+  border: 4px solid #fff;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 1px 2px #d59d26 inset;
+  background: url('../images/popup/pergament.png') center;
+  background-size: cover;
+}
+.tutorial-char {
+  position: absolute;
+  background: url('../images/hud/parrot-right.png') left top no-repeat;
+  right: 0px;
+  top: 30px;
+  width: 141px;
+  height: 300px;
+  pointer-events: none;
+}
+@-webkit-keyframes bouncer {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(20%, 0, 0);
+  }
+}
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+  #game, body, html {
+    min-height: 833px !important;
+  }
+  .tutarrow {
+    width: 178px;
+    height: 177px;
+  }
+  .tutarrow .arrow {
+    background-image: url('../images/hud/hand.png');
+  }
+  .tutarrow .arrow.right {
+    background-image: url('../images/hud/hand-right.png');
+  }
+}
+#enforce-modal, #uiblocker {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  opacity: 1;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-transition: opacity .6s;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 8000;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  opacity: 1;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-transition: opacity .6s;
+  display: block!important;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 5001;
+}
+#enforce-modal.hidden, #uiblocker.hidden {
+  display: none;
+}
+#uiblocker {
+  z-index: 10020;
+}
+#enforce-urlBarRemove {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  -webkit-transition: opacity .6s;
+  display: block;
+  z-index: 100000;
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+.feedbacker, .feedbacker img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: auto !important;
+  -webkit-animation-duration: 0.75s;
+  -webkit-animation-timing-function: ease;
+}
+.feedbacker.done {
+  -webkit-transition: all 2s ease-in, opacity 1.6s 0.4s ease-in;
+}
+.feedbacker.to_food {
+  -webkit-animation-name: foodOuterAnimation;
+}
+.feedbacker.to_food img {
+  -webkit-animation-name: foodInnerAnimation;
+}
+.feedbacker.to_level {
+  -webkit-animation-name: levelOuterAnimation;
+}
+.feedbacker.to_level img {
+  -webkit-animation-name: levelInnerAnimation;
+}
+.feedbacker.to_coins {
+  -webkit-animation-name: coinsOuterAnimation;
+}
+.feedbacker.to_coins img {
+  -webkit-animation-name: coinsInnerAnimation;
+}
+.feedbacker.to_lock {
+  -webkit-animation-name: lockOuterAnimation;
+  z-index: 6000;
+}
+.feedbacker.to_lock img {
+  -webkit-animation-name: lockInnerAnimation;
+}
+[data-in-tutorial="true"] .ship.actionIcon {
+  visibility: hidden;
+}

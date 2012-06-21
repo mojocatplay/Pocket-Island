@@ -1,0 +1,464 @@
+.xgoals {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: rgba(0, 0, 0, 0.7) url("../images/popup/paper-big.png") no-repeat center;
+  z-index: 10000;
+}
+.ipad .xgoals {
+  width: 640px;
+  height: 840px;
+  top: 50%;
+  left: 50%;
+  margin: -420px 0 0 -320px;
+  background-color: transparent;
+}
+.fullscreen .xgoals {
+  background-size: 110% 110%;
+}
+.xgoals .gold {
+  display: inline-block;
+  padding: 10px 10px 10px 54px;
+  background: url(../images/status/coins-small.png) no-repeat 14px center;
+}
+.xgoals .head {
+  background: url(../images/popup/goal-header.png) no-repeat center 16px;
+  height: 196px;
+}
+.xgoals .head .gold {
+  position: absolute;
+  top: 46px;
+  left: 300px;
+  font: bold 28px/42px sans-serif;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  -webkit-transform: rotate(1deg);
+}
+.xgoals h1 {
+  font: 36px/108px GrilledCheeseBTNCn, sans-serif;
+  color: #d90326;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.xgoals .head h1 {
+  position: absolute;
+  top: 90px;
+  left: 290px;
+  right: 0px;
+  margin-right: 132px;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
+  -webkit-transform: rotate(1deg);
+}
+.xgoals .subgoals {
+  position: absolute;
+  top: 200px;
+  left: 52px;
+  right: 52px;
+  height: 590px;
+  overflow: hidden;
+}
+.xgoals .subgoals ul {
+  -webkit-transform: translate3d(0, 0, 0);
+  overflow: hidden;
+}
+.xgoals hr {
+  position: absolute;
+  height: 28px;
+  width: 100%;
+  margin-top: -4px;
+  border: none;
+  z-index: 1000;
+  background: url(../images/popup/goal-hr.png) no-repeat center;
+}
+.xgoals .subgoals + hr {
+  margin-top: 580px;
+}
+.xgoals .subgoals li {
+  display: -webkit-box;
+  height: 224px;
+  margin: 6px 0;
+  text-align: center;
+  background: #fdf7e5 url(../images/popup/item.png) no-repeat center;
+  background-size: 100% 100%;
+  border: 1px solid brown;
+  border-radius: 20px;
+  color: #977f63;
+  pointer-events: none;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.subgoals li, .subgoals .gold {
+  font-family: GrilledCheeseBTNCn;
+  font-size: 28px;
+}
+.thumbnail {
+  width: 120px;
+  margin: 0 10px;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-orient: vertical;
+}
+.thumbnail img {
+  max-width: 120px;
+}
+.thumbnail figure {
+  display: block;
+  margin: 0;
+}
+.done .thumbnail:after {
+  content: "DONE";
+  color: #f00;
+  padding: 5px 15px;
+  border: 4px solid #f00;
+  border-radius: 10px;
+  position: absolute;
+  -webkit-transform: rotate(-5deg) translate(40px, -20px);
+  font: normal 36px/24px GrilledCheeseBTNCn, sans-serif;
+}
+.done .thumbnail figure {
+  visibility: hidden;
+}
+.xgoals .description {
+  -webkit-box-flex: 1;
+  padding: 0 20px;
+  margin: 20px 0;
+  border-left: 4px solid #c3b096;
+}
+.description h5 {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 36px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 5px 0;
+}
+.description p {
+  line-height: 36px;
+  padding: 5px 0;
+  min-height: 72px;
+  margin: 0;
+  color: #b53a26;
+}
+.reward {
+  font: normal 36px/36px GrilledCheeseBTNCn;
+  padding: 5px 10px;
+}
+.reward .button {
+  font: normal 36px/36px GrilledCheeseBTNCn;
+  display: none;
+  margin: -5px -10px;
+  padding: 10px 30px 4px;
+  pointer-events: auto;
+  -webkit-animation-name: pulse;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: .8s;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: ease;
+}
+.done .reward .details {
+  display: none;
+}
+.done .reward .button {
+  display: inline-block;
+  font-size: 30px;
+  padding: 10px 0 0 0;
+  width: 330px;
+}
+.collected .reward .button {
+  display: none;
+}
+.reward .gold {
+  font: normal 36px/36px GrilledCheeseBTN;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.collected .reward, .done .reward.no-rewards {
+  background: url(../images/popup/tick.png) no-repeat center;
+  height: 70px;
+}
+.goals .finished {
+  position: absolute;
+  z-index: 1500;
+  left: 0;
+  right: 0;
+  height: 636px;
+  text-align: center;
+  background: url(../images/popup/reward-paper.png) no-repeat center;
+  display: none;
+}
+.finished.active, [data-state="3"] .finished {
+  margin: 0;
+  display: block;
+  bottom: 0;
+  -webkit-animation-name: popOverlay;
+  -webkit-animation-duration: .8s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+}
+.finished .bubble {
+  border-radius: 24px;
+  border: 2px solid #d7ac78;
+  position: absolute;
+  padding: 20px 20px 20px 30px;
+  margin: -1000px 20px 0 250px;
+  text-align: left;
+  background: #fff;
+  color: #854c1f;
+  font: normal 36px/42px GrilledCheeseBTNCn;
+  -webkit-box-shadow: 0 3px 10px #000;
+}
+.finished.active .bubble, [data-state="3"] .finished .bubble, .finished.active .bubble {
+  margin-top: -150px;
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: .5s;
+  -webkit-animation-delay: .8s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: backwards;
+}
+.finished h1 {
+  height: 200px;
+  padding-left: 10px;
+  margin: 0;
+  line-height: 200px;
+  font-size: 50px;
+}
+.finished h2 {
+  margin: 0;
+  height: 60px;
+  font: normal 36px/60px GrilledCheeseBTN;
+}
+.finished .details {
+  margin: 0;
+  height: 230px;
+  color: #854c1f;
+  font: normal 50px GrilledCheeseBTN;
+}
+.finished .xp {
+  display: inline-block;
+  background: url(../images/popup/xp.png) no-repeat right center;
+  background-size: 48px 48px;
+  padding-right: 60px;
+  padding-left: 20px;
+  height: 160px;
+  line-height: 168px;
+}
+.finished .gold {
+  display: inline-block;
+  height: 160px;
+  line-height: 168px;
+}
+.finished button {
+  margin-top: 20px;
+  font: normal 36px/36px GrilledCheeseBTN;
+}
+/* OLD */
+#goals-drawer {
+  height: 131px;
+}
+#goals-drawer a figure {
+  margin: 0;
+  padding: 0;
+  outline: 1px solid yellow;
+  display: block;
+}
+.goalIcon {
+  display: block;
+  height: 131px;
+  background: url(../images/hud/tasklist.png) no-repeat 0 -131px;
+}
+.goalIcon:active {
+  background-position: 0 -1px;
+}
+.goalIcon:after {
+  position: absolute;
+  display: block;
+  right: 5px;
+  top: 30px;
+}
+.goalIcon[data-notif-count]:after {
+  content: attr(data-notif-count);
+  font: bold 20px/30px sans-serif;
+  box-shadow: 1px 1px 2px #900 inset;
+  text-shadow: 1px 1px 2px #000;
+  background: #f00;
+  color: #fff;
+  border: 4px solid #fff;
+  border-radius: 20px;
+  padding: 0 10px;
+}
+.goalIcon figure {
+  display: none!important;
+}
+.goals {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  z-index: 10000;
+  display: block;
+  opacity: 1;
+  -webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
+  -webkit-transform: scale(1, 1);
+  -webkit-transform-origin: 10% 100%;
+}
+.goals.hidden {
+  display: block;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transform: scale(0, 0);
+}
+.goals .subgoals li:first-child {
+  margin-top: 20px;
+}
+.goals .subgoals li:last-child {
+  margin-bottom: 32px;
+}
+.goals .subgoals .panel .stat {
+  position: absolute;
+  text-align: center;
+  width: 156px;
+  margin-top: 110px;
+  font: normal 36px/56px GrilledCheeseBTN, sans-serif;
+}
+.goals .subgoals .panel div.image {
+  float: left;
+  width: 144px;
+  min-height: 120px;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+.goals .subgoals .pay div.image {
+  padding-top: 1em;
+}
+.goals .subgoals .panel div.image img {
+  max-height: 120px;
+  display: -webkit-box;
+}
+.goals .subgoals .panel div.specification {
+  margin: 10px 10px 10px 160px;
+  text-align: center;
+}
+.goals .hint, .goals .panel .info {
+  color: #dc3d1d;
+}
+.goals .panel .info {
+  font-family: GrilledCheeseBTN, sans-serif;
+}
+.goals .subgoals .specification button {
+  margin: -50px auto 10px;
+}
+.goals .subgoals .pay-hint,
+.goals .subgoals .pay.done .pay-hint,
+.goals .subgoals .panel .pay,
+.goals .subgoals .panel.done.pay .pay,
+.goals .subgoals .pay .stat,
+.goals .subgoals .pay .hint {
+  display: none;
+}
+.goals .subgoals .pay .pay-hint, .goals .subgoals .pay .pay {
+  display: inline-block;
+}
+.subgoals .panel.done .specification:after {
+  display: block;
+  content: " ";
+  position: relative;
+  width: 72px;
+  height: 72px;
+  margin: -30px auto 18px;
+  background: url(../images/popup/tick.png) 0 0 no-repeat;
+  -webkit-background-size: contain;
+}
+.goal-screen-subgoals .subgoals .panel.done button {
+  display: none;
+}
+.goals h6 {
+  margin: 0;
+  padding: 0;
+  font: normal 36px/56px GrilledCheeseBTN, sans-serif;
+  display: block;
+  letter-spacing: 0;
+  text-align: center;
+}
+.goals .rewards .embossed {
+  display: -webkit-box;
+  height: 160px;
+}
+.goals .rewards figure {
+  margin: 0;
+  font: 26px/32px GrilledCheeseBTNCn, sans-serif;
+  padding-top: 112px;
+  background-size: 80px;
+  color: #543001;
+  -webkit-box-flex: 1;
+  margin: 0;
+  text-align: center;
+  text-transform: capitalize;
+  display: block;
+}
+.goals .no.rewards p {
+  font: normal 40px/60px GrilledCheeseBTN, sans-serif;
+  text-shadow: 0 1px 0px #ffdc87;
+  color: #422806;
+  text-align: center;
+  padding: 40px 0 10px;
+}
+.goals .rewards .embossed {
+  height: 80px;
+}
+.goals .rewards figure.gold {
+  background: url(../images/popup/coins.png) 50% 20px no-repeat;
+}
+.goals .rewards figure.food {
+  background: url(../images/popup/food.png) 50% 20px no-repeat;
+}
+.goals .rewards figure.xp {
+  background: url(../images/popup/xp.png) 50% 20px no-repeat;
+  text-transform: uppercase;
+}
+.goals.drydock .page .head {
+  height: auto;
+}
+.goals.drydock .page .head h1 {
+  position: relative;
+}
+.goals.drydock .page .head h1:after {
+  content: url(../images/popup/ship_image.png);
+  display: block;
+  width: 281px;
+  height: 154px;
+  position: relative;
+  margin: 20px auto 20px 15px;
+}
+.goals .hint {
+  font-size: 30px;
+}
+.goals .screen {
+  display: none;
+}
+.goals[data-state="-1"] .screen.drydock-screen-repairing {
+  display: block;
+}
+.hidden {
+  display: none;
+  pointer-events: none!important;
+  opacity: 0;
+}
+.goals.hidden {
+  display: block;
+}
+.goals.drydock .share.embossed, .goals.drydock hr {
+  display: none;
+}
+[data-state="3"] .cancel {
+  display: none;
+}

@@ -1,0 +1,641 @@
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -180px 0 0 -180px;
+  width: 360px;
+  height: 360px;
+  z-index: 8001;
+  font-family: GrilledCheeseBTNCn, sans-serif;
+}
+.popup h1 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 25px;
+  font-family: GrilledCheeseBTNCn, sans-serif;
+}
+.popup h2 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 13px;
+  font-family: GrilledCheeseBTNCn, sans-serif;
+}
+.xgoals button.cancel,
+.popup button.cancel {
+  position: absolute;
+  right: 37px;
+  top: 36px;
+  width: 46px;
+  height: 46px;
+  border: none;
+  background: url("../images/popup/close_button.png") no-repeat 0 0;
+  background-size: auto 100%;
+}
+.xgoals button.cancel:active,
+.popup button.cancel:active {
+  background-position: -46px 0;
+}
+#level-up {
+  background: url(../images/popup/levelup.png) no-repeat center;
+  border: none;
+  -webkit-border-image: none;
+}
+#level-up .header {
+  background: none;
+}
+#level-up .header h1 {
+  background: none;
+  color: red;
+  width: 100%;
+  margin-top: 28px;
+  text-align: center;
+  font: 48px/108px GrilledCheeseBTN, sans-serif;
+  font-weight: normal;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(255, 255, 255, 0.3);
+}
+#level-up h2 {
+  background: none;
+}
+#level-up .unlocked {
+  position: absolute;
+  background: none;
+  color: #6e1700;
+  top: 373px;
+  margin-left: 267px;
+  height: 50px;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(255, 255, 255, 0.3);
+}
+#level-up .unlocked figure {
+  height: 120px;
+  width: 120px;
+  margin-top: 0px;
+  display: inline-block;
+  background-size: 120px;
+  background-repeat: no-repeat;
+}
+#level-up .rewards {
+  position: absolute;
+  color: red;
+  margin-left: 0px;
+  width: 100%;
+  bottom: 115px;
+  font: 42px/90px GrilledCheeseBTNCn, sans-serif;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5), 0 -2px 0 rgba(255, 255, 255, 0.3);
+}
+#level-up .rewards figure {
+  height: 100px;
+  width: 64px;
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+#level-up .checkout {
+  bottom: 20px;
+}
+#level-up .rewards .gold {
+  background-image: url(../images/status/coins.png);
+  padding-bottom: 50px;
+  height: 70px;
+  width: 65px;
+  display: inline-block;
+}
+#level-up .rewards .food {
+  background-image: url(../images/popup/food.png);
+  height: 43px;
+  width: 60px;
+  display: inline-block;
+}
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+  #level-up figure.gold {
+    background: url(../images/status/coins-small.png) no-repeat center;
+  }
+  #level-up .unlocked figure {
+    margin-top: 60px;
+  }
+  .popup {
+    margin: -420px 0 0 -360px;
+    width: 720px;
+    height: 720px;
+  }
+  .popup h1 {
+    font-size: 50px;
+  }
+  .popup h2 {
+    font-size: 26px;
+  }
+  .xgoals button.cancel,
+  .popup button.cancel {
+    right: 27px;
+    top: 72px;
+    width: 92px;
+    height: 92px;
+  }
+  .xgoals button.cancel:active,
+  .popup button.cancel:active {
+    background-position: 100% 0;
+  }
+  .popup button.share {
+    left: 186px;
+    top: 624px;
+    width: 124px!important;
+    height: 90px!important;
+    font-size: 46px;
+  }
+  .popup button.share:active {
+    text-shadow: 0 0 20px yellow, 0 0 20px yellow;
+  }
+  /* Level Up */
+  #level-up figure {
+    height: 24px;
+    padding-top: 90px;
+    width: 128px;
+    font-size: 22px;
+    line-height: 40px;
+    margin-top: -20px;
+  }
+}
+.ipad #level-up .wrap {
+  width: 500px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  margin: -460px 0 0 -250px;
+  height: 920px;
+}
+.ipad #level-up .header h1 {
+  margin-top: 5px;
+}
+.ipad #level-up .unlocked {
+  top: 371px;
+  margin-left: 255px;
+  height: 60px;
+  font: 30px/70px GrilledCheeseBTNCn, sans-serif;
+}
+.ipad #level-up .unlocked figure {
+  margin-top: 50px;
+}
+.ipad #level-up .rewards {
+  bottom: 105px;
+}
+#level-up-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+/* Welcome Comic */
+.comic {
+  display: none;
+  padding-top: 25px;
+  border-width: none;
+  -webkit-border-image: none;
+  z-index: 100000;
+  text-align: center;
+}
+.comic .wrap {
+  display: inline-block;
+  position: relative;
+  min-width: 309px;
+}
+.comic .frame {
+  height: 98px;
+  width: 144px;
+  position: absolute;
+  border: 2px solid #f8bb55;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+  background-image: url(../images/comic/blue-panels.jpg);
+}
+.comic .frame p {
+  margin: 4px 7px;
+  font: normal 16px/16px GrilledCheeseBTNCn, sans-serif;
+  text-shadow: 0 0 2px #1166a7, 0 0 2px #1166a7, 0 0 2px #1166a7, 0 0 2px #1166a7, 0 0 2px #1166a7;
+}
+.comic .no1,
+.comic .no4 {
+  width: 305px;
+  height: 93px;
+}
+.comic .no1 {
+  background-position: 0 0;
+  margin: 5px 0 0 5px;
+}
+.comic .no2 {
+  background-position: 0 -285px;
+  margin: 95px 0 0 5px;
+  z-index: 3;
+}
+.comic .no2 p {
+  margin-top: 60px;
+  text-shadow: 0 0 2px #a84b00, 0 0 2px #a84b00, 0 0 2px #a84b00, 0 0 2px #a84b00, 0 0 2px #a84b00;
+}
+.comic .no3 {
+  background-position: 0 -187px;
+  margin: 103px 0 0 166px;
+  z-index: 3;
+}
+.comic .no4 {
+  background-position: 0 -93px;
+  margin: 198px 0 0 5px;
+}
+.comic .no5 {
+  background-position: -144px -187px;
+  margin: 285px 0 0 5px;
+}
+.comic .no6 {
+  background-position: -144px -285px;
+  margin: 285px 0 0 166px;
+}
+.comic .no6 .logo {
+  margin-top: 4px;
+  background: url(../images/logo.png) no-repeat center;
+  height: 78px;
+  position: absolute;
+  width: 100%;
+  background-size: contain;
+}
+.comic .no6 button {
+  margin: 80px 0 0 30px;
+  position: absolute;
+}
+.landscape .comic {
+  padding-top: 75px;
+}
+.landscape .comic .no1 {
+  margin: 5px 0 0 5px;
+}
+.landscape .comic .no2 {
+  margin: 5px 0 0 320px;
+}
+.landscape .comic .no3 {
+  margin: 110px 0 0 10px;
+  z-index: 3;
+}
+.landscape .comic .no4 {
+  margin: 97px 0 0 164px;
+  width: 151px;
+  background-position: -115px -93px;
+}
+.landscape .comic .no5 {
+  margin: 112px 0 0 325px;
+  z-index: 3;
+  height: 83px;
+}
+.landscape .comic .no6 {
+  margin: 204px 0 0 5px;
+  width: 462px;
+  height: 50px;
+  z-index: 0;
+  background-size: 200% 400px;
+  background-position: bottom right;
+}
+.landscape .comic .no6 .logo {
+  margin-top: -20px;
+  height: 80px;
+}
+.landscape .comic .no6 button {
+  margin: 5px 0 0 360px;
+  position: absolute;
+}
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+  .comic .wrap {
+    min-width: 640px;
+  }
+  .comic .frame {
+    height: 196px;
+    width: 288px;
+    border: 4px solid #f8bb55;
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    background-image: url(../images/comic/blue-panels.jpg);
+  }
+  .comic .frame p {
+    margin: 8px 14px;
+    font: normal 30px/32px GrilledCheeseBTNCn, sans-serif;
+    text-shadow: 0 0 4px #1166a7, 0 0 4px #1166a7, 0 0 4px #1166a7, 0 0 4px #1166a7, 0 0 4px #1166a7;
+  }
+  .comic .no1,
+  .comic .no4 {
+    width: 610px;
+    height: 187px;
+  }
+  .comic .no1 {
+    margin: -15px 0 0 10px;
+  }
+  .comic .no2 {
+    background-position: 0 -570px;
+    margin: 175px 0 0 25px;
+    z-index: 3;
+  }
+  .comic .no2 p {
+    margin-top: 120px;
+    text-shadow: 0 0 4px #a84b00, 0 0 4px #a84b00, 0 0 4px #a84b00, 0 0 4px #a84b00, 0 0 4px #a84b00;
+  }
+  .comic .no3 {
+    background-position: 0 -374px;
+    margin: 205px 0 0 317px;
+  }
+  .comic .no4 {
+    background-position: -300px -187px;
+    margin: 400px 0 0 25px;
+    width: 290px;
+    z-index: 3;
+  }
+  .comic .no5 {
+    background-position: -288px -374px;
+    margin: 430px 0 0 317px;
+    height: 187px;
+    z-index: 3;
+  }
+  .comic .no6 {
+    background-position: bottom;
+    margin: 620px 0 0 10px;
+    width: 610px;
+    height: 187px;
+    z-index: 3;
+  }
+  .comic .no6 .logo {
+    margin-top: 13px;
+    height: 165px;
+  }
+  .comic .no6 button {
+    margin: 205px 0 0 215px;
+  }
+  .browser {
+    /* horrible mobile browser adjustment */
+  
+  }
+  .browser .comic .frame {
+    top: -20px;
+  }
+  .browser .comic .no6 {
+    top: -80px;
+  }
+  .browser .comic .no6 button {
+    top: -50px;
+    right: 20px;
+    margin-left: 0;
+  }
+  .landscape .comic .no1 {
+    margin: 10px 0 0 10px;
+  }
+  .landscape .comic .no2 {
+    margin: 10px 0 0 640px;
+  }
+  .landscape .comic .no3 {
+    margin: 219px 0 0 20px;
+  }
+  .landscape .comic .no4 {
+    margin: 195px 0 0 328px;
+    width: 302px;
+    background-position: -230px -187px;
+  }
+  .landscape .comic .no5 {
+    margin: 225px 0 0 650px;
+    height: 166px;
+  }
+  .landscape .comic .no6 {
+    margin: 408px 0 0 10px;
+    width: 925px;
+    height: 100px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    background-size: 200% 400px;
+  }
+  .landscape .comic .no6 .logo {
+    margin-top: -40px;
+    height: 160px;
+  }
+  .landscape .comic .no6 button {
+    margin: 10px 0 0 740px;
+  }
+}
+.ipad {
+  /* fixes for tutorial screen on ipad */
+
+}
+.ipad .comic {
+  padding: 50px 0 0 64px;
+}
+.ipad .comic .wrap {
+  min-width: 681px;
+}
+.ipad .comic .frame {
+  height: 196px;
+  width: 288px;
+  border: 4px solid #f8bb55;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  background-image: url(../images/comic/blue-panels.jpg);
+}
+.ipad .comic .frame p {
+  margin: 8px 14px;
+  font: normal 30px/32px GrilledCheeseBTNCn, sans-serif;
+  text-shadow: 0 0 4px #1166a7, 0 0 4px #1166a7, 0 0 4px #1166a7, 0 0 4px #1166a7, 0 0 4px #1166a7;
+}
+.ipad .comic .no1,
+.ipad .comic .no4 {
+  width: 610px;
+  height: 187px;
+}
+.ipad .comic .no1 {
+  margin: -15px 0 0 10px;
+}
+.ipad .comic .no2 {
+  background-position: 0 -570px;
+  margin: 190px 0 0 25px;
+  z-index: 3;
+}
+.ipad .comic .no2 p {
+  margin-top: 120px;
+  text-shadow: 0 0 4px #a84b00, 0 0 4px #a84b00, 0 0 4px #a84b00, 0 0 4px #a84b00, 0 0 4px #a84b00;
+}
+.ipad .comic .no3 {
+  background-position: 0 -374px;
+  margin: 220px 0 0 317px;
+}
+.ipad .comic .no4 {
+  background-position: -300px -187px;
+  margin: 415px 0 0 25px;
+  width: 288px;
+  z-index: 3;
+}
+.ipad .comic .no5 {
+  background-position: -288px -374px;
+  margin: 445px 0 0 317px;
+  height: 187px;
+  z-index: 3;
+}
+.ipad .comic .no6 {
+  background-position: bottom;
+  margin: 650px 0 0 10px;
+  width: 610px;
+  height: 187px;
+  z-index: 3;
+}
+.ipad .comic .no6 .logo {
+  margin-top: 13px;
+  height: 165px;
+}
+.ipad .comic .no6 button {
+  margin: 210px 0 0 230px;
+  font-size: 36px;
+  line-height: 32px;
+  padding: 9px 30px 9px 30px;
+}
+.ipad.landscape .comic {
+  padding: 70px 0 0 32px;
+}
+.ipad.landscape .comic .no1 {
+  margin: 10px 0 0 10px;
+}
+.ipad.landscape .comic .no2 {
+  margin: 10px 0 0 640px;
+}
+.ipad.landscape .comic .no3 {
+  margin: 219px 0 0 20px;
+}
+.ipad.landscape .comic .no4 {
+  margin: 195px 0 0 328px;
+  width: 302px;
+  background-position: -230px -187px;
+}
+.ipad.landscape .comic .no5 {
+  margin: 225px 0 0 650px;
+  height: 166px;
+}
+.ipad.landscape .comic .no6 {
+  margin: 408px 0 0 10px;
+  width: 925px;
+  height: 100px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  background-size: 200% 400px;
+  background-position: bottom right;
+}
+.ipad.landscape .comic .no6 .logo {
+  margin-top: -40px;
+  height: 160px;
+}
+.ipad.landscape .comic .no6 button {
+  margin: 25px 0 0 760px;
+}
+.ipad .step_7 .tutarrow .arrow {
+  background: url(../images/hud/hand-right.png) top left no-repeat;
+}
+.intro {
+  display: none;
+  overflow: hidden;
+  z-index: 200000;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  color: #543001;
+  background: rgba(0, 0, 0, 0.85);
+  /* starting game already. intro should still be ontop of everything */
+
+}
+.intro .parrot {
+  background: url('../images/hud/parrot.png') center top no-repeat;
+  /*width: 424px;*/
+
+  width: 100%;
+  height: 538px;
+  margin-top: 75px;
+}
+.intro .parrot:before {
+  position: absolute;
+  top: 180px;
+  left: 50%;
+  margin-left: -200px;
+  display: block;
+  content: "Squaak!";
+  font: normal 52px/32px GrilledCheeseBTNCn, sans-serif;
+  color: #fff;
+  text-shadow: 0 0 5px #000, 2px 2px 4px #000;
+}
+.intro .intro-text {
+  position: relative;
+  margin: -190px auto 0;
+  font: normal 30px/32px GrilledCheeseBTNCn, sans-serif;
+  width: 401px;
+  padding: 10px 30px;
+  border: 4px solid #fff;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 1px 2px #d59d26 inset;
+  background: url('../images/popup/pergament.png') center;
+  background-size: cover;
+}
+.intro .intro-text p {
+  padding: .5em 0 .5em 0;
+}
+.intro .button {
+  position: absolute;
+  left: 50%;
+  margin-top: 30px;
+  margin-left: -3em;
+}
+.connect {
+  padding: 20px;
+  text-align: center;
+}
+.connect img {
+  max-width: 90%;
+}
+.connect .embossed {
+  margin-top: 10px;
+}
+.connect .button {
+  margin-top: -8px;
+}
+.connect .button.play {
+  width: 200px;
+  font-size: 18px;
+  line-height: 25px;
+}
+.connect .button.facebook {
+  font-family: GrilledCheeseBTNCn;
+  border-color: #2a447e!important;
+  background-color: #617aac!important;
+}
+.ipad .connect {
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+  .connect {
+    padding: 40px;
+  }
+  .connect .embossed {
+    margin-top: 20px;
+  }
+  .connect .button {
+    margin-top: -15px;
+  }
+  .connect .button.play {
+    width: 400px;
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .ipad .comic .wrap {
+    margin-top: 100px;
+  }
+  .ipad .intro .parrot {
+    margin-top: 175px;
+  }
+  .ipad #level-up .unlocked {
+    margin-left: 195px!important;
+    margin-top: -20px;
+  }
+}
+#castle-complete {
+  z-index: 5001;
+}
+.browser.ipad .comic .frame {
+  top: -20px;
+}
+.browser.ipad .comic .no6 {
+  top: -40px;
+}
+.browser.ipad .comic .no6 button {
+  top: -40px;
+}
