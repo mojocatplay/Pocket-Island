@@ -17,9 +17,9 @@ To build the game you need the following tools:
 
 # Getting Started
 
-- `git clone git@github.com:wooga/pocket_island.git`
+- `git clone git@github.com:wooga/Pocket-Island.git`
 
-- Get the art assets from cdn-mkt.wooga.com/downloads/images.zip and extract them into ./Pocket-Island/images.
+- Get the art assets from http://cdn-mkt.wooga.com/downloads/images.zip and extract them into ./Pocket-Island/images.
 
 - Run `rake` to generate all config files, sprite images, etc.
 
